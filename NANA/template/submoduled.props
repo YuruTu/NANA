@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <PreBuildEvent>
+      <Command>md $(SolutionDir)bin\dll
+md $(SolutionDir)bin\lib
+md $(SolutionDir)bin\include
+xcopy /E/S/C/Y $(SolutionDir)modules\core\include $(SolutionDir)bin\include</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy /Y $(SolutionDir)$(Platform)\$(Configuration)\*.dll $(SolutionDir)bin\dll
+xcopy /Y $(SolutionDir)$(Platform)\$(Configuration)\*.pdb $(SolutionDir)bin\dll
+xcopy /Y $(SolutionDir)$(Platform)\$(Configuration)\*.lib $(SolutionDir)bin\lib</Command>
+    </PostBuildEvent>
+    <ClCompile>
+      <PreprocessorDefinitions>NA_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

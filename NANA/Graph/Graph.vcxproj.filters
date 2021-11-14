@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{5a3c8144-48d2-4b33-88b1-8d85d845d2e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\graph">
+      <UniqueIdentifier>{e31ec2d0-4298-4be5-84ff-1e7098f4889b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\modules\graph\include\graph.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\graph\include\graph\binarytree.hpp">
+      <Filter>include\graph</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
