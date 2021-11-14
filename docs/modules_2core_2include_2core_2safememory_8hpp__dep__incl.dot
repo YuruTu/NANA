@@ -3,9 +3,9 @@ digraph "NANA/modules/core/include/core/safememory.hpp"
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="NANA/modules/core/include\l/core/safememory.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="ÊµÏÖ°²È«µÄÄÚ´æ¹ÜÀí"];
+  Node1 [label="NANA/modules/core/include\l/core/safememory.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="å®žçŽ°å®‰å…¨çš„å†…å­˜ç®¡ç†"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="NANA/modules/core/include\l/core/mat.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_2mat_8h.html",tooltip="ÊµÏÖÒ»¸öÓÃÓÚ¾ØÕóÔËËãµÄÄ£°åÀà(ÈÔÔÚÊµÏÖµ±ÖÐ)"];
+  Node2 [label="NANA/modules/core/include\l/core/mat.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_2mat_8h.html",tooltip="å®žçŽ°ä¸€ä¸ªç”¨äºŽçŸ©é˜µè¿ç®—çš„æ¨¡æ¿ç±»(ä»åœ¨å®žçŽ°å½“ä¸­)"];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="NANA/modules/core/src\l/mat.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mat_8cpp.html",tooltip="ÊµÏÖMatµÄÏà¹Ø¹¦ÄÜ"];
+  Node3 [label="NANA/modules/core/src\l/mat.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mat_8cpp.html",tooltip="å®žçŽ°Matçš„ç›¸å…³åŠŸèƒ½"];
 }

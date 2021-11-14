@@ -3,9 +3,9 @@ digraph "NANA/bin/include/core/core_global.h"
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="NANA/bin/include/core\l/core_global.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="È«¾ÖÍ·ÎÄ¼þ"];
+  Node1 [label="NANA/bin/include/core\l/core_global.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="å…¨å±€å¤´æ–‡ä»¶"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="nadef.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2nadef_8h.html",tooltip="ÊýÖµ·ÖÎöËùÒÀÀµµÄ¶¨Òå"];
+  Node2 [label="nadef.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2nadef_8h.html",tooltip="æ•°å€¼åˆ†æžæ‰€ä¾èµ–çš„å®šä¹‰"];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

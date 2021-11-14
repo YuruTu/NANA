@@ -3,20 +3,20 @@ digraph "NANA/bin/include/core/core_global.h"
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="NANA/bin/include/core\l/core_global.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="È«¾ÖÍ·ÎÄ¼þ"];
+  Node1 [label="NANA/bin/include/core\l/core_global.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="å…¨å±€å¤´æ–‡ä»¶"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="NANA/bin/include/core\l/datamanager.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2datamanager_8h.html",tooltip="ÊµÏÖÒ»¸öÊý¾Ý¹ÜÀíÆ÷"];
+  Node2 [label="NANA/bin/include/core\l/datamanager.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2datamanager_8h.html",tooltip="å®žçŽ°ä¸€ä¸ªæ•°æ®ç®¡ç†å™¨"];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="NANA/bin/include/core\l/mat.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2mat_8h.html",tooltip="ÊµÏÖÒ»¸öÓÃÓÚ¾ØÕóÔËËãµÄÄ£°åÀà(ÈÔÔÚÊµÏÖµ±ÖÐ)"];
+  Node3 [label="NANA/bin/include/core\l/mat.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2mat_8h.html",tooltip="å®žçŽ°ä¸€ä¸ªç”¨äºŽçŸ©é˜µè¿ç®—çš„æ¨¡æ¿ç±»(ä»åœ¨å®žçŽ°å½“ä¸­)"];
   Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="NANA/bin/include/core\l/error.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2error_8h.html",tooltip="ÓÃÓÚÅ×³öÒì³£"];
+  Node4 [label="NANA/bin/include/core\l/error.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2error_8h.html",tooltip="ç”¨äºŽæŠ›å‡ºå¼‚å¸¸"];
   Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="NANA/bin/include/core\l/graphCore.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2graph_core_8hpp.html",tooltip="ÎªÍ¼ÂÛËã·¨ÊµÏÖµÄ»ù±¾Êý¾Ý½á¹¹"];
+  Node5 [label="NANA/bin/include/core\l/graphCore.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2graph_core_8hpp.html",tooltip="ä¸ºå›¾è®ºç®—æ³•å®žçŽ°çš„åŸºæœ¬æ•°æ®ç»“æž„"];
   Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="NANA/bin/include/core.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_8hpp.html",tooltip="°üº¬»ù±¾µÄÊý¾Ý½á¹¹µÈ"];
+  Node6 [label="NANA/bin/include/core.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_8hpp.html",tooltip="åŒ…å«åŸºæœ¬çš„æ•°æ®ç»“æž„ç­‰"];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="NANA/bin/include/core\l/safememory.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2safememory_8hpp.html",tooltip="ÊµÏÖ°²È«µÄÄÚ´æ¹ÜÀí"];
+  Node7 [label="NANA/bin/include/core\l/safememory.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2safememory_8hpp.html",tooltip="å®žçŽ°å®‰å…¨çš„å†…å­˜ç®¡ç†"];
   Node7 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }
