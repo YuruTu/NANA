@@ -1,0 +1,11 @@
+digraph "NANA/modules/core/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c3e203e05606b384f5fc9d03652c3ac7 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="core" fontname="Helvetica", fontsize="10", URL="dir_c3e203e05606b384f5fc9d03652c3ac7.html"]
+  dir_b97e1ce20cef1a3a5870d559f8ef4003 [shape=box label="include" fillcolor="white" style="filled" color="red" URL="dir_b97e1ce20cef1a3a5870d559f8ef4003.html"];
+  dir_d4290d2844396728f52f10a3cbfe8030 [shape=box, label="src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_d4290d2844396728f52f10a3cbfe8030.html"];
+  }
+  dir_d4290d2844396728f52f10a3cbfe8030->dir_b97e1ce20cef1a3a5870d559f8ef4003 [headlabel="3", labeldistance=1.5 headhref="dir_000009_000006.html"];
+}

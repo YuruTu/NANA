@@ -1,0 +1,31 @@
+digraph "NANA/modules/core/include/core/nadef.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="NANA/modules/core/include\l/core/nadef.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="数值分析所依赖的定义"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="NANA/modules/core/include\l/core.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_8hpp.html",tooltip="包含基本的数据结构等"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NANA/modules/core/include\l/core/core_global.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_2core__global_8h.html",tooltip="全局头文件"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NANA/modules/core/include\l/core/datamanager.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_2datamanager_8h.html",tooltip="实现一个数据管理器"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="NANA/modules/core/include\l/core/mat.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_2mat_8h.html",tooltip="实现一个用于矩阵运算的模板类(仍在实现当中)"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="NANA/modules/core/src\l/mat.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mat_8cpp.html",tooltip="实现Mat的相关功能"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="NANA/modules/core/src\l/datamanager.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$datamanager_8cpp_source.html",tooltip=" "];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="NANA/modules/core/include\l/core/error.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_2error_8h.html",tooltip="用于抛出异常"];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="NANA/modules/core/src\l/error.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$error_8cpp_source.html",tooltip=" "];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="NANA/modules/core/include\l/core/graphCore.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_2graph_core_8hpp.html",tooltip="为图论算法实现的基本数据结构"];
+  Node10 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="NANA/modules/core/include\l/core/safememory.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_2safememory_8hpp.html",tooltip="实现安全的内存管理"];
+  Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
