@@ -12,6 +12,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -36,17 +41,38 @@
 var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,15 +107,9 @@ $(function() {
 <tr class="memitem:a031f88b2b28358b08289d9536662bdc6"><td class="memItemLeft" align="right" valign="top"><a id="a031f88b2b28358b08289d9536662bdc6" name="a031f88b2b28358b08289d9536662bdc6"></a>
 static <a class="el" href="class_n_a_n_a_1_1_c_error.html">CError</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> (std::string filename=&quot;error.txt&quot;)</td></tr>
 <tr class="separator:a031f88b2b28358b08289d9536662bdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd60b6077abdb784417278dacab4d95c"><td class="memItemLeft" align="right" valign="top"><a id="acd60b6077abdb784417278dacab4d95c" name="acd60b6077abdb784417278dacab4d95c"></a>
-static <a class="el" href="class_n_a_n_a_1_1_c_error.html">CError</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> (std::string filename=&quot;error.txt&quot;)</td></tr>
-<tr class="separator:acd60b6077abdb784417278dacab4d95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
-<tr class="memitem:aa68d9586c29a9a8d9b7563e937c06f71"><td class="memItemLeft" align="right" valign="top"><a id="aa68d9586c29a9a8d9b7563e937c06f71" name="aa68d9586c29a9a8d9b7563e937c06f71"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CError</b> (std::string &amp;filename)</td></tr>
-<tr class="separator:aa68d9586c29a9a8d9b7563e937c06f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa68d9586c29a9a8d9b7563e937c06f71"><td class="memItemLeft" align="right" valign="top"><a id="aa68d9586c29a9a8d9b7563e937c06f71" name="aa68d9586c29a9a8d9b7563e937c06f71"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CError</b> (std::string &amp;filename)</td></tr>
 <tr class="separator:aa68d9586c29a9a8d9b7563e937c06f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,8 +121,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_filename</b>
 <tr class="separator:a2cc180a474587170190595cc0184a6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>NANA/bin/include/core/<a class="el" href="bin_2include_2core_2error_8h_source.html">error.h</a></li>
-<li>NANA/modules/core/include/core/<a class="el" href="modules_2core_2include_2core_2error_8h_source.html">error.h</a></li>
+<li>NANA/modules/core/include/core/<a class="el" href="error_8h_source.html">error.h</a></li>
 <li>NANA/modules/core/src/error.cpp</li>
 </ul>
 </div><!-- contents -->

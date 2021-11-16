@@ -20,7 +20,7 @@ Matrix::~Matrix()
 void Matrix::create()
 {
 	m_step = m_cols + m_cols *static_cast<int>(sizeof(NAFLOAT)) % 32;
-	size_t nSize = m_rows* m_step;
+	size_t nSize =static_cast<size_t> (m_rows)* m_step;
 	m_data = new NAFLOAT[nSize];
 }
 

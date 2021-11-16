@@ -12,6 +12,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -36,17 +41,38 @@
 var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -78,7 +104,7 @@ $(function() {
 <p>3D点集  
  <a href="struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="modules_2computergeometry_2include_2computergeometry_2geometrytypes_8hpp_source.html">geometrytypes.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="geometrytypes_8hpp_source.html">geometrytypes.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
@@ -88,36 +114,36 @@ Public 成员函数</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:ac3b10f5da6cfda10288f69ac3ed2f5f6"><td class="memItemLeft" ><a id="ac3b10f5da6cfda10288f69ac3ed2f5f6" name="ac3b10f5da6cfda10288f69ac3ed2f5f6"></a>
+<tr class="memitem:ada421ca6cff3c113e6bce52659646118"><td class="memItemLeft" ><a id="ada421ca6cff3c113e6bce52659646118" name="ada421ca6cff3c113e6bce52659646118"></a>
 union {</td></tr>
-<tr class="memitem:aec0c3f1cf827725394ec84995f410440"><td class="memItemLeft" ><a id="aec0c3f1cf827725394ec84995f410440" name="aec0c3f1cf827725394ec84995f410440"></a>
+<tr class="memitem:a70751b60e08768729c1ad57021ac35ea"><td class="memItemLeft" ><a id="a70751b60e08768729c1ad57021ac35ea" name="a70751b60e08768729c1ad57021ac35ea"></a>
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a3d6e4ecc84a9cde791db1dc59352f51a"><td class="memItemLeft" >
+<tr class="memitem:a8cdf9195080f0d8221b60027693a11a9"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;_Tp&#160;&#160;&#160;<b>x</b></td></tr>
-<tr class="memdesc:a3d6e4ecc84a9cde791db1dc59352f51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">x坐标 <br /></td></tr>
-<tr class="separator:a3d6e4ecc84a9cde791db1dc59352f51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a201a33192cf1f44b10b180fd4ddf3d98"><td class="memItemLeft" >
+<tr class="memdesc:a8cdf9195080f0d8221b60027693a11a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">x坐标 <br /></td></tr>
+<tr class="separator:a8cdf9195080f0d8221b60027693a11a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de871bbd32b7bf47d0a4ce652bf6b52"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;_Tp&#160;&#160;&#160;<b>y</b></td></tr>
-<tr class="memdesc:a201a33192cf1f44b10b180fd4ddf3d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">y坐标 <br /></td></tr>
-<tr class="separator:a201a33192cf1f44b10b180fd4ddf3d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d1d025b460a444e67d8e625affb6b4f"><td class="memItemLeft" >
+<tr class="memdesc:a0de871bbd32b7bf47d0a4ce652bf6b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">y坐标 <br /></td></tr>
+<tr class="separator:a0de871bbd32b7bf47d0a4ce652bf6b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa344468dd9f67f521d5a2a9d11b9f62a"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;_Tp&#160;&#160;&#160;<b>z</b></td></tr>
-<tr class="memdesc:a1d1d025b460a444e67d8e625affb6b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">z坐标 <br /></td></tr>
-<tr class="separator:a1d1d025b460a444e67d8e625affb6b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec0c3f1cf827725394ec84995f410440"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aec0c3f1cf827725394ec84995f410440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47353972ffbe3b1dc688ebed2169152c"><td class="memItemLeft" >
+<tr class="memdesc:aa344468dd9f67f521d5a2a9d11b9f62a"><td class="mdescLeft">&#160;</td><td class="mdescRight">z坐标 <br /></td></tr>
+<tr class="separator:aa344468dd9f67f521d5a2a9d11b9f62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70751b60e08768729c1ad57021ac35ea"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a70751b60e08768729c1ad57021ac35ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2c12f6b4130f88835e9a44dfa0688c"><td class="memItemLeft" >
 &#160;&#160;&#160;_Tp&#160;&#160;&#160;<b>data</b> [4]</td></tr>
-<tr class="memdesc:a47353972ffbe3b1dc688ebed2169152c"><td class="mdescLeft">&#160;</td><td class="mdescRight">指针部分 <br /></td></tr>
-<tr class="separator:a47353972ffbe3b1dc688ebed2169152c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b10f5da6cfda10288f69ac3ed2f5f6"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ac3b10f5da6cfda10288f69ac3ed2f5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ace2c12f6b4130f88835e9a44dfa0688c"><td class="mdescLeft">&#160;</td><td class="mdescRight">数据部分 <br /></td></tr>
+<tr class="separator:ace2c12f6b4130f88835e9a44dfa0688c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada421ca6cff3c113e6bce52659646118"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ada421ca6cff3c113e6bce52659646118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename _Tp&gt;<br />
 struct NANA::ComputerGeometry::PointXYZ_&lt; _Tp &gt;</div><p >3D点集 </p>
 </div><hr/>该结构体的文档由以下文件生成:<ul>
-<li>NANA/modules/computergeometry/include/computergeometry/<a class="el" href="modules_2computergeometry_2include_2computergeometry_2geometrytypes_8hpp_source.html">geometrytypes.hpp</a></li>
+<li>NANA/modules/computergeometry/include/computergeometry/<a class="el" href="geometrytypes_8hpp_source.html">geometrytypes.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,8 +5,6 @@ digraph "NANA" {
   subgraph clusterdir_7c9b6f0367ec74be5e320712e0f90a45 {
     graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_7c9b6f0367ec74be5e320712e0f90a45.html"];
     dir_7c9b6f0367ec74be5e320712e0f90a45 [shape=plaintext label="NANA"];
-  dir_f5ddf8559e58b1343ad51e19c16eda1a [shape=box label="bin" fillcolor="white" style="filled" color="red" URL="dir_f5ddf8559e58b1343ad51e19c16eda1a.html"];
   dir_6b55659ead8ae8e939b199224b5f3833 [shape=box label="modules" fillcolor="white" style="filled" color="red" URL="dir_6b55659ead8ae8e939b199224b5f3833.html"];
-  dir_67ec44d8e79349673e34c9d0bc7a19b4 [shape=box label="test" fillcolor="white" style="filled" URL="dir_67ec44d8e79349673e34c9d0bc7a19b4.html"];
   }
 }

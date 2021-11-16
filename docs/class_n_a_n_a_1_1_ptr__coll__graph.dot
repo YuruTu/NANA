@@ -6,5 +6,4 @@ digraph "NANA::Ptr&lt; _T &gt;"
   Node1 [label="NANA::Ptr\< _T \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="继承自std::shared_ptr的智能指针"];
   Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="std::shared_ptr\< _T \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
-  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

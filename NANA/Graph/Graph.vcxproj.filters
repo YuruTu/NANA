@@ -6,10 +6,13 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="include">
-      <UniqueIdentifier>{5a3c8144-48d2-4b33-88b1-8d85d845d2e8}</UniqueIdentifier>
+      <UniqueIdentifier>{654816c5-0a0d-4f8e-ac4a-6f40a36951d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{252e83a7-e136-4f83-990a-03e37c30b074}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\graph">
-      <UniqueIdentifier>{e31ec2d0-4298-4be5-84ff-1e7098f4889b}</UniqueIdentifier>
+      <UniqueIdentifier>{9cb71d80-de51-4d46-b35f-69ccfea6817e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

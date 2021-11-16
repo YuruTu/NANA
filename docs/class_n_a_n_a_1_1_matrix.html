@@ -12,6 +12,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -36,17 +41,38 @@
 var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,13 +105,10 @@ $(function() {
 <p>简单矩阵类  
  <a href="class_n_a_n_a_1_1_matrix.html#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="bin_2include_2core_2matrix_8h_source.html">matrix.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="matrix_8h_source.html">matrix.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a200779713f922b3c87ad193b3ea7f6b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4">Matrix</a> (int rows, int cols)</td></tr>
-<tr class="memdesc:a200779713f922b3c87ad193b3ea7f6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，主动申请与管理内存  <a href="class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4">更多...</a><br /></td></tr>
-<tr class="separator:a200779713f922b3c87ad193b3ea7f6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a200779713f922b3c87ad193b3ea7f6b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4">Matrix</a> (int rows, int cols)</td></tr>
 <tr class="memdesc:a200779713f922b3c87ad193b3ea7f6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，主动申请与管理内存  <a href="class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4">更多...</a><br /></td></tr>
 <tr class="separator:a200779713f922b3c87ad193b3ea7f6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,19 +121,13 @@ Private 成员函数</h2></td></tr>
 <tr class="memitem:af89b2a36817707cc891210384ac59f98"><td class="memItemLeft" align="right" valign="top"><a id="af89b2a36817707cc891210384ac59f98" name="af89b2a36817707cc891210384ac59f98"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
 <tr class="separator:af89b2a36817707cc891210384ac59f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf5ac2b6eb845f7ef18654422f19a786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#abf5ac2b6eb845f7ef18654422f19a786">create</a> ()</td></tr>
-<tr class="memdesc:abf5ac2b6eb845f7ef18654422f19a786"><td class="mdescLeft">&#160;</td><td class="mdescRight">申请内存  <a href="class_n_a_n_a_1_1_matrix.html#abf5ac2b6eb845f7ef18654422f19a786">更多...</a><br /></td></tr>
-<tr class="separator:abf5ac2b6eb845f7ef18654422f19a786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af89b2a36817707cc891210384ac59f98"><td class="memItemLeft" align="right" valign="top"><a id="af89b2a36817707cc891210384ac59f98" name="af89b2a36817707cc891210384ac59f98"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
-<tr class="separator:af89b2a36817707cc891210384ac59f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private 属性</h2></td></tr>
-<tr class="memitem:a113a769cd260f977e74693b7a51db10b"><td class="memItemLeft" align="right" valign="top"><a id="a113a769cd260f977e74693b7a51db10b" name="a113a769cd260f977e74693b7a51db10b"></a>
+<tr class="memitem:a0467c2593447a7c37388b011b35a835c"><td class="memItemLeft" align="right" valign="top"><a id="a0467c2593447a7c37388b011b35a835c" name="a0467c2593447a7c37388b011b35a835c"></a>
 NAFLOAT *&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
-<tr class="memdesc:a113a769cd260f977e74693b7a51db10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵的数据 <br /></td></tr>
-<tr class="separator:a113a769cd260f977e74693b7a51db10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a0467c2593447a7c37388b011b35a835c"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵的数据 <br /></td></tr>
+<tr class="separator:a0467c2593447a7c37388b011b35a835c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53dab414488a1f13e95a212fead4936b"><td class="memItemLeft" align="right" valign="top"><a id="a53dab414488a1f13e95a212fead4936b" name="a53dab414488a1f13e95a212fead4936b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_rows</b></td></tr>
 <tr class="memdesc:a53dab414488a1f13e95a212fead4936b"><td class="mdescLeft">&#160;</td><td class="mdescRight">行数 <br /></td></tr>
@@ -128,7 +145,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_step</b></td></tr>
 <div class="textblock"><p >简单矩阵类 </p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="a200779713f922b3c87ad193b3ea7f6b4" name="a200779713f922b3c87ad193b3ea7f6b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a200779713f922b3c87ad193b3ea7f6b4">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a200779713f922b3c87ad193b3ea7f6b4">&#9670;&nbsp;</a></span>Matrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,49 +189,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_step</b></td></tr>
 
 </div>
 </div>
-<a id="a200779713f922b3c87ad193b3ea7f6b4" name="a200779713f922b3c87ad193b3ea7f6b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a200779713f922b3c87ad193b3ea7f6b4">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NANA::Matrix::Matrix </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rows</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cols</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>构造函数，主动申请与管理内存 </p>
-<dl class="section return"><dt>返回</dt><dd><br  />
- </dd></dl>
-<dl class="params"><dt>参数</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">int</td><td>rows </td></tr>
-    <tr><td class="paramname">int</td><td>cols </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>注解</dt><dd></dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">成员函数说明</h2>
 <a id="abf5ac2b6eb845f7ef18654422f19a786" name="abf5ac2b6eb845f7ef18654422f19a786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf5ac2b6eb845f7ef18654422f19a786">&#9670;&nbsp;</a></span>create() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5ac2b6eb845f7ef18654422f19a786">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,39 +225,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_step</b></td></tr>
 
 </div>
 </div>
-<a id="abf5ac2b6eb845f7ef18654422f19a786" name="abf5ac2b6eb845f7ef18654422f19a786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf5ac2b6eb845f7ef18654422f19a786">&#9670;&nbsp;</a></span>create() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NANA::Matrix::create </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>申请内存 </p>
-<dl class="section return"><dt>返回</dt><dd>: void </dd></dl>
-<dl class="section note"><dt>注解</dt><dd>: <br  />
- </dd></dl>
-
-</div>
-</div>
 <hr/>该类的文档由以下文件生成:<ul>
-<li>NANA/bin/include/core/<a class="el" href="bin_2include_2core_2matrix_8h_source.html">matrix.h</a></li>
-<li>NANA/modules/core/include/core/<a class="el" href="modules_2core_2include_2core_2matrix_8h_source.html">matrix.h</a></li>
+<li>NANA/modules/core/include/core/<a class="el" href="matrix_8h_source.html">matrix.h</a></li>
 <li>NANA/modules/core/src/matrix.cpp</li>
 </ul>
 </div><!-- contents -->

@@ -9,7 +9,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComputerGeometry", "ComputerGeometry\ComputerGeometry.vcxproj", "{24CE26D2-7E1F-46B5-94EE-5C8EE209E19D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Graph", "Graph\Graph.vcxproj", "{9E2BBA20-E2E5-4A5C-9A50-C6B2382B7DF2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Graph", "Graph\Graph.vcxproj", "{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,13 +37,12 @@ Global
 		{24CE26D2-7E1F-46B5-94EE-5C8EE209E19D}.Release|x64.ActiveCfg = Release|x64
 		{24CE26D2-7E1F-46B5-94EE-5C8EE209E19D}.Release|x64.Build.0 = Release|x64
 		{24CE26D2-7E1F-46B5-94EE-5C8EE209E19D}.Release|x86.ActiveCfg = Release|x64
-		{9E2BBA20-E2E5-4A5C-9A50-C6B2382B7DF2}.Debug|x64.ActiveCfg = Debug|x64
-		{9E2BBA20-E2E5-4A5C-9A50-C6B2382B7DF2}.Debug|x64.Build.0 = Debug|x64
-		{9E2BBA20-E2E5-4A5C-9A50-C6B2382B7DF2}.Debug|x86.ActiveCfg = Debug|x64
-		{9E2BBA20-E2E5-4A5C-9A50-C6B2382B7DF2}.Release|x64.ActiveCfg = Release|x64
-		{9E2BBA20-E2E5-4A5C-9A50-C6B2382B7DF2}.Release|x64.Build.0 = Release|x64
-		{9E2BBA20-E2E5-4A5C-9A50-C6B2382B7DF2}.Release|x86.ActiveCfg = Release|Win32
-		{9E2BBA20-E2E5-4A5C-9A50-C6B2382B7DF2}.Release|x86.Build.0 = Release|Win32
+		{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}.Debug|x64.ActiveCfg = Debug|x64
+		{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}.Debug|x64.Build.0 = Debug|x64
+		{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}.Debug|x86.ActiveCfg = Debug|x64
+		{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}.Release|x64.ActiveCfg = Release|x64
+		{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}.Release|x64.Build.0 = Release|x64
+		{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

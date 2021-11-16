@@ -24,24 +24,13 @@
 */
 var menudata={children:[
 {text:"首页",url:"index.html"},
-{text:"相关页面",url:"pages.html"},
 {text:"模块",url:"modules.html"},
 {text:"类",url:"annotated.html",children:[
 {text:"类列表",url:"annotated.html"},
 {text:"类索引",url:"classes.html"},
 {text:"类继承关系",url:"inherits.html"},
 {text:"类成员",url:"functions.html",children:[
-{text:"全部",url:"functions.html",children:[
-{text:"c",url:"functions.html#index_c"},
-{text:"d",url:"functions.html#index_d"},
-{text:"e",url:"functions.html#index_e"},
-{text:"f",url:"functions.html#index_f"},
-{text:"l",url:"functions.html#index_l"},
-{text:"m",url:"functions.html#index_m"},
-{text:"w",url:"functions.html#index_w"},
-{text:"x",url:"functions.html#index_x"},
-{text:"y",url:"functions.html#index_y"},
-{text:"z",url:"functions.html#index_z"}]},
+{text:"全部",url:"functions.html"},
 {text:"函数",url:"functions_func.html"},
 {text:"变量",url:"functions_vars.html"}]}]},
 {text:"文件",url:"files.html",children:[

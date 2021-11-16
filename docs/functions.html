@@ -12,6 +12,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -36,17 +41,45 @@
 var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','搜索');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li class="current"><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="functions.html"><span>全部</span></a></li>
+      <li><a href="functions_func.html"><span>函数</span></a></li>
+      <li><a href="functions_vars.html"><span>变量</span></a></li>
+    </ul>
+  </div>
 </div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -63,66 +96,28 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">这里列出了所有文档化的类成员，并附带类所属的文件:</div>
-
-<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<div class="textblock">这里列出了所有文档化的类成员，并附带类所属的文件:</div><ul>
 <li>code&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_exception.html#a0f901f8439a536a27500bb4deda9e56b">NANA::Exception</a></li>
 <li>conj()&#160;:&#160;<a class="el" href="group__core__basic.html#gae798b5af1d8954176b4eab4855346a26">NANA::Complex&lt; _T &gt;</a></li>
 <li>create()&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_matrix.html#abf5ac2b6eb845f7ef18654422f19a786">NANA::Matrix</a></li>
-</ul>
-
-
-<h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
 <li>data&#160;:&#160;<a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#ac4e4f7b9d56d8287c56f6961201b4402">NANA::ComputerGeometry::PointXYZ_&lt; _Tp &gt;</a></li>
-</ul>
-
-
-<h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
 <li>err&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_exception.html#aeeff050a5505e27b67cae4a799d1e95f">NANA::Exception</a></li>
 <li>Exception()&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_exception.html#ae72abd7562f353293ebad2b0bcecde0a">NANA::Exception</a></li>
-</ul>
-
-
-<h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
 <li>file&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_exception.html#a326da81152cb4bc6dcce4a4aa7fec019">NANA::Exception</a></li>
 <li>func&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_exception.html#a56bb9b1a9b6924387a8675e74cc1595a">NANA::Exception</a></li>
-</ul>
-
-
-<h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
 <li>line&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_exception.html#a12ba300c1d983b64c541095e545aff16">NANA::Exception</a></li>
-</ul>
-
-
-<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
 <li>m_cols&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_mat.html#a781220089b0b01fb92f082ba9a2d3086">NANA::Mat&lt; _T &gt;</a>, <a class="el" href="class_n_a_n_a_1_1_matrix.html#a5629dd234353f57153481f23c311d113">NANA::Matrix</a></li>
-<li>m_data&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_matrix.html#a113a769cd260f977e74693b7a51db10b">NANA::Matrix</a></li>
-<li>m_datamanager&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_mat.html#aba4bbb5fa172250470818a04d4db9dc6">NANA::Mat&lt; _T &gt;</a></li>
+<li>m_data&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_matrix.html#a0467c2593447a7c37388b011b35a835c">NANA::Matrix</a></li>
+<li>m_datamanager&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_mat.html#a7fb093495ccb7f3b128729154f9de3ce">NANA::Mat&lt; _T &gt;</a></li>
 <li>m_rows&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_mat.html#ad6dfc45d02669679510c1835d55c70ce">NANA::Mat&lt; _T &gt;</a>, <a class="el" href="class_n_a_n_a_1_1_matrix.html#a53dab414488a1f13e95a212fead4936b">NANA::Matrix</a></li>
 <li>m_step&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_matrix.html#ae86429e06b30ce0044f850d3c7205c55">NANA::Matrix</a></li>
 <li>m_stride&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_mat.html#acb64d1c1c611db9572f0680ac7971655">NANA::Mat&lt; _T &gt;</a></li>
 <li>Mat()&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_mat.html#ab9020e46287396ad53f551cbb24d7154">NANA::Mat&lt; _T &gt;</a></li>
 <li>Matrix()&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4">NANA::Matrix</a></li>
 <li>msg&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_exception.html#a71f359dabb13e2378d1f9beb3a55d900">NANA::Exception</a></li>
-</ul>
-
-
-<h3><a id="index_w" name="index_w"></a>- w -</h3><ul>
 <li>what()&#160;:&#160;<a class="el" href="class_n_a_n_a_1_1_exception.html#acfd4f608a5a0129acb6048f8e6ff7e7c">NANA::Exception</a></li>
-</ul>
-
-
-<h3><a id="index_x" name="index_x"></a>- x -</h3><ul>
 <li>x&#160;:&#160;<a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#a2a48815ac25db8dd2da4a1bd48526058">NANA::ComputerGeometry::PointXYZ_&lt; _Tp &gt;</a></li>
-</ul>
-
-
-<h3><a id="index_y" name="index_y"></a>- y -</h3><ul>
 <li>y&#160;:&#160;<a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#a6f17a91af9ea7d2a8d0f5d373f6561f4">NANA::ComputerGeometry::PointXYZ_&lt; _Tp &gt;</a></li>
-</ul>
-
-
-<h3><a id="index_z" name="index_z"></a>- z -</h3><ul>
 <li>z&#160;:&#160;<a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#ae80711d0928fbc11002d2dac046dc2eb">NANA::ComputerGeometry::PointXYZ_&lt; _Tp &gt;</a></li>
 </ul>
 </div><!-- contents -->

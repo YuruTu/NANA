@@ -35,7 +35,6 @@ struct PointXY_ {
 			_Tp x, y;
 		};
 		_Tp data[3];
-		
 	};
 };
 
@@ -57,10 +56,18 @@ struct PointXYZ_ {
 			_Tp y;///<y坐标
 			_Tp z;///<z坐标
 		};
-		_Tp data[4];///<指针部分
+		_Tp data[4];///<数据部分
 
 	};
 };
+
+template<typename _Tp>
+struct Rect_ {
+	_Tp x, y, w, h;
+};
+
+
+
 
 
 }

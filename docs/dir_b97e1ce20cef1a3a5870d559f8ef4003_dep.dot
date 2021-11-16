@@ -10,5 +10,5 @@ digraph "NANA/modules/core/include" {
   dir_0b3436d11cdafbf8314ae8e34c2f5846 [shape=box label="core" fillcolor="white" style="filled" URL="dir_0b3436d11cdafbf8314ae8e34c2f5846.html"];
   }
   }
-  dir_b97e1ce20cef1a3a5870d559f8ef4003->dir_0b3436d11cdafbf8314ae8e34c2f5846 [headlabel="5", labeldistance=1.5 headhref="dir_000009_000011.html"];
+  dir_b97e1ce20cef1a3a5870d559f8ef4003->dir_0b3436d11cdafbf8314ae8e34c2f5846 [headlabel="5", labeldistance=1.5 headhref="dir_000007_000008.html"];
 }
