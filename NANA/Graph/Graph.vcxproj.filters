@@ -19,5 +19,8 @@
     <ClInclude Include="..\modules\graph\include\graph\binarytree.hpp">
       <Filter>include\graph</Filter>
     </ClInclude>
+    <ClInclude Include="..\modules\graph\include\graph\huffman.hpp">
+      <Filter>include\graph</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

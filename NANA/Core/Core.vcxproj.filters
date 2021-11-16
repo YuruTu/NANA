@@ -51,6 +51,9 @@
     <ClInclude Include="..\modules\core\include\core\graphCore.hpp">
       <Filter>include\core</Filter>
     </ClInclude>
+    <ClInclude Include="..\modules\core\include\core\matrix.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\modules\core\src\error.cpp">
@@ -60,6 +63,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\modules\core\src\datamanager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\core\src\matrix.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

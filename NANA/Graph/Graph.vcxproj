@@ -84,6 +84,7 @@
   <ItemGroup>
     <ClInclude Include="..\modules\graph\include\graph.hpp" />
     <ClInclude Include="..\modules\graph\include\graph\binarytree.hpp" />
+    <ClInclude Include="..\modules\graph\include\graph\huffman.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

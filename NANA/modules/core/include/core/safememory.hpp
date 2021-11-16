@@ -37,6 +37,22 @@ inline void deleteSafe(_T*& p) {
 	p = nullptr;
 }
 
+///************************************
+/// @brief:    deleteArraySafe 安全释放 xxx * a = new xxx[num];申请的内存
+/// @fullname:  NANA::deleteArraySafe
+/// @access:    public 
+/// @returns:   void
+/// @qualifier:
+/// @param: _T * & p
+///************************************
+template<typename _T>
+inline void deleteArraySafe(_T*& p) {
+	if (nullptr == p)
+		return;
+	delete [] p;
+	p = nullptr;
+}
+
 
 }
 
