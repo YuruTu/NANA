@@ -66,6 +66,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">类</a> &#124;
 <a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
 <a href="#func-members">函数</a> &#124;
 <a href="#var-members">变量</a>  </div>
   <div class="headertitle"><div class="title">Basic structures<div class="ingroups"><a class="el" href="group__core.html">Core</a></div></div></div>
@@ -80,10 +81,12 @@ Basic structures 的协作图:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_complex.html">NANA::Complex&lt; _T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">复数类，用于实现复数的加减乘除运算  <a href="class_n_a_n_a_1_1_complex.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_c_data_manager.html">NANA::CDataManager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_exception.html">NANA::Exception</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">用于异常抛出  <a href="class_n_a_n_a_1_1_exception.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_c_error.html">NANA::CError</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,18 +94,30 @@ Basic structures 的协作图:</div>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">边类  <a href="class_n_a_n_a_1_1_g_r_a_p_h_1_1_edge.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_mat.html">NANA::Mat&lt; _T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">高效矩阵运算类  <a href="class_n_a_n_a_1_1_mat.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_mat_op.html">NANA::MatOp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html">NANA::Matrix</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">简单矩阵类  <a href="class_n_a_n_a_1_1_matrix.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 宏定义</h2></td></tr>
 <tr class="memitem:ga565ebbe097427f7ac31b1fe4c512f252"><td class="memItemLeft" align="right" valign="top"><a id="ga565ebbe097427f7ac31b1fe4c512f252" name="ga565ebbe097427f7ac31b1fe4c512f252"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NA_Assert</b>(expr)&#160;&#160;&#160;do { if(!!(expr)) ; else throw <a class="el" href="class_n_a_n_a_1_1_exception.html">NANA::Exception</a>( NANA::Error::ErrAssert, #expr, __FUNCTION__, __FILE__, __LINE__ ); } while(0);</td></tr>
+<tr class="memdesc:ga565ebbe097427f7ac31b1fe4c512f252"><td class="mdescLeft">&#160;</td><td class="mdescRight">当表达式非法，抛出异常 <br /></td></tr>
 <tr class="separator:ga565ebbe097427f7ac31b1fe4c512f252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga565ebbe097427f7ac31b1fe4c512f252"><td class="memItemLeft" align="right" valign="top"><a id="ga565ebbe097427f7ac31b1fe4c512f252" name="ga565ebbe097427f7ac31b1fe4c512f252"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>NA_Assert</b>(expr)&#160;&#160;&#160;do { if(!!(expr)) ; else throw <a class="el" href="class_n_a_n_a_1_1_exception.html">NANA::Exception</a>( NANA::Error::ErrAssert, #expr, __FUNCTION__, __FILE__, __LINE__ ); } while(0);</td></tr>
+<tr class="memdesc:ga565ebbe097427f7ac31b1fe4c512f252"><td class="mdescLeft">&#160;</td><td class="mdescRight">当表达式非法，抛出异常 <br /></td></tr>
 <tr class="separator:ga565ebbe097427f7ac31b1fe4c512f252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ga929893c445859c91f0932ef5585595bf"><td class="memItemLeft" align="right" valign="top"><a id="ga929893c445859c91f0932ef5585595bf" name="ga929893c445859c91f0932ef5585595bf"></a>
+typedef double&#160;</td><td class="memItemRight" valign="bottom"><b>NANA::NAFLOAT</b></td></tr>
+<tr class="separator:ga929893c445859c91f0932ef5585595bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
@@ -110,7 +125,7 @@ Basic structures 的协作图:</div>
 &#160;</td><td class="memItemRight" valign="bottom"><b>NANA::Complex&lt; _T &gt;::Complex</b> (_T &amp;_re, _T &amp;_im=0)</td></tr>
 <tr class="separator:gacc4c67a2b820f35d71962b73d54a8092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae798b5af1d8954176b4eab4855346a26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_a_n_a_1_1_complex.html">Complex</a>&lt; _T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__basic.html#gae798b5af1d8954176b4eab4855346a26">NANA::Complex&lt; _T &gt;::conj</a> () const</td></tr>
-<tr class="memdesc:gae798b5af1d8954176b4eab4855346a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">共轭  <a href="group__core__basic.html#gae798b5af1d8954176b4eab4855346a26">更多...</a><br /></td></tr>
+<tr class="memdesc:gae798b5af1d8954176b4eab4855346a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回共轭复数  <a href="group__core__basic.html#gae798b5af1d8954176b4eab4855346a26">更多...</a><br /></td></tr>
 <tr class="separator:gae798b5af1d8954176b4eab4855346a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -146,8 +161,9 @@ template&lt;typename _T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>共轭 </p>
-<dl class="section return"><dt>返回</dt><dd>返回共轭复数 </dd></dl>
+<p>返回共轭复数 </p>
+<dl class="section return"><dt>返回</dt><dd>NANA::Complex&lt;_T&gt; </dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
 
 </div>
 </div>

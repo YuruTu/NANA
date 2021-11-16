@@ -20,6 +20,10 @@ namespace NANA {
 
 //! @addtogroup core_basic
 //! @{
+
+/**
+ *@brief 用于异常抛出
+ */
 class  NA_API Exception : public std::exception
 {
 public:
@@ -48,6 +52,8 @@ public:
     String file; ///< source file name where the error has occurred
     int line; ///< line number in the source file where the error has occurred
 };
+
+/// 当表达式非法，抛出异常
 #define NA_Assert( expr ) do { if(!!(expr)) ; else throw NANA::Exception( NANA::Error::ErrAssert, #expr, __FUNCTION__, __FILE__, __LINE__ ); } while(0);
 
 

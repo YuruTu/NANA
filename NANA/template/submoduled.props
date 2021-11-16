@@ -8,7 +8,7 @@
       <Command>md $(SolutionDir)bin\dll
 md $(SolutionDir)bin\lib
 md $(SolutionDir)bin\include
-xcopy /E/S/C/Y $(SolutionDir)modules\core\include $(SolutionDir)bin\include</Command>
+xcopy /E/S/C/Y $(SolutionDir)modules\$(ProjectName)\include $(SolutionDir)bin\include</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>xcopy /Y $(SolutionDir)$(Platform)\$(Configuration)\*.dll $(SolutionDir)bin\dll

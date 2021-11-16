@@ -7,5 +7,7 @@ digraph "NANA/modules/core/include/core/error.h"
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="NANA/modules/core/include\l/core/mat.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_2mat_8h.html",tooltip="实现一个用于矩阵运算的模板类(仍在实现当中)"];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="NANA/modules/core/src\l/mat.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mat_8cpp.html",tooltip="实现Mat的相关功能"];
+  Node3 [label="NANA/modules/core/include\l/core.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modules_2core_2include_2core_8hpp.html",tooltip="包含基本的数据结构等"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NANA/modules/core/src\l/mat.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mat_8cpp.html",tooltip="实现Mat的相关功能"];
 }

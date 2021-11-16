@@ -74,6 +74,11 @@ $(function() {
   <div class="headertitle"><div class="title">NANA::Complex&lt; _T &gt; 模板类 参考<div class="ingroups"><a class="el" href="group__core.html">Core</a> &raquo; <a class="el" href="group__core__basic.html">Basic structures</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>复数类，用于实现复数的加减乘除运算  
+ <a href="class_n_a_n_a_1_1_complex.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bin_2include_2core_2_complex_8hpp_source.html">Complex.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
@@ -81,13 +86,13 @@ Public 成员函数</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Complex</b> (_T &amp;_re, _T &amp;_im=0)</td></tr>
 <tr class="separator:gacc4c67a2b820f35d71962b73d54a8092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae798b5af1d8954176b4eab4855346a26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_a_n_a_1_1_complex.html">Complex</a>&lt; _T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__core__basic.html#gae798b5af1d8954176b4eab4855346a26">conj</a> () const</td></tr>
-<tr class="memdesc:gae798b5af1d8954176b4eab4855346a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">共轭  <a href="group__core__basic.html#gae798b5af1d8954176b4eab4855346a26">更多...</a><br /></td></tr>
+<tr class="memdesc:gae798b5af1d8954176b4eab4855346a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回共轭复数  <a href="group__core__basic.html#gae798b5af1d8954176b4eab4855346a26">更多...</a><br /></td></tr>
 <tr class="separator:gae798b5af1d8954176b4eab4855346a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc4c67a2b820f35d71962b73d54a8092"><td class="memItemLeft" align="right" valign="top"><a id="acc4c67a2b820f35d71962b73d54a8092" name="acc4c67a2b820f35d71962b73d54a8092"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Complex</b> (_T &amp;_re, _T &amp;_im=0)</td></tr>
 <tr class="separator:acc4c67a2b820f35d71962b73d54a8092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae798b5af1d8954176b4eab4855346a26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_a_n_a_1_1_complex.html">Complex</a>&lt; _T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_complex.html#ae798b5af1d8954176b4eab4855346a26">conj</a> () const</td></tr>
-<tr class="memdesc:ae798b5af1d8954176b4eab4855346a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">共轭  <a href="class_n_a_n_a_1_1_complex.html#ae798b5af1d8954176b4eab4855346a26">更多...</a><br /></td></tr>
+<tr class="memdesc:ae798b5af1d8954176b4eab4855346a26"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回共轭复数  <a href="class_n_a_n_a_1_1_complex.html#ae798b5af1d8954176b4eab4855346a26">更多...</a><br /></td></tr>
 <tr class="separator:ae798b5af1d8954176b4eab4855346a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -99,7 +104,11 @@ _T&#160;</td><td class="memItemRight" valign="bottom"><b>re</b></td></tr>
 _T&#160;</td><td class="memItemRight" valign="bottom"><b>im</b></td></tr>
 <tr class="separator:ad151ac321178ff11355de3f97b378b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">成员函数说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename _T&gt;<br />
+class NANA::Complex&lt; _T &gt;</div><p >复数类，用于实现复数的加减乘除运算 </p>
+<dl class="section note"><dt>注解</dt><dd>用于实现复数的加减乘除运算 </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
 <a id="ae798b5af1d8954176b4eab4855346a26" name="ae798b5af1d8954176b4eab4855346a26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae798b5af1d8954176b4eab4855346a26">&#9670;&nbsp;</a></span>conj()</h2>
 
@@ -117,8 +126,9 @@ template&lt;typename _T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>共轭 </p>
-<dl class="section return"><dt>返回</dt><dd>返回共轭复数 </dd></dl>
+<p>返回共轭复数 </p>
+<dl class="section return"><dt>返回</dt><dd>NANA::Complex&lt;_T&gt; </dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
 
 </div>
 </div>

@@ -18,6 +18,11 @@
 
 
 namespace NANA{
+
+
+
+//! @addtogroup core_basic
+//! @{
 typedef  double NAFLOAT;
 
 /*!
@@ -68,5 +73,5 @@ private:
 };
 
 
-
+//! @} core_basic
 }

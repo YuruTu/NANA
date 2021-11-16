@@ -7,8 +7,11 @@ digraph "NANA/bin/include" {
   subgraph clusterdir_2156600b8c3e55c5ca1b32fdf4f55ffd {
     graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_2156600b8c3e55c5ca1b32fdf4f55ffd.html"];
     dir_2156600b8c3e55c5ca1b32fdf4f55ffd [shape=plaintext label="include"];
+  dir_b4a25bbb5ce6f359b31bc7ed4f3bfa78 [shape=box label="computergeometry" fillcolor="white" style="filled" URL="dir_b4a25bbb5ce6f359b31bc7ed4f3bfa78.html"];
   dir_b586e2cfb6303e993350d54452194385 [shape=box label="core" fillcolor="white" style="filled" URL="dir_b586e2cfb6303e993350d54452194385.html"];
+  dir_8e72e6cc34956c306ea1afd555ca5097 [shape=box label="graph" fillcolor="white" style="filled" URL="dir_8e72e6cc34956c306ea1afd555ca5097.html"];
   }
   }
-  dir_2156600b8c3e55c5ca1b32fdf4f55ffd->dir_b586e2cfb6303e993350d54452194385 [headlabel="3", labeldistance=1.5 headhref="dir_000002_000006.html"];
+  dir_2156600b8c3e55c5ca1b32fdf4f55ffd->dir_8e72e6cc34956c306ea1afd555ca5097 [headlabel="2", labeldistance=1.5 headhref="dir_000002_000014.html"];
+  dir_2156600b8c3e55c5ca1b32fdf4f55ffd->dir_b586e2cfb6303e993350d54452194385 [headlabel="5", labeldistance=1.5 headhref="dir_000002_000010.html"];
 }

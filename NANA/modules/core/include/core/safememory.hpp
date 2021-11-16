@@ -14,21 +14,28 @@
  * \note
 */
 
+#include <memory>
+
 namespace NANA {
+/**
+ * @brief 继承自std::shared_ptr的智能指针
+ */
+template<typename _T>
+class Ptr : public std::shared_ptr<_T>
+{
+public:
+
+private:
+
+};
 
 
-
-
-
-
-///************************************
-/// @brief:    deleteSafe 安全内存释放
-/// @fullname:  deleteSafe
-/// @access:    public 
-/// @returns:   void
-/// @qualifier:
-/// @param: _T * & p
-///************************************
+/**
+ * @brief  
+ * @returns   void
+ * @param _T * & p
+ * @note
+ */
 template<typename _T>
 inline void deleteSafe(_T*& p) {
 	if (nullptr == p)
@@ -37,14 +44,13 @@ inline void deleteSafe(_T*& p) {
 	p = nullptr;
 }
 
-///************************************
-/// @brief:    deleteArraySafe 安全释放 xxx * a = new xxx[num];申请的内存
-/// @fullname:  NANA::deleteArraySafe
-/// @access:    public 
-/// @returns:   void
-/// @qualifier:
-/// @param: _T * & p
-///************************************
+
+/**
+ * @brief  deleteArraySafe 安全释放 xxx * a = new xxx[num];申请的内存
+ * @returns   void
+ * @param _T * & p
+ * @note
+ */
 template<typename _T>
 inline void deleteArraySafe(_T*& p) {
 	if (nullptr == p)

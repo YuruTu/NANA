@@ -6,4 +6,6 @@ digraph "NANA/bin/include/core/safememory.hpp"
   Node1 [label="NANA/bin/include/core\l/safememory.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="实现安全的内存管理"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="NANA/bin/include/core\l/mat.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_2mat_8h.html",tooltip="实现一个用于矩阵运算的模板类(仍在实现当中)"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NANA/bin/include/core.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bin_2include_2core_8hpp.html",tooltip="包含基本的数据结构等"];
 }

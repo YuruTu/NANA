@@ -14,7 +14,7 @@
 */
 
 #include "graph/binarytree.hpp"
-
+#include "graph/huffman.hpp"
 
 /**
 @defgroup graph Graph

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['what_0',['what',['../class_n_a_n_a_1_1_exception.html#acfd4f608a5a0129acb6048f8e6ff7e7c',1,'NANA::Exception::what() const'],['../class_n_a_n_a_1_1_exception.html#a8314e160c7ca3fdf80ac0adaef46aaef',1,'NANA::Exception::what() const']]]
+  ['safememory_2ehpp_0',['safememory.hpp',['../bin_2include_2core_2safememory_8hpp.html',1,'(全局命名空间)'],['../modules_2core_2include_2core_2safememory_8hpp.html',1,'(全局命名空间)']]]
 ];

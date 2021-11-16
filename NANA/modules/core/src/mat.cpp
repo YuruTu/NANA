@@ -33,6 +33,7 @@ Mat<_T>::Mat(int rows, int cols)
 	m_rows = rows;
 	m_cols = cols;
 	m_stride = cols * sizeof(_T);
+	m_stride = m_stride + m_stride % 32;
 	m_datamanager = new CDataManager();
 	this->allocateMemory(m_rows, m_stride);
 }

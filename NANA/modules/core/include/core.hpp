@@ -15,7 +15,8 @@
 #include "core/nadef.h"
 #include "core/Complex.hpp"
 #include "core/graphCore.hpp"
-
+#include "core/matrix.h"
+#include "core/mat.h"
 
 
 

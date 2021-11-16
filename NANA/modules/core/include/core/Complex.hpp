@@ -15,14 +15,21 @@
 namespace NANA{
 //! @addtogroup core_basic
 //! @{
-
+/**
+ * @brief 复数类，用于实现复数的加减乘除运算
+ * @note 用于实现复数的加减乘除运算
+ */
 template <typename _T>
 class Complex {
 public:
 	Complex();
 	Complex(_T& _re, _T& _im = 0);
-	/// @brief 共轭
-	/// @return 返回共轭复数
+
+	/**
+	 * @brief  返回共轭复数
+	 * @returns   NANA::Complex<_T>
+	 * @note
+	 */
 	Complex<_T> conj() const;
 private:
 	_T re, im;

@@ -75,6 +75,11 @@ $(function() {
   <div class="headertitle"><div class="title">NANA::Mat&lt; _T &gt; 模板类 参考<div class="ingroups"><a class="el" href="group__core.html">Core</a> &raquo; <a class="el" href="group__core__basic.html">Basic structures</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>高效矩阵运算类  
+ <a href="class_n_a_n_a_1_1_mat.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bin_2include_2core_2mat_8h_source.html">mat.h</a>&gt;</code></p>
 <div class="dynheader">
 NANA::Mat&lt; _T &gt; 的协作图:</div>
 <div class="dyncontent">
@@ -83,11 +88,21 @@ NANA::Mat&lt; _T &gt; 的协作图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:ae2e5019301aa7ef03d493e28a5e874ee"><td class="memItemLeft" align="right" valign="top"><a id="ae2e5019301aa7ef03d493e28a5e874ee" name="ae2e5019301aa7ef03d493e28a5e874ee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Mat</b> (int rows, int cols)</td></tr>
+<tr class="memitem:ab9020e46287396ad53f551cbb24d7154"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_mat.html#ab9020e46287396ad53f551cbb24d7154">Mat</a> ()</td></tr>
+<tr class="memdesc:ab9020e46287396ad53f551cbb24d7154"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+  <a href="class_n_a_n_a_1_1_mat.html#ab9020e46287396ad53f551cbb24d7154">更多...</a><br /></td></tr>
+<tr class="separator:ab9020e46287396ad53f551cbb24d7154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e5019301aa7ef03d493e28a5e874ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_mat.html#ae2e5019301aa7ef03d493e28a5e874ee">Mat</a> (int rows, int cols)</td></tr>
+<tr class="memdesc:ae2e5019301aa7ef03d493e28a5e874ee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+  <a href="class_n_a_n_a_1_1_mat.html#ae2e5019301aa7ef03d493e28a5e874ee">更多...</a><br /></td></tr>
 <tr class="separator:ae2e5019301aa7ef03d493e28a5e874ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2e5019301aa7ef03d493e28a5e874ee"><td class="memItemLeft" align="right" valign="top"><a id="ae2e5019301aa7ef03d493e28a5e874ee" name="ae2e5019301aa7ef03d493e28a5e874ee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Mat</b> (int rows, int cols)</td></tr>
+<tr class="memitem:ab9020e46287396ad53f551cbb24d7154"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_mat.html#ab9020e46287396ad53f551cbb24d7154">Mat</a> ()</td></tr>
+<tr class="memdesc:ab9020e46287396ad53f551cbb24d7154"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+  <a href="class_n_a_n_a_1_1_mat.html#ab9020e46287396ad53f551cbb24d7154">更多...</a><br /></td></tr>
+<tr class="separator:ab9020e46287396ad53f551cbb24d7154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e5019301aa7ef03d493e28a5e874ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_mat.html#ae2e5019301aa7ef03d493e28a5e874ee">Mat</a> (int rows, int cols)</td></tr>
+<tr class="memdesc:ae2e5019301aa7ef03d493e28a5e874ee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+  <a href="class_n_a_n_a_1_1_mat.html#ae2e5019301aa7ef03d493e28a5e874ee">更多...</a><br /></td></tr>
 <tr class="separator:ae2e5019301aa7ef03d493e28a5e874ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -133,6 +148,144 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cols</b></td></tr>
 <tr class="memdesc:aba4bbb5fa172250470818a04d4db9dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">列数 <br /></td></tr>
 <tr class="separator:aba4bbb5fa172250470818a04d4db9dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename _T&gt;<br />
+class NANA::Mat&lt; _T &gt;</div><p >高效矩阵运算类 </p>
+<dl class="section note"><dt>注解</dt><dd>不同于OpenCV的Mat，实现了32位对齐(因为Cuda等加速算法是针对32数据的) </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ab9020e46287396ad53f551cbb24d7154" name="ab9020e46287396ad53f551cbb24d7154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9020e46287396ad53f551cbb24d7154">&#9670;&nbsp;</a></span>Mat() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_a_n_a_1_1_mat.html">NANA::Mat</a>&lt; _T &gt;::<a class="el" href="class_n_a_n_a_1_1_mat.html">Mat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><br  />
+ </p>
+<dl class="section return"><dt>返回</dt><dd><br  />
+ </dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ae2e5019301aa7ef03d493e28a5e874ee" name="ae2e5019301aa7ef03d493e28a5e874ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e5019301aa7ef03d493e28a5e874ee">&#9670;&nbsp;</a></span>Mat() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_a_n_a_1_1_mat.html">NANA::Mat</a>&lt; _T &gt;::<a class="el" href="class_n_a_n_a_1_1_mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cols</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><br  />
+ </p>
+<dl class="section return"><dt>返回</dt><dd><br  />
+ </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td>rows </td></tr>
+    <tr><td class="paramname">int</td><td>cols </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ab9020e46287396ad53f551cbb24d7154" name="ab9020e46287396ad53f551cbb24d7154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9020e46287396ad53f551cbb24d7154">&#9670;&nbsp;</a></span>Mat() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_a_n_a_1_1_mat.html">NANA::Mat</a>&lt; _T &gt;::<a class="el" href="class_n_a_n_a_1_1_mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><br  />
+ </p>
+<dl class="section return"><dt>返回</dt><dd><br  />
+ </dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ae2e5019301aa7ef03d493e28a5e874ee" name="ae2e5019301aa7ef03d493e28a5e874ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e5019301aa7ef03d493e28a5e874ee">&#9670;&nbsp;</a></span>Mat() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_a_n_a_1_1_mat.html">NANA::Mat</a>&lt; _T &gt;::<a class="el" href="class_n_a_n_a_1_1_mat.html">Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cols</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><br  />
+ </p>
+<dl class="section return"><dt>返回</dt><dd><br  />
+ </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td>rows </td></tr>
+    <tr><td class="paramname">int</td><td>cols </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>NANA/bin/include/core/<a class="el" href="bin_2include_2core_2mat_8h_source.html">mat.h</a></li>
 <li>NANA/modules/core/include/core/<a class="el" href="modules_2core_2include_2core_2mat_8h_source.html">mat.h</a></li>

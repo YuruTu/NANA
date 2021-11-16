@@ -11,5 +11,5 @@ var searchData=
   ['core_8',['Core',['../group__core.html',1,'']]],
   ['core_2ehpp_9',['core.hpp',['../bin_2include_2core_8hpp.html',1,'(全局命名空间)'],['../modules_2core_2include_2core_8hpp.html',1,'(全局命名空间)']]],
   ['core_5fglobal_2eh_10',['core_global.h',['../bin_2include_2core_2core__global_8h.html',1,'(全局命名空间)'],['../modules_2core_2include_2core_2core__global_8h.html',1,'(全局命名空间)']]],
-  ['create_11',['create',['../class_n_a_n_a_1_1_matrix.html#abf5ac2b6eb845f7ef18654422f19a786',1,'NANA::Matrix']]]
+  ['create_11',['create',['../class_n_a_n_a_1_1_matrix.html#abf5ac2b6eb845f7ef18654422f19a786',1,'NANA::Matrix::create()'],['../class_n_a_n_a_1_1_matrix.html#abf5ac2b6eb845f7ef18654422f19a786',1,'NANA::Matrix::create()']]]
 ];
