@@ -19,6 +19,8 @@
 
 namespace NANA {
 namespace ComputerGeometry {
+//! @addtogroup geometry_basic
+//! @{
 
 /**
  * @brief 2D点集
@@ -61,13 +63,16 @@ struct PointXYZ_ {
 	};
 };
 
+/**
+ * @brief 正矩形
+ */
 template<typename _Tp>
 struct Rect_ {
 	_Tp x, y, w, h;
 };
 
 
-
+//! @} geometry_basic
 
 
 }

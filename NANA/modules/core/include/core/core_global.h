@@ -3,7 +3,7 @@
  * @file core_global.h
  * @date 2021/11/11 18:28
  *
- * @author Administrator
+ * @author yurutu
  * Contact: 707101557@qq.com
  *
  * @brief 全局头文件
@@ -21,12 +21,16 @@
 #endif
 
 namespace NANA {
+
+/**
+ * @brief 返回必要的错误类型 
+ */
 enum  Error
 {
-	RetOk,//!<0表示返回值正常
-	ErrParam,
-	ErrRuntime,
-	ErrAssert,///断言时出错
+	RetOk,///<0表示返回值正常
+	ErrParam,///<参数出错
+	ErrRuntime,///<运行时出错
+	ErrAssert,///<断言时出错
 };
 
 
