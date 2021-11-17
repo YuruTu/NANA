@@ -6,8 +6,9 @@ var indexSectionsWithContent =
   3: "cdemw",
   4: "cdeflmxyz",
   5: "e",
-  6: "r",
-  7: "bcg"
+  6: "er",
+  7: "n",
+  8: "bcg"
 };
 
 var indexSectionNames =
@@ -19,7 +20,8 @@ var indexSectionNames =
   4: "variables",
   5: "enums",
   6: "enumvalues",
-  7: "groups"
+  7: "defines",
+  8: "groups"
 };
 
 var indexSectionLabels =
@@ -31,6 +33,7 @@ var indexSectionLabels =
   4: "变量",
   5: "枚举",
   6: "枚举值",
-  7: "组"
+  7: "宏定义",
+  8: "组"
 };
 
