@@ -1,0 +1,14 @@
+digraph "NANA/modules/computergeometry/include" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a0034a2e1eb347b72447d7288fcbeb40 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="computergeometry" fontname="Helvetica", fontsize="10", URL="dir_a0034a2e1eb347b72447d7288fcbeb40.html"]
+  subgraph clusterdir_fb7eaad88856202e42e495fe4c640ce2 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_fb7eaad88856202e42e495fe4c640ce2.html"];
+    dir_fb7eaad88856202e42e495fe4c640ce2 [shape=plaintext label="include"];
+  dir_818d925d127edf1f832d988170f0690d [shape=box label="computergeometry" fillcolor="white" style="filled" URL="dir_818d925d127edf1f832d988170f0690d.html"];
+  }
+  }
+  dir_fb7eaad88856202e42e495fe4c640ce2->dir_818d925d127edf1f832d988170f0690d [headlabel="1", labeldistance=1.5 headhref="dir_000003_000004.html"];
+}
