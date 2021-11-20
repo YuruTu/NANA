@@ -115,13 +115,16 @@ Public 成员函数</h2></td></tr>
 <tr class="memdesc:ae2e5019301aa7ef03d493e28a5e874ee"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
   <a href="class_n_a_n_a_1_1_mat.html#ae2e5019301aa7ef03d493e28a5e874ee">更多...</a><br /></td></tr>
 <tr class="separator:ae2e5019301aa7ef03d493e28a5e874ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d577b7a5faa91e4e697b2bca48a23c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_mat.html#a82d577b7a5faa91e4e697b2bca48a23c">~Mat</a> ()</td></tr>
+<tr class="memdesc:a82d577b7a5faa91e4e697b2bca48a23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数  <a href="class_n_a_n_a_1_1_mat.html#a82d577b7a5faa91e4e697b2bca48a23c">更多...</a><br /></td></tr>
+<tr class="separator:a82d577b7a5faa91e4e697b2bca48a23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename _T&gt;<br />
 class NANA::Mat&lt; _T &gt;</div><p >高效矩阵运算类 </p>
-<dl class="section note"><dt>注解</dt><dd>不同于OpenCV的Mat，实现了32位对齐(因为Cuda等加速算法是针对32数据的) </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>不同于OpenCV的Mat，实现了32位对齐(因为Cuda等加速算法是针对32数据的) Mat是为了继承而写的 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="mat_8h_source.html">mat.h</a> 第 <a class="el" href="mat_8h_source.html#l00030">30</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="mat_8h_source.html">mat.h</a> 第 <a class="el" href="mat_8h_source.html#l00031">31</a> 行定义.</p>
 </div><h2 class="groupheader">构造及析构函数说明</h2>
 <a id="ab9020e46287396ad53f551cbb24d7154" name="ab9020e46287396ad53f551cbb24d7154"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9020e46287396ad53f551cbb24d7154">&#9670;&nbsp;</a></span>Mat() <span class="overload">[1/2]</span></h2>
@@ -213,6 +216,10 @@ template&lt;typename _T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>析构函数 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>用于释放Mat中申请的数据 </dd></dl>
 
 <p class="definition">在文件 <a class="el" href="mat_8cpp_source.html">mat.cpp</a> 第 <a class="el" href="mat_8cpp_source.html#l00042">42</a> 行定义.</p>
 

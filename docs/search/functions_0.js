@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['conj_0',['conj',['../group__core__basic.html#gae798b5af1d8954176b4eab4855346a26',1,'NANA::Complex']]]
+  ['conj_0',['conj',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ae18558077d31a2002b24ce1a1c3637f5',1,'NANA::NA_FINAL']]]
 ];

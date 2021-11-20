@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#a2a48815ac25db8dd2da4a1bd48526058',1,'NANA::ComputerGeometry::PointXYZ_']]]
+  ['what_0',['what',['../class_n_a_n_a_1_1_exception.html#acfd4f608a5a0129acb6048f8e6ff7e7c',1,'NANA::Exception']]]
 ];
