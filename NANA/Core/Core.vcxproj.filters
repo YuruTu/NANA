@@ -25,7 +25,7 @@
     <ClInclude Include="..\modules\core\include\core\core_global.h">
       <Filter>include\core</Filter>
     </ClInclude>
-    <ClInclude Include="..\modules\core\include\core\nadef.h">
+    <ClInclude Include="..\modules\core\include\core\nadef.hpp">
       <Filter>include\core</Filter>
     </ClInclude>
     <ClInclude Include="..\modules\core\include\core\error.h">

@@ -86,6 +86,7 @@
   <ItemGroup>
     <ClInclude Include="..\modules\computergeometry\include\computergeometry.hpp" />
     <ClInclude Include="..\modules\computergeometry\include\computergeometry\geometrytypes.hpp" />
+    <ClInclude Include="..\modules\computergeometry\include\computergeometry\warp.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\modules\computergeometry\src\geometrytypes.cpp" />

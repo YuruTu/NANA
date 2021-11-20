@@ -1,6 +1,7 @@
 #pragma  once
+
 /**
- * @file geomotrytypes.hpp
+ * @file geometrytypes.hpp
  * @date 2021/11/17 7:23
  *
  * @author yurutu

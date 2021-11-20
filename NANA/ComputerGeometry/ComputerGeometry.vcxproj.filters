@@ -22,6 +22,9 @@
     <ClInclude Include="..\modules\computergeometry\include\computergeometry\geometrytypes.hpp">
       <Filter>include\computergeometry</Filter>
     </ClInclude>
+    <ClInclude Include="..\modules\computergeometry\include\computergeometry\warp.hpp">
+      <Filter>include\computergeometry</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\modules\computergeometry\src\geometrytypes.cpp">

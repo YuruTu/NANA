@@ -12,7 +12,7 @@
  *
  * \note
 */
-#include "nadef.h"
+#include "nadef.hpp"
 
 #ifdef NA_EXPORT
 #define NA_API __declspec(dllexport)
@@ -29,10 +29,10 @@ namespace NANA {
  */
 enum  Error
 {
-	RetOk,///<0表示返回值正常
-	ErrParam,///<参数出错
-	ErrRuntime,///<运行时出错
-	ErrAssert,///<断言时出错
+	RET_OK,///<0表示返回值正常
+	ERR_PARAM,///<参数出错
+	ERR_RUNTIME,///<运行时出错
+	ERR_ASSERT,///<断言时出错
 };
 
 

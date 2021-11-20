@@ -19,7 +19,7 @@
     <ClInclude Include="..\modules\core\include\core\error.h" />
     <ClInclude Include="..\modules\core\include\core\mat.h" />
     <ClInclude Include="..\modules\core\include\core\matrix.h" />
-    <ClInclude Include="..\modules\core\include\core\nadef.h" />
+    <ClInclude Include="..\modules\core\include\core\nadef.hpp" />
     <ClInclude Include="..\modules\core\include\core\safememory.hpp" />
   </ItemGroup>
   <ItemGroup>

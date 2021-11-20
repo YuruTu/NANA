@@ -54,7 +54,7 @@ public:
 };
 
 /// 当表达式非法，抛出异常
-#define NA_Assert( expr ) do { if(!!(expr)) ; else throw NANA::Exception( NANA::Error::ErrAssert, #expr, __FUNCTION__, __FILE__, __LINE__ ); } while(0);
+#define NA_Assert( expr ) do { if(!!(expr)) ; else throw NANA::Exception( NANA::Error::ERR_ASSERT, #expr, __FUNCTION__, __FILE__, __LINE__ ); } while(0);
 
 
 

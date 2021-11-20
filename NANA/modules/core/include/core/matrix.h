@@ -14,7 +14,7 @@
  * \note
 */
 #include "core_global.h"
-
+#include "nadef.hpp"
 
 
 namespace NANA{

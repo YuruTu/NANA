@@ -12,7 +12,7 @@
  *
  * \note
 */
-#include "core/nadef.h"
+#include "core/nadef.hpp"
 #include "core/Complex.hpp"
 #include "core/graphCore.hpp"
 #include "core/matrix.h"
