@@ -17,6 +17,16 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -100,7 +110,7 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 
 <p>全局头文件  
 <a href="#details">更多...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="nadef_8h_source.html">nadef.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;nadef.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 core_global.h 的引用(Include)关系图:</div>
 <div class="dyncontent">
@@ -123,10 +133,10 @@ core_global.h 的引用(Include)关系图:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 枚举</h2></td></tr>
-<tr class="memitem:a1e797be0531b8bba36892f4625887338"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338">NANA::Error</a> { <a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a147d50f165b4a680108c9638463bc535">NANA::RetOk</a>
-, <a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a6a6e55c507e10e01ff7872de1b48f28f">NANA::ErrParam</a>
-, <a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338aa182dd9eeb9d6d131b103bb9ad762023">NANA::ErrRuntime</a>
-, <a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a32529299cb8e9f7668abcb65493ae7fb">NANA::ErrAssert</a>
+<tr class="memitem:a1e797be0531b8bba36892f4625887338"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338">NANA::Error</a> { <a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962">NANA::RET_OK</a>
+, <a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338adc52dfb7d8eb7ede6c04c16aa8ab0f8a">NANA::ERR_PARAM</a>
+, <a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338ae643f23c9632d1e6d47255460398f27b">NANA::ERR_RUNTIME</a>
+, <a class="el" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a580945f3e482c601dd9b9d516c838bb9">NANA::ERR_ASSERT</a>
  }</td></tr>
 <tr class="memdesc:a1e797be0531b8bba36892f4625887338"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回必要的错误类型  <a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338">更多...</a><br /></td></tr>
 <tr class="separator:a1e797be0531b8bba36892f4625887338"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,13 +197,13 @@ core_global.h 的引用(Include)关系图:</div>
 
 <p>返回必要的错误类型 </p>
 <table class="fieldtable">
-<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1e797be0531b8bba36892f4625887338a147d50f165b4a680108c9638463bc535" name="a1e797be0531b8bba36892f4625887338a147d50f165b4a680108c9638463bc535"></a>RetOk&#160;</td><td class="fielddoc"><p >0表示返回值正常 </p>
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962" name="a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962"></a>RET_OK&#160;</td><td class="fielddoc"><p >0表示返回值正常 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1e797be0531b8bba36892f4625887338a6a6e55c507e10e01ff7872de1b48f28f" name="a1e797be0531b8bba36892f4625887338a6a6e55c507e10e01ff7872de1b48f28f"></a>ErrParam&#160;</td><td class="fielddoc"><p >参数出错 </p>
+<tr><td class="fieldname"><a id="a1e797be0531b8bba36892f4625887338adc52dfb7d8eb7ede6c04c16aa8ab0f8a" name="a1e797be0531b8bba36892f4625887338adc52dfb7d8eb7ede6c04c16aa8ab0f8a"></a>ERR_PARAM&#160;</td><td class="fielddoc"><p >参数出错 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1e797be0531b8bba36892f4625887338aa182dd9eeb9d6d131b103bb9ad762023" name="a1e797be0531b8bba36892f4625887338aa182dd9eeb9d6d131b103bb9ad762023"></a>ErrRuntime&#160;</td><td class="fielddoc"><p >运行时出错 </p>
+<tr><td class="fieldname"><a id="a1e797be0531b8bba36892f4625887338ae643f23c9632d1e6d47255460398f27b" name="a1e797be0531b8bba36892f4625887338ae643f23c9632d1e6d47255460398f27b"></a>ERR_RUNTIME&#160;</td><td class="fielddoc"><p >运行时出错 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1e797be0531b8bba36892f4625887338a32529299cb8e9f7668abcb65493ae7fb" name="a1e797be0531b8bba36892f4625887338a32529299cb8e9f7668abcb65493ae7fb"></a>ErrAssert&#160;</td><td class="fielddoc"><p >断言时出错 </p>
+<tr><td class="fieldname"><a id="a1e797be0531b8bba36892f4625887338a580945f3e482c601dd9b9d516c838bb9" name="a1e797be0531b8bba36892f4625887338a580945f3e482c601dd9b9d516c838bb9"></a>ERR_ASSERT&#160;</td><td class="fielddoc"><p >断言时出错 </p>
 </td></tr>
 </table>
 

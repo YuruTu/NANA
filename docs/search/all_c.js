@@ -1,5 +1,5 @@
 var searchData=
 [
   ['rect_5f_0',['Rect_',['../struct_n_a_n_a_1_1_computer_geometry_1_1_rect__.html',1,'NANA::ComputerGeometry']]],
-  ['retok_1',['RetOk',['../core__global_8h.html#a1e797be0531b8bba36892f4625887338a147d50f165b4a680108c9638463bc535',1,'NANA']]]
+  ['ret_5fok_1',['RET_OK',['../core__global_8h.html#a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962',1,'NANA']]]
 ];

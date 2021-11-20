@@ -5,5 +5,7 @@ digraph "ComputerGeometry"
   rankdir=LR;
   Node1 [label="ComputerGeometry",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node2 [label="geometry structures",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__geometry__basic.html",tooltip=" "];
+  Node3 [label="geometry warp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__geometrywarp.html",tooltip=" "];
   Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
 }

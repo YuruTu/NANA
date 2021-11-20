@@ -17,6 +17,16 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -117,9 +127,6 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8h.html">matrix.h</a> <a href="matrix_8h_source.html">[代码]</a></td></tr>
 <tr class="memdesc:matrix_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">简单矩阵类(效率不高，但易于理解，很多时候会触发复制构造函数)，不同于Mat <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nadef_8h.html">nadef.h</a> <a href="nadef_8h_source.html">[代码]</a></td></tr>
-<tr class="memdesc:nadef_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">数值分析所依赖的定义 <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">文件 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="safememory_8hpp.html">safememory.hpp</a> <a href="safememory_8hpp_source.html">[代码]</a></td></tr>
 <tr class="memdesc:safememory_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现安全的内存管理 <br /></td></tr>

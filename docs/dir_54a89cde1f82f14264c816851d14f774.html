@@ -17,6 +17,16 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -94,6 +104,11 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
   <div class="headertitle"><div class="title">src 目录参考</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+src 的目录依赖关系图</div>
+<div class="dyncontent">
+<div class="center"><img src="dir_54a89cde1f82f14264c816851d14f774_dep.png" border="0" usemap="#adir__54a89cde1f82f14264c816851d14f774__dep" alt="NANA/modules/computergeometry/src"/></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
 文件</h2></td></tr>

@@ -17,6 +17,16 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -95,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 </div><!--header-->
 <div class="contents">
 <a href="core__global_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="nadef_8h.html">nadef.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;nadef.hpp&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef NA_EXPORT</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define NA_API __declspec(dllexport)</span></div>
@@ -109,10 +119,10 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338">   30</a></span><span class="keyword">enum</span>  <a class="code hl_enumeration" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338">Error</a></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a147d50f165b4a680108c9638463bc535">   32</a></span>    <a class="code hl_enumvalue" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a147d50f165b4a680108c9638463bc535">RetOk</a>,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a6a6e55c507e10e01ff7872de1b48f28f">   33</a></span>    <a class="code hl_enumvalue" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a6a6e55c507e10e01ff7872de1b48f28f">ErrParam</a>,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338aa182dd9eeb9d6d131b103bb9ad762023">   34</a></span>    <a class="code hl_enumvalue" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338aa182dd9eeb9d6d131b103bb9ad762023">ErrRuntime</a>,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a32529299cb8e9f7668abcb65493ae7fb">   35</a></span>    <a class="code hl_enumvalue" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a32529299cb8e9f7668abcb65493ae7fb">ErrAssert</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962">   32</a></span>    <a class="code hl_enumvalue" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962">RET_OK</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338adc52dfb7d8eb7ede6c04c16aa8ab0f8a">   33</a></span>    <a class="code hl_enumvalue" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338adc52dfb7d8eb7ede6c04c16aa8ab0f8a">ERR_PARAM</a>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338ae643f23c9632d1e6d47255460398f27b">   34</a></span>    <a class="code hl_enumvalue" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338ae643f23c9632d1e6d47255460398f27b">ERR_RUNTIME</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a580945f3e482c601dd9b9d516c838bb9">   35</a></span>    <a class="code hl_enumvalue" href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a580945f3e482c601dd9b9d516c838bb9">ERR_ASSERT</a>,</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -121,11 +131,10 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="ttc" id="acore__global_8h_html_a1e797be0531b8bba36892f4625887338"><div class="ttname"><a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338">NANA::Error</a></div><div class="ttdeci">Error</div><div class="ttdoc">返回必要的错误类型</div><div class="ttdef"><b>Definition:</b> <a href="core__global_8h_source.html#l00030">core_global.h:31</a></div></div>
-<div class="ttc" id="acore__global_8h_html_a1e797be0531b8bba36892f4625887338a147d50f165b4a680108c9638463bc535"><div class="ttname"><a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a147d50f165b4a680108c9638463bc535">NANA::RetOk</a></div><div class="ttdeci">@ RetOk</div><div class="ttdoc">0表示返回值正常</div><div class="ttdef"><b>Definition:</b> <a href="core__global_8h_source.html#l00032">core_global.h:32</a></div></div>
-<div class="ttc" id="acore__global_8h_html_a1e797be0531b8bba36892f4625887338a32529299cb8e9f7668abcb65493ae7fb"><div class="ttname"><a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a32529299cb8e9f7668abcb65493ae7fb">NANA::ErrAssert</a></div><div class="ttdeci">@ ErrAssert</div><div class="ttdoc">断言时出错</div><div class="ttdef"><b>Definition:</b> <a href="core__global_8h_source.html#l00035">core_global.h:35</a></div></div>
-<div class="ttc" id="acore__global_8h_html_a1e797be0531b8bba36892f4625887338a6a6e55c507e10e01ff7872de1b48f28f"><div class="ttname"><a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a6a6e55c507e10e01ff7872de1b48f28f">NANA::ErrParam</a></div><div class="ttdeci">@ ErrParam</div><div class="ttdoc">参数出错</div><div class="ttdef"><b>Definition:</b> <a href="core__global_8h_source.html#l00033">core_global.h:33</a></div></div>
-<div class="ttc" id="acore__global_8h_html_a1e797be0531b8bba36892f4625887338aa182dd9eeb9d6d131b103bb9ad762023"><div class="ttname"><a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338aa182dd9eeb9d6d131b103bb9ad762023">NANA::ErrRuntime</a></div><div class="ttdeci">@ ErrRuntime</div><div class="ttdoc">运行时出错</div><div class="ttdef"><b>Definition:</b> <a href="core__global_8h_source.html#l00034">core_global.h:34</a></div></div>
-<div class="ttc" id="anadef_8h_html"><div class="ttname"><a href="nadef_8h.html">nadef.h</a></div><div class="ttdoc">数值分析所依赖的定义</div></div>
+<div class="ttc" id="acore__global_8h_html_a1e797be0531b8bba36892f4625887338a580945f3e482c601dd9b9d516c838bb9"><div class="ttname"><a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338a580945f3e482c601dd9b9d516c838bb9">NANA::ERR_ASSERT</a></div><div class="ttdeci">@ ERR_ASSERT</div><div class="ttdoc">断言时出错</div><div class="ttdef"><b>Definition:</b> <a href="core__global_8h_source.html#l00035">core_global.h:35</a></div></div>
+<div class="ttc" id="acore__global_8h_html_a1e797be0531b8bba36892f4625887338adc52dfb7d8eb7ede6c04c16aa8ab0f8a"><div class="ttname"><a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338adc52dfb7d8eb7ede6c04c16aa8ab0f8a">NANA::ERR_PARAM</a></div><div class="ttdeci">@ ERR_PARAM</div><div class="ttdoc">参数出错</div><div class="ttdef"><b>Definition:</b> <a href="core__global_8h_source.html#l00033">core_global.h:33</a></div></div>
+<div class="ttc" id="acore__global_8h_html_a1e797be0531b8bba36892f4625887338ae643f23c9632d1e6d47255460398f27b"><div class="ttname"><a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338ae643f23c9632d1e6d47255460398f27b">NANA::ERR_RUNTIME</a></div><div class="ttdeci">@ ERR_RUNTIME</div><div class="ttdoc">运行时出错</div><div class="ttdef"><b>Definition:</b> <a href="core__global_8h_source.html#l00034">core_global.h:34</a></div></div>
+<div class="ttc" id="acore__global_8h_html_a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962"><div class="ttname"><a href="core__global_8h.html#a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962">NANA::RET_OK</a></div><div class="ttdeci">@ RET_OK</div><div class="ttdoc">0表示返回值正常</div><div class="ttdef"><b>Definition:</b> <a href="core__global_8h_source.html#l00032">core_global.h:32</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

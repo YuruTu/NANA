@@ -17,6 +17,16 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -121,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_exception.html#a12ba300c1d983b64c541095e545aff16">   53</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_n_a_n_a_1_1_exception.html#a12ba300c1d983b64c541095e545aff16">line</a>; </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group__core__basic.html#ga565ebbe097427f7ac31b1fe4c512f252">   57</a></span><span class="preprocessor">#define NA_Assert( expr ) do { if(!!(expr)) ; else throw NANA::Exception( NANA::Error::ErrAssert, #expr, __FUNCTION__, __FILE__, __LINE__ ); } while(0);</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group__core__basic.html#ga565ebbe097427f7ac31b1fe4c512f252">   57</a></span><span class="preprocessor">#define NA_Assert( expr ) do { if(!!(expr)) ; else throw NANA::Exception( NANA::Error::ERR_ASSERT, #expr, __FUNCTION__, __FILE__, __LINE__ ); } while(0);</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>

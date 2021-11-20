@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['msg_0',['msg',['../class_n_a_n_a_1_1_exception.html#a71f359dabb13e2378d1f9beb3a55d900',1,'NANA::Exception']]]
+  ['line_0',['line',['../class_n_a_n_a_1_1_exception.html#a12ba300c1d983b64c541095e545aff16',1,'NANA::Exception']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#a6f17a91af9ea7d2a8d0f5d373f6561f4',1,'NANA::ComputerGeometry::PointXYZ_']]]
+  ['width_0',['width',['../struct_n_a_n_a_1_1_size__.html#aa49f182e510617af72801b463aef58e1',1,'NANA::Size_']]]
 ];
