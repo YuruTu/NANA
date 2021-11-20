@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComputerGeometry", "Compute
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Graph", "Graph\Graph.vcxproj", "{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "Math\Math.vcxproj", "{FF2F4166-A6E7-4D67-A62C-701C2721FA96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -43,6 +45,12 @@ Global
 		{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}.Release|x64.ActiveCfg = Release|x64
 		{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}.Release|x64.Build.0 = Release|x64
 		{25B63C57-3B34-4217-89E1-DB9AD9A9ABB5}.Release|x86.ActiveCfg = Release|x64
+		{FF2F4166-A6E7-4D67-A62C-701C2721FA96}.Debug|x64.ActiveCfg = Debug|x64
+		{FF2F4166-A6E7-4D67-A62C-701C2721FA96}.Debug|x64.Build.0 = Debug|x64
+		{FF2F4166-A6E7-4D67-A62C-701C2721FA96}.Debug|x86.ActiveCfg = Debug|x64
+		{FF2F4166-A6E7-4D67-A62C-701C2721FA96}.Release|x64.ActiveCfg = Release|x64
+		{FF2F4166-A6E7-4D67-A62C-701C2721FA96}.Release|x64.Build.0 = Release|x64
+		{FF2F4166-A6E7-4D67-A62C-701C2721FA96}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

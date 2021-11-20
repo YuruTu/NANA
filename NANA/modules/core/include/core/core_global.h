@@ -20,6 +20,8 @@
 #define NA_API __declspec(dllimport)
 #endif
 
+#define NA_FINAL final
+
 namespace NANA {
 
 /**

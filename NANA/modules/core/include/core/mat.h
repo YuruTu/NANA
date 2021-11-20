@@ -25,6 +25,7 @@ namespace NANA {
 /**
  * @brief 高效矩阵运算类
  * @note 不同于OpenCV的Mat，实现了32位对齐(因为Cuda等加速算法是针对32数据的)
+ *		 Mat是为了继承而写的
  */
 template <typename _T>
 class Mat {
@@ -47,13 +48,11 @@ public:
 	 */
 	Mat(int rows, int cols);
 
-	///************************************
-	/// @brief:    ~Mat
-	/// @fullname:  NANA::Mat<_T>::~Mat
-	/// @access:    public 
-	/// @returns:   
-	/// @qualifier:
-	///************************************
+	/**
+	 * @brief 析构函数
+	 * @returns
+	 * @note 用于释放Mat中申请的数据
+	 */
 	virtual ~Mat();
 
 
@@ -64,15 +63,14 @@ public:
 
 private:
 
-	///************************************
-	/// @brief:    allocateMemory 内存申请
-	/// @fullname:  NANA::Mat<_T>::allocateMemory
-	/// @access:    private 
-	/// @returns:   void
-	/// @qualifier:
-	/// @param: const int32_t rows
-	/// @param: const int32_t cols
-	///************************************
+
+	/**
+	 * @brief 内存申请
+ 	 * @returns
+	 * @param[in] const int32_t rows
+	 * @param[in] const int32_t rows
+	 * @note
+	 */
 	void allocateMemory(const int32_t rows, const int32_t cols);
 
 	///************************************
