@@ -17,8 +17,14 @@
 
 
 using namespace NANA;
+
+void showMatrix(const Matrix & a) {
+
+}
+
+
 int main() {
-	
+	Matrix a = Matrix::eye(3);
 
 
 	return 0;

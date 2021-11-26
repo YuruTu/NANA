@@ -1,4 +1,19 @@
 #include <core.hpp>
+/**
+ * @file gaussian.hpp
+ * @date 2021/11/20 7:23
+ *
+ * @author yurutu
+ * Contact: 707101557@qq.com
+ *
+ * @brief 实现高斯相关的算法
+
+ *
+ *@note 1.高斯滤波
+ *		2.生成高斯随机数
+ * \note
+*/
+
 
 namespace NANA {
 namespace MATH {
@@ -31,6 +46,11 @@ int GenGaussianKernel(Matrix & mat,const Size & dstSize, _Tp sigma) {
 
 	return RET_OK;
 }
+
+
+
+
+
 
 
 

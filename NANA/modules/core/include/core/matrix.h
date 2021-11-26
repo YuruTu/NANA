@@ -28,7 +28,7 @@ typedef  double NAFLOAT;
 /*!
  * @brief 简单矩阵类
  */
-class Matrix {
+class Matrix  {
 public:
 	
 	/**
@@ -41,6 +41,25 @@ public:
 	Matrix(int rows, int cols);
 
 	~Matrix();
+
+	/**
+	 * @brief 创建并返回一个单位矩阵
+	 * @param m 
+	 * @return 
+	*/
+	static Matrix eye(const int m);
+
+	/**
+	 * @brief 用value填充Matrix的全部内容
+	 * @param value 
+	*/
+	void fill(const NAFLOAT & value);
+	
+	/**
+	 * @brief 获取值的指针
+	 * @return 
+	*/
+	const NAFLOAT** getValPtr();
 
 private:
 
@@ -63,7 +82,9 @@ private:
 	void release();
 
 	/// @brief 矩阵的数据
+	NAFLOAT** m_val;
 	NAFLOAT* m_data;
+
 	/// @brief 行数
 	int m_rows;
 	/// @brief 列数
