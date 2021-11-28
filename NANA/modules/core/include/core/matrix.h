@@ -28,9 +28,10 @@ typedef  double NAFLOAT;
 /*!
  * @brief 简单矩阵类
  */
-class Matrix  {
+class NA_API Matrix  {
 public:
 	
+	Matrix();
 	/**
 	 * @brief  构造函数，主动申请与管理内存
 	 * @returns   
@@ -43,11 +44,10 @@ public:
 	~Matrix();
 
 	/**
-	 * @brief 创建并返回一个单位矩阵
-	 * @param m 
+	 * @brief 将当前矩阵设置为单位矩阵
 	 * @return 
 	*/
-	static Matrix eye(const int m);
+	static void setMatrixEye(Matrix & mat,const int m);
 
 	/**
 	 * @brief 用value填充Matrix的全部内容
@@ -59,8 +59,27 @@ public:
 	 * @brief 获取值的指针
 	 * @return 
 	*/
-	const NAFLOAT** getValPtr();
+	const NAFLOAT** getValPtr() const ;
 
+	/**
+	 * @brief 获取当前矩阵的行数
+	 * @return 
+	*/
+	int getRows() const;
+
+	/**
+	 * @brief 获取当前矩阵的列数
+	 * @return 
+	*/
+	int getCols() const;
+
+
+	/**
+	 * @brief 等于时
+	 * @param M 
+	 * @return 
+	*/
+	Matrix operator= (const Matrix& M);
 private:
 
 
@@ -70,7 +89,7 @@ private:
 	 * @returns:   void
 	 * @note:	
 	 */
-	void create();
+	void create(int rows,int cols);
 
 	///************************************
 	/// @brief:    release 内存释放

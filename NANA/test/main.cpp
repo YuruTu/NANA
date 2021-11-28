@@ -1,5 +1,5 @@
 #include <core.hpp>
-
+#include <iostream>
 /**
  * @file main.cpp
  * @date 2021/11/14 12:45
@@ -19,14 +19,26 @@
 using namespace NANA;
 
 void showMatrix(const Matrix & a) {
-
+	std::cout << "¾ØÕóÏÔÊ¾£º\n";
+	int width = a.getCols();
+	int height = a.getRows();
+	const double** pdata = a.getValPtr();
+	int u, v;
+	for (v = 0; v < height; v++) {
+		for (u = 0; u < width; u++) {
+			std::cout << pdata[v][u] << " ";
+		}
+		std::cout << std::endl;
+	}
+	std::cout << std::endl;
 }
 
 
 int main() {
-	Matrix a = Matrix::eye(3);
-
-
+	Matrix a;
+	Matrix::setMatrixEye(a, 3);
+	showMatrix(a);
+	system("pause");
 	return 0;
 }
 
