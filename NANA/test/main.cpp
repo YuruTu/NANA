@@ -37,7 +37,12 @@ void showMatrix(const Matrix & a) {
 int main() {
 	Matrix a;
 	Matrix::setMatrixEye(a, 3);
+	Matrix b;
+	Matrix::setMatrixEye(b, 4);
 	showMatrix(a);
+	showMatrix(b);
+	Matrix c = a + b;
+	showMatrix(c);
 	system("pause");
 	return 0;
 }
