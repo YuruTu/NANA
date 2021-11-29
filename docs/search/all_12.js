@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7emat_0',['~Mat',['../class_n_a_n_a_1_1_mat.html#a82d577b7a5faa91e4e697b2bca48a23c',1,'NANA::Mat']]]
+  ['y_0',['y',['../struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#a6f17a91af9ea7d2a8d0f5d373f6561f4',1,'NANA::ComputerGeometry::PointXYZ_']]]
 ];

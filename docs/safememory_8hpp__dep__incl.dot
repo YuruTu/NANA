@@ -21,9 +21,9 @@ digraph "NANA/modules/core/include/core/safememory.hpp"
   Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node9 [label="NANA/modules/math/src\l/fft.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fft_8cpp_source.html",tooltip=" "];
   Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="NANA/modules/math/include\l/math/gaussian.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gaussian_8hpp_source.html",tooltip=" "];
+  Node10 [label="NANA/modules/math/include\l/math/gaussian.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gaussian_8hpp.html",tooltip="实现高斯相关的算法"];
   Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node11 [label="NANA/modules/core/src\l/mat.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mat_8cpp.html",tooltip="实现Mat的相关功能"];
   Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node12 [label="NANA/modules/core/src\l/matrix.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix_8cpp_source.html",tooltip=" "];
+  Node12 [label="NANA/modules/core/src\l/matrix.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix_8cpp.html",tooltip="简单矩阵类的实现"];
 }

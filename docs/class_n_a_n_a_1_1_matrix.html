@@ -104,7 +104,9 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
 <a href="class_n_a_n_a_1_1_matrix-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">NANA::Matrix类 参考<div class="ingroups"><a class="el" href="group__core.html">Core</a> &raquo; <a class="el" href="group__core__basic.html">Basic structures</a></div></div></div>
 </div><!--header-->
@@ -115,19 +117,105 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 
 <p><code>#include &lt;<a class="el" href="matrix_8h_source.html">matrix.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a4513ca00857661356b036f9d4723a6d1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a4513ca00857661356b036f9d4723a6d1">DecompositionMethod</a> { <b>LU</b>
+, <b>QR</b>
+, <b>SVD</b>
+ }</td></tr>
+<tr class="memdesc:a4513ca00857661356b036f9d4723a6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">枚举矩阵的各种分解方法  <a href="class_n_a_n_a_1_1_matrix.html#a4513ca00857661356b036f9d4723a6d1">更多...</a><br /></td></tr>
+<tr class="separator:a4513ca00857661356b036f9d4723a6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a200779713f922b3c87ad193b3ea7f6b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4">Matrix</a> (int rows, int cols)</td></tr>
 <tr class="memdesc:a200779713f922b3c87ad193b3ea7f6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，主动申请与管理内存  <a href="class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4">更多...</a><br /></td></tr>
 <tr class="separator:a200779713f922b3c87ad193b3ea7f6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993ef6b3ea430956efc1febce948e766"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a993ef6b3ea430956efc1febce948e766">Matrix</a> (const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;M)</td></tr>
+<tr class="memdesc:a993ef6b3ea430956efc1febce948e766"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现复制构造函数  <a href="class_n_a_n_a_1_1_matrix.html#a993ef6b3ea430956efc1febce948e766">更多...</a><br /></td></tr>
+<tr class="separator:a993ef6b3ea430956efc1febce948e766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6db31f44e0cedf29f256b35049a5d20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#af6db31f44e0cedf29f256b35049a5d20">~Matrix</a> ()</td></tr>
+<tr class="memdesc:af6db31f44e0cedf29f256b35049a5d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵的析构函数，释放申请的内存  <a href="class_n_a_n_a_1_1_matrix.html#af6db31f44e0cedf29f256b35049a5d20">更多...</a><br /></td></tr>
+<tr class="separator:af6db31f44e0cedf29f256b35049a5d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac2a4af02d821da6f1890f4073eac51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#aeac2a4af02d821da6f1890f4073eac51">fill</a> (const NAFLOAT &amp;value)</td></tr>
+<tr class="memdesc:aeac2a4af02d821da6f1890f4073eac51"><td class="mdescLeft">&#160;</td><td class="mdescRight">用value填充Matrix的全部内容  <a href="class_n_a_n_a_1_1_matrix.html#aeac2a4af02d821da6f1890f4073eac51">更多...</a><br /></td></tr>
+<tr class="separator:aeac2a4af02d821da6f1890f4073eac51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4d75c6e103b1e8a2524a04f0b6ef98"><td class="memItemLeft" align="right" valign="top">const NAFLOAT **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a9f4d75c6e103b1e8a2524a04f0b6ef98">getValPtr</a> () const</td></tr>
+<tr class="memdesc:a9f4d75c6e103b1e8a2524a04f0b6ef98"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取值的指针  <a href="class_n_a_n_a_1_1_matrix.html#a9f4d75c6e103b1e8a2524a04f0b6ef98">更多...</a><br /></td></tr>
+<tr class="separator:a9f4d75c6e103b1e8a2524a04f0b6ef98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28398a6a570df0dd900d9084c6b9c729"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a28398a6a570df0dd900d9084c6b9c729">getRows</a> () const</td></tr>
+<tr class="memdesc:a28398a6a570df0dd900d9084c6b9c729"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前矩阵的行数  <a href="class_n_a_n_a_1_1_matrix.html#a28398a6a570df0dd900d9084c6b9c729">更多...</a><br /></td></tr>
+<tr class="separator:a28398a6a570df0dd900d9084c6b9c729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8b9001acc119d1fd41db92361d70e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a4d8b9001acc119d1fd41db92361d70e0">getCols</a> () const</td></tr>
+<tr class="memdesc:a4d8b9001acc119d1fd41db92361d70e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前矩阵的列数  <a href="class_n_a_n_a_1_1_matrix.html#a4d8b9001acc119d1fd41db92361d70e0">更多...</a><br /></td></tr>
+<tr class="separator:a4d8b9001acc119d1fd41db92361d70e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f91cc9e267b3c55d0b8e6cb80351c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#af8f91cc9e267b3c55d0b8e6cb80351c4">operator=</a> (const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;M)</td></tr>
+<tr class="memdesc:af8f91cc9e267b3c55d0b8e6cb80351c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">等于时  <a href="class_n_a_n_a_1_1_matrix.html#af8f91cc9e267b3c55d0b8e6cb80351c4">更多...</a><br /></td></tr>
+<tr class="separator:af8f91cc9e267b3c55d0b8e6cb80351c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1c2cfc0cc1f16ee7e0f824655fad5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a8f1c2cfc0cc1f16ee7e0f824655fad5c">operator+</a> (const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;B)</td></tr>
+<tr class="memdesc:a8f1c2cfc0cc1f16ee7e0f824655fad5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现矩阵的加法  <a href="class_n_a_n_a_1_1_matrix.html#a8f1c2cfc0cc1f16ee7e0f824655fad5c">更多...</a><br /></td></tr>
+<tr class="separator:a8f1c2cfc0cc1f16ee7e0f824655fad5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa301aa225cf8946bc7edeecd4bffc972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#aa301aa225cf8946bc7edeecd4bffc972">operator-</a> (const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;M)</td></tr>
+<tr class="memdesc:aa301aa225cf8946bc7edeecd4bffc972"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现矩阵的减法  <a href="class_n_a_n_a_1_1_matrix.html#aa301aa225cf8946bc7edeecd4bffc972">更多...</a><br /></td></tr>
+<tr class="separator:aa301aa225cf8946bc7edeecd4bffc972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba17bb066c665c1b4604b23255ac034"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a8ba17bb066c665c1b4604b23255ac034">operator*</a> (const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;M)</td></tr>
+<tr class="memdesc:a8ba17bb066c665c1b4604b23255ac034"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现矩阵的乘法  <a href="class_n_a_n_a_1_1_matrix.html#a8ba17bb066c665c1b4604b23255ac034">更多...</a><br /></td></tr>
+<tr class="separator:a8ba17bb066c665c1b4604b23255ac034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ec0c22be222e5ea4848180c8f0202b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a47ec0c22be222e5ea4848180c8f0202b">inv</a> (int flag=LU)</td></tr>
+<tr class="memdesc:a47ec0c22be222e5ea4848180c8f0202b"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现矩阵的求逆  <a href="class_n_a_n_a_1_1_matrix.html#a47ec0c22be222e5ea4848180c8f0202b">更多...</a><br /></td></tr>
+<tr class="separator:a47ec0c22be222e5ea4848180c8f0202b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a0a5423a5d4ad70b3225216b7a6542ee4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_matrix.html#a0a5423a5d4ad70b3225216b7a6542ee4">setMatrixEye</a> (<a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;mat, const int m)</td></tr>
+<tr class="memdesc:a0a5423a5d4ad70b3225216b7a6542ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">将当前矩阵设置为单位矩阵  <a href="class_n_a_n_a_1_1_matrix.html#a0a5423a5d4ad70b3225216b7a6542ee4">更多...</a><br /></td></tr>
+<tr class="separator:a0a5423a5d4ad70b3225216b7a6542ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p >简单矩阵类 </p>
 
-<p class="definition">在文件 <a class="el" href="matrix_8h_source.html">matrix.h</a> 第 <a class="el" href="matrix_8h_source.html#l00031">31</a> 行定义.</p>
-</div><h2 class="groupheader">构造及析构函数说明</h2>
+<p class="definition">在文件 <a class="el" href="matrix_8h_source.html">matrix.h</a> 第 <a class="el" href="matrix_8h_source.html#l00032">32</a> 行定义.</p>
+</div><h2 class="groupheader">成员枚举类型说明</h2>
+<a id="a4513ca00857661356b036f9d4723a6d1" name="a4513ca00857661356b036f9d4723a6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4513ca00857661356b036f9d4723a6d1">&#9670;&nbsp;</a></span>DecompositionMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_n_a_n_a_1_1_matrix.html#a4513ca00857661356b036f9d4723a6d1">NANA::Matrix::DecompositionMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>枚举矩阵的各种分解方法 </p>
+
+<p class="definition">在文件 <a class="el" href="matrix_8h_source.html">matrix.h</a> 第 <a class="el" href="matrix_8h_source.html#l00037">37</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a454408ea3c117f53fe0d0868224f34fc" name="a454408ea3c117f53fe0d0868224f34fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a454408ea3c117f53fe0d0868224f34fc">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NANA::Matrix::Matrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00021">21</a> 行定义.</p>
+
+</div>
+</div>
 <a id="a200779713f922b3c87ad193b3ea7f6b4" name="a200779713f922b3c87ad193b3ea7f6b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a200779713f922b3c87ad193b3ea7f6b4">&#9670;&nbsp;</a></span>Matrix()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a200779713f922b3c87ad193b3ea7f6b4">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,8 +241,7 @@ Public 成员函数</h2></td></tr>
 </div><div class="memdoc">
 
 <p>构造函数，主动申请与管理内存 </p>
-<dl class="section return"><dt>返回</dt><dd><br  />
- </dd></dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">int</td><td>rows </td></tr>
@@ -164,7 +251,35 @@ Public 成员函数</h2></td></tr>
 </dl>
 <dl class="section note"><dt>注解</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00008">8</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00028">28</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a993ef6b3ea430956efc1febce948e766" name="a993ef6b3ea430956efc1febce948e766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993ef6b3ea430956efc1febce948e766">&#9670;&nbsp;</a></span>Matrix() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NANA::Matrix::Matrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>实现复制构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00033">33</a> 行定义.</p>
 
 </div>
 </div>
@@ -183,7 +298,300 @@ Public 成员函数</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00015">15</a> 行定义.</p>
+<p>矩阵的析构函数，释放申请的内存 </p>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aeac2a4af02d821da6f1890f4073eac51" name="aeac2a4af02d821da6f1890f4073eac51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac2a4af02d821da6f1890f4073eac51">&#9670;&nbsp;</a></span>fill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NANA::Matrix::fill </td>
+          <td>(</td>
+          <td class="paramtype">const NAFLOAT &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>用value填充Matrix的全部内容 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00083">83</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_n_a_n_a_1_1_matrix_aeac2a4af02d821da6f1890f4073eac51_icgraph.png" border="0" usemap="#aclass_n_a_n_a_1_1_matrix_aeac2a4af02d821da6f1890f4073eac51_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a4d8b9001acc119d1fd41db92361d70e0" name="a4d8b9001acc119d1fd41db92361d70e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8b9001acc119d1fd41db92361d70e0">&#9670;&nbsp;</a></span>getCols()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NANA::Matrix::getCols </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前矩阵的列数 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00106">106</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a28398a6a570df0dd900d9084c6b9c729" name="a28398a6a570df0dd900d9084c6b9c729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28398a6a570df0dd900d9084c6b9c729">&#9670;&nbsp;</a></span>getRows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NANA::Matrix::getRows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前矩阵的行数 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00101">101</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a9f4d75c6e103b1e8a2524a04f0b6ef98" name="a9f4d75c6e103b1e8a2524a04f0b6ef98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4d75c6e103b1e8a2524a04f0b6ef98">&#9670;&nbsp;</a></span>getValPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const NAFLOAT ** NANA::Matrix::getValPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取值的指针 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00096">96</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a47ec0c22be222e5ea4848180c8f0202b" name="a47ec0c22be222e5ea4848180c8f0202b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ec0c22be222e5ea4848180c8f0202b">&#9670;&nbsp;</a></span>inv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> NANA::Matrix::inv </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em> = <code>LU</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>实现矩阵的求逆 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flag</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00163">163</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8ba17bb066c665c1b4604b23255ac034" name="a8ba17bb066c665c1b4604b23255ac034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba17bb066c665c1b4604b23255ac034">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> NANA::Matrix::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>实现矩阵的乘法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">B</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>C = A*B </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00150">150</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8f1c2cfc0cc1f16ee7e0f824655fad5c" name="a8f1c2cfc0cc1f16ee7e0f824655fad5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1c2cfc0cc1f16ee7e0f824655fad5c">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> NANA::Matrix::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>B</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>实现矩阵的加法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>C = A+B </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00126">126</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa301aa225cf8946bc7edeecd4bffc972" name="aa301aa225cf8946bc7edeecd4bffc972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa301aa225cf8946bc7edeecd4bffc972">&#9670;&nbsp;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> NANA::Matrix::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>实现矩阵的减法 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">B</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>C = A-B </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00138">138</a> 行定义.</p>
+
+</div>
+</div>
+<a id="af8f91cc9e267b3c55d0b8e6cb80351c4" name="af8f91cc9e267b3c55d0b8e6cb80351c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f91cc9e267b3c55d0b8e6cb80351c4">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp; NANA::Matrix::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>等于时 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">M</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00111">111</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a0a5423a5d4ad70b3225216b7a6542ee4" name="a0a5423a5d4ad70b3225216b7a6542ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5423a5d4ad70b3225216b7a6542ee4">&#9670;&nbsp;</a></span>setMatrixEye()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NANA::Matrix::setMatrixEye </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_a_n_a_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将当前矩阵设置为单位矩阵 </p>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00045">45</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_n_a_n_a_1_1_matrix_a0a5423a5d4ad70b3225216b7a6542ee4_cgraph.png" border="0" usemap="#aclass_n_a_n_a_1_1_matrix_a0a5423a5d4ad70b3225216b7a6542ee4_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
