@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inv_0',['inv',['../class_n_a_n_a_1_1_matrix.html#a47ec0c22be222e5ea4848180c8f0202b',1,'NANA::Matrix']]]
+  ['inv_0',['inv',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a57f20352c6013b32fb4ff05c312234dd',1,'NANA::NA_FINAL']]]
 ];

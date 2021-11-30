@@ -7,7 +7,7 @@
  * @author Administrator
  * Contact: 707101557@qq.com
  *
- * @brief 用于抛出异常
+ * @brief 用于抛出异常，移植自OpenCV
  *
  * TODO: long description
  *

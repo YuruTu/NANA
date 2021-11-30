@@ -20,8 +20,8 @@ using namespace NANA;
 
 void showMatrix(const Matrix & a) {
 	std::cout << "¾ØÕóÏÔÊ¾£º\n";
-	int width = a.getCols();
-	int height = a.getRows();
+	int width = a.cols();
+	int height = a.rows();
 	const double** pdata = a.getValPtr();
 	int u, v;
 	for (v = 0; v < height; v++) {
@@ -36,6 +36,8 @@ void showMatrix(const Matrix & a) {
 
 int main() {
 
+	Matrix a = Matrix::zeros(4, 5);
+	std::cout << a;
 
 
 #if 0

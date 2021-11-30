@@ -41,7 +41,9 @@ var menudata={children:[
 {text:"l",url:"functions.html#index_l"},
 {text:"m",url:"functions.html#index_m"},
 {text:"o",url:"functions.html#index_o"},
+{text:"r",url:"functions.html#index_r"},
 {text:"s",url:"functions.html#index_s"},
+{text:"t",url:"functions.html#index_t"},
 {text:"w",url:"functions.html#index_w"},
 {text:"x",url:"functions.html#index_x"},
 {text:"y",url:"functions.html#index_y"},
@@ -49,7 +51,8 @@ var menudata={children:[
 {text:"~",url:"functions.html#index__7E"}]},
 {text:"函数",url:"functions_func.html"},
 {text:"变量",url:"functions_vars.html"},
-{text:"枚举",url:"functions_enum.html"}]}]},
+{text:"枚举",url:"functions_enum.html"},
+{text:"相关函数",url:"functions_rela.html"}]}]},
 {text:"文件",url:"files.html",children:[
 {text:"文件列表",url:"files.html"},
 {text:"文件成员",url:"globals.html",children:[

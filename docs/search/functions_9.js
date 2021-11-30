@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setmatrixeye_0',['setMatrixEye',['../class_n_a_n_a_1_1_matrix.html#a0a5423a5d4ad70b3225216b7a6542ee4',1,'NANA::Matrix']]]
+  ['rows_0',['rows',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a01f8d9a7affea6995b7c9faba3f013a8',1,'NANA::NA_FINAL']]]
 ];

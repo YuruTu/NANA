@@ -16,4 +16,6 @@ digraph "NANA/modules/core/include/core/datamanager.h"
   Node6 [label="map",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="memory",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="float.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
 }
