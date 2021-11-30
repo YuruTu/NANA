@@ -28,5 +28,8 @@
     <ClInclude Include="..\modules\graph\include\graph\sort.hpp">
       <Filter>include\graph</Filter>
     </ClInclude>
+    <ClInclude Include="..\modules\graph\include\graph\list.hpp">
+      <Filter>include\graph</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

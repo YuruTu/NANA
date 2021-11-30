@@ -1,0 +1,81 @@
+#pragma once
+
+
+namespace NANA {
+namespace GRAPH {
+
+//! @addtogroup Graph_basic
+//! @{
+
+
+template <typename T>
+struct ListNode
+{
+	ListNode* m_next;
+	ListNode* m_prev;
+	T m_data;
+
+	ListNode(T x)
+		:m_next(nullptr)
+		, m_prev(nullptr)
+		, m_data(x)
+	{}
+};
+
+/**
+ * @brief 双向循环链表
+ * @tparam T 
+*/
+template <typename T>
+class CicList {
+	typedef ListNode<T> Node;
+public:
+	CList()
+		:_head(new Node(T()))
+	{
+		_head->_next = _head;
+		_head->_prev = _head;
+	}
+
+
+	virtual	~CList()
+	{
+		Node* tmp = _head->_next;
+		while (tmp != _head)
+		{
+			Node* cur = tmp->_next;
+			delete tmp;
+			tmp = cur;
+		}
+	}
+
+	void setHead(T x) {
+		_head->_data = x;
+	}
+
+	void push_front(const T& x) {
+		Insert(_head->_next, x);
+	}
+
+	void push_back(const T& x) {
+		Insert(_head->_prev, x);
+	}
+
+
+private:
+	//插入一个元素
+	void Insert(Node* pos, T x)
+	{
+		Node* newnode = new Node(x);
+		newnode->m_next = pos;
+		pos->m_prev->m_next = newnode;
+		newnode->m_prev = pos->m_prev;
+		pos->m_prev = newnode;
+	}
+	//data
+	Node* m_head;
+};
+//! @} Graph_basic
+
+}
+}
