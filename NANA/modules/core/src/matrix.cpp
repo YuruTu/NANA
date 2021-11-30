@@ -42,6 +42,15 @@ Matrix::~Matrix()
 	this->release();
 }
 
+
+int Matrix::cols() const {
+	return m_cols;
+}
+
+int Matrix::rows() const {
+	return m_rows;
+}
+
 void Matrix::setMatrixEye(Matrix& mat, const int m) {
 	mat.release();
 	mat.create(m, m);
@@ -50,6 +59,11 @@ void Matrix::setMatrixEye(Matrix& mat, const int m) {
 		mat.m_val[i][i] = 1.0;
 }
 
+Matrix Matrix::zeros(int rows, int cols) {
+	Matrix mat(rows, cols);
+	mat.fill(0.0);
+	return mat;
+}
 
 void Matrix::create(int rows,int cols)
 {
@@ -98,14 +112,12 @@ const NAFLOAT** Matrix::getValPtr() const
 	return const_cast<const NAFLOAT**>(m_val);
 }
 
-int Matrix::getRows() const
-{
-	return m_rows;
-}
-
-int Matrix::getCols() const
-{
-	return m_cols;
+Matrix Matrix::T() const {
+	Matrix C(m_cols, m_rows);
+	for (int i = 0; i < m_rows; i++)
+		for (int32_t j = 0; j < m_cols; j++)
+			C.m_val[j][i] = m_val[i][j];
+	return C;
 }
 
 Matrix& Matrix::operator=(const Matrix& M)
@@ -160,6 +172,9 @@ Matrix Matrix::operator*(const Matrix& B) {
 }
 
 
+
+
+
 Matrix Matrix::inv(int flag) {
 	Matrix C;
 	
@@ -167,5 +182,36 @@ Matrix Matrix::inv(int flag) {
 
 	return C;
 }
+
+
+std::istream& operator>>(std::istream& is, Matrix& m)
+{
+	NAFLOAT** val =const_cast<NAFLOAT**>(m.getValPtr());
+	for (int i = 0; i < m.rows(); i++) {
+		for (int j = 0; j < m.cols(); j++) {
+			is>>val[i][j];
+		}
+	}
+	return is;
+}
+
+std::ostream& operator<< (std::ostream& out, const Matrix& M) {
+	if (M.m_cols == 0 || M.m_rows == 0) {
+		out << "[empty matrix]";
+	}
+	else {
+		char buffer[1024];
+		for (int i = 0; i < M.m_rows; i++) {
+			for (int j = 0; j < M.m_cols; j++) {
+				sprintf_s(buffer, "%12.7f ", M.m_val[i][j]);
+				out << buffer;
+			}
+			out << std::endl;
+		}
+	}
+	return out;
+}
+
+
 
 }

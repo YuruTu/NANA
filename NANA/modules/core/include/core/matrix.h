@@ -24,12 +24,12 @@ namespace NANA {
 
 //! @addtogroup core_basic
 //! @{
-typedef  double NAFLOAT;
+
 
 /*!
  * @brief 简单矩阵类
  */
-class NA_API Matrix {//NA_FINAL{
+class NA_API Matrix NA_FINAL{
 public:
 	/**
 	 * @brief 枚举矩阵的各种分解方法
@@ -63,13 +63,30 @@ public:
 	~Matrix();
 
 	/**
+	 * @brief 获取矩阵的列数
+	 * @return 
+	*/
+	int cols() const;
+
+	/**
+	 * @brief 获取矩阵的行数
+	 * @return 
+	*/
+	int rows() const;
+
+	/**
 	 * @brief 将当前矩阵设置为单位矩阵
 	 * @return
 	*/
 	static void setMatrixEye(Matrix& mat, const int m);
 
-
-
+	/**
+	 * @brief 生成全0矩阵
+	 * @param rows 
+	 * @param cols 
+	 * @return 
+	*/
+	static Matrix zeros(int rows, int cols);
 
 	/**
 	 * @brief 用value填充Matrix的全部内容
@@ -83,18 +100,13 @@ public:
 	*/
 	const NAFLOAT** getValPtr() const;
 
-	/**
-	 * @brief 获取当前矩阵的行数
-	 * @return
-	*/
-	int getRows() const;
+
 
 	/**
-	 * @brief 获取当前矩阵的列数
-	 * @return
+	 * @brief 实现矩阵的转置
+	 * @return 
 	*/
-	int getCols() const;
-
+	Matrix T() const;
 
 	/**
 	 * @brief 等于时
@@ -132,8 +144,21 @@ public:
 	*/
 	Matrix inv(int flag = LU);
 
+	/**
+	 * @brief 用istream的形式给矩阵赋值
+	 * @param is 
+	 * @param m 
+	 * @return 
+	*/
+	friend NA_API std::istream& operator>>(std::istream& is, Matrix& m);
 
-
+	/**
+	 * @brief 将矩阵中的内容导出
+	 * @param out 
+	 * @param M 
+	 * @return 
+	*/
+	friend NA_API std::ostream& operator<< (std::ostream& out, const Matrix& M);
 private:
 
 

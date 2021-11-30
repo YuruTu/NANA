@@ -17,7 +17,7 @@
 #include <string>
 #include <map>
 #include <memory>
-
+#include <float.h>
 
 namespace NANA {
 
@@ -30,16 +30,19 @@ typedef uint64_t uint64;
 
 #endif
 
-#pragma region  定义必要的宏
+#pragma region 定义数学上的常量和浮点数
 /// 圆周率
 #define NA_PI   3.1415926535897932384626433832795
  ///二倍圆周率
 #define NA_2PI  6.283185307179586476925286766559
 
+///定义一个极小的正数 smallest such that 1.0+DBL_EPSILON != 1.0
+#define NA_EPS	 DBL_EPSILON
+
 /// 数学常数
 #define NA_EulerNum 2.7182818284590452353602874713526
 
-
+typedef  double NAFLOAT;
 
 #pragma endregion
 

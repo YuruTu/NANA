@@ -91,10 +91,10 @@ private:
 	///************************************
 	void release();
 
-	char * m_data;///指针数组
-	int m_stride;///步长
-	int m_rows;///行数
-	int m_cols;///列数
+	char * m_data;///<指针数组
+	int m_stride;///<步长
+	int m_rows;///<行数
+	int m_cols;///<列数
 	CDataManager* m_datamanager;
 };
 

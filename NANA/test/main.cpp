@@ -35,14 +35,22 @@ void showMatrix(const Matrix & a) {
 
 
 int main() {
+
+
+
+#if 0
 	Matrix a;
 	Matrix::setMatrixEye(a, 3);
 	Matrix b;
-	Matrix::setMatrixEye(b, 4);
+	Matrix::setMatrixEye(b,3);
 	showMatrix(a);
 	showMatrix(b);
 	Matrix c = a + b;
 	showMatrix(c);
+	Matrix d(3, 1);
+	std::cin >> d;
+	showMatrix(d);
+#endif
 	system("pause");
 	return 0;
 }
