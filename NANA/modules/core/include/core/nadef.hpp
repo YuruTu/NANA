@@ -1,12 +1,12 @@
 #pragma once
-/*!
- * \file nadef.h
- * \date 2021/11/11 18:17
+/**
+ * @file nadef.h
+ * @date 2021/11/11 18:17
  *
  * \author yurutu
  * Contact: 707101557@qq.com
  *
- * \brief 数值分析所依赖的定义
+ * @brief 数值分析所依赖的定义
  *
  * TODO: long description
  *

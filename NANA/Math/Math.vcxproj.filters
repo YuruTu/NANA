@@ -25,9 +25,15 @@
     <ClInclude Include="..\modules\math\include\math\gaussian.hpp">
       <Filter>include\math</Filter>
     </ClInclude>
+    <ClInclude Include="..\modules\math\include\math\polynomialevaluation.hpp">
+      <Filter>include\math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\modules\math\src\fft.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\math\src\polynomialevaluation.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,3 +1,4 @@
+#pragma once
 /**
  * @file sort.hpp
  * @date 2021/11/17 18:52

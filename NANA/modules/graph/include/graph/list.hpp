@@ -1,5 +1,17 @@
 #pragma once
-
+/**
+ * @file list.hpp
+ * @date 2021/11/30 6:03
+ *
+ * @author yurutu
+ * Contact: 707101557@qq.com
+ *
+ * @brief 实现双向链表类
+ *
+ * TODO:
+ *
+ * @note
+*/
 
 namespace NANA {
 namespace GRAPH {

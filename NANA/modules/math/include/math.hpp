@@ -14,7 +14,8 @@
 */
 
 #include "math/fft.h"
-
+#include "math/gaussian.hpp"
+#include "math/polynomialevaluation.hpp"
 
 
 /**
