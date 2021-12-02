@@ -20,4 +20,5 @@ digraph "NANA/modules/core/include/core/graphCore.hpp"
   Node8 [label="NANA/modules/math/src\l/fft.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fft_8cpp_source.html",tooltip=" "];
   Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node9 [label="NANA/modules/math/include\l/math/gaussian.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gaussian_8hpp.html",tooltip="实现高斯相关的算法"];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

@@ -167,6 +167,9 @@ Public 成员函数</h2></td></tr>
 <tr class="memitem:a346b385f79d5cb92a677f31fd217d009"><td class="memItemLeft" align="right" valign="top">Matrix &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a346b385f79d5cb92a677f31fd217d009">operator=</a> (const Matrix &amp;M)</td></tr>
 <tr class="memdesc:a346b385f79d5cb92a677f31fd217d009"><td class="mdescLeft">&#160;</td><td class="mdescRight">等于时  <a href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a346b385f79d5cb92a677f31fd217d009">更多...</a><br /></td></tr>
 <tr class="separator:a346b385f79d5cb92a677f31fd217d009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95bf737a27a243422766f74db3cccf14"><td class="memItemLeft" align="right" valign="top">const NAFLOAT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a95bf737a27a243422766f74db3cccf14">operator[]</a> (int row) const</td></tr>
+<tr class="memdesc:a95bf737a27a243422766f74db3cccf14"><td class="mdescLeft">&#160;</td><td class="mdescRight">返回第row行的起始指针  <a href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a95bf737a27a243422766f74db3cccf14">更多...</a><br /></td></tr>
+<tr class="separator:a95bf737a27a243422766f74db3cccf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee049d3b1378779113358020e3aa24d"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#acee049d3b1378779113358020e3aa24d">operator+</a> (const Matrix &amp;B)</td></tr>
 <tr class="memdesc:acee049d3b1378779113358020e3aa24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现矩阵的加法  <a href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#acee049d3b1378779113358020e3aa24d">更多...</a><br /></td></tr>
 <tr class="separator:acee049d3b1378779113358020e3aa24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,7 +207,7 @@ class NANA::NA_FINAL&lt; _T &gt;</div><p >复数类，用于实现复数的加�
 <p >简单矩阵类</p>
 <dl class="section note"><dt>注解</dt><dd>用于实现复数的加减乘除运算 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_complex_8hpp_source.html">Complex.hpp</a> 第 <a class="el" href="_complex_8hpp_source.html#l00025">25</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_complex_8hpp_source.html">Complex.hpp</a> 第 <a class="el" href="_complex_8hpp_source.html#l00026">26</a> 行定义.</p>
 </div><h2 class="groupheader">成员枚举类型说明</h2>
 <a id="ad6bd75855e844773c047791b1ffb614f" name="ad6bd75855e844773c047791b1ffb614f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6bd75855e844773c047791b1ffb614f">&#9670;&nbsp;</a></span>DecompositionMethod</h2>
@@ -274,7 +277,7 @@ template&lt;typename _T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="_complex_8hpp_source.html">Complex.hpp</a> 第 <a class="el" href="_complex_8hpp_source.html#l00027">27</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_complex_8hpp_source.html">Complex.hpp</a> 第 <a class="el" href="_complex_8hpp_source.html#l00028">28</a> 行定义.</p>
 
 </div>
 </div>
@@ -314,7 +317,7 @@ template&lt;typename _T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="_complex_8hpp_source.html">Complex.hpp</a> 第 <a class="el" href="_complex_8hpp_source.html#l00034">34</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_complex_8hpp_source.html">Complex.hpp</a> 第 <a class="el" href="_complex_8hpp_source.html#l00035">35</a> 行定义.</p>
 
 </div>
 </div>
@@ -347,7 +350,7 @@ template&lt;typename _T &gt; </div>
 <dl class="section return"><dt>返回</dt><dd>NANA::Complex&lt;_T&gt; </dd></dl>
 <dl class="section note"><dt>注解</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="_complex_8hpp_source.html">Complex.hpp</a> 第 <a class="el" href="_complex_8hpp_source.html#l00044">44</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="_complex_8hpp_source.html">Complex.hpp</a> 第 <a class="el" href="_complex_8hpp_source.html#l00045">45</a> 行定义.</p>
 
 </div>
 </div>
@@ -615,6 +618,35 @@ template&lt;typename _T &gt; </div>
 
 </div>
 </div>
+<a id="a95bf737a27a243422766f74db3cccf14" name="a95bf737a27a243422766f74db3cccf14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95bf737a27a243422766f74db3cccf14">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const NAFLOAT * <a class="el" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html">NANA::NA_FINAL</a>&lt; _T &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>返回第row行的起始指针 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a01f8d9a7affea6995b7c9faba3f013a8" name="a01f8d9a7affea6995b7c9faba3f013a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01f8d9a7affea6995b7c9faba3f013a8">&#9670;&nbsp;</a></span>rows()</h2>
 
@@ -795,7 +827,7 @@ template&lt;typename _T &gt; </div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00198">198</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00202">202</a> 行定义.</p>
 
 </div>
 </div>
@@ -845,7 +877,7 @@ template&lt;typename _T &gt; </div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00187">187</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00191">191</a> 行定义.</p>
 
 </div>
 </div>
