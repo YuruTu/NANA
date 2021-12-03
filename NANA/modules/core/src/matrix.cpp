@@ -135,6 +135,10 @@ Matrix& Matrix::operator=(const Matrix& M)
 }
 
 
+const NAFLOAT* Matrix::operator[](int row) const {
+	return const_cast<const  NAFLOAT*>(m_val[row]);
+}
+
 Matrix Matrix::operator+ (const Matrix& B) {
 	Matrix& A = *this;
 	NA_Assert(A.m_cols == B.m_cols || A.m_rows == B.m_rows);

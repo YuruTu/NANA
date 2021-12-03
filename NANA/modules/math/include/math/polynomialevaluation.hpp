@@ -1,14 +1,13 @@
 #pragma once
 /**
- * @file math.hpp
+ * @file polynomialevaluation.hpp
  * @date 2021/12/02 19:42
  *
- * @author Administrator
+ * @author tuyuru
  * Contact: 707101557@qq.com
  *
  * @brief 实现多项式的求值
  *
- * TODO: long description
  *
  * \note
 */

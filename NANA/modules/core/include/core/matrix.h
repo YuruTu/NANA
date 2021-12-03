@@ -114,6 +114,12 @@ public:
 	 * @return
 	*/
 	Matrix& operator= (const Matrix& M);
+	/**
+	 * @brief 返回第row行的起始指针
+	 * @param row 
+	 * @return 
+	*/
+	const NAFLOAT* operator[](int row) const ;
 
 	/**
 	 * @brief 实现矩阵的加法
