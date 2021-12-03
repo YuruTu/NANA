@@ -8,12 +8,18 @@ digraph "NANA::Matrix::cols"
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="NANA::Matrix::create",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a9143733c65d050c962bb9ea8fe03d19b",tooltip="申请内存"];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="NANA::Matrix::Matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4",tooltip="构造函数，主动申请与管理内存"];
+  Node3 [label="NANA::Matrix::LU",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a4fa999237fe4b55b662bcd8e38707d1e",tooltip="实现矩阵的LU分解"];
   Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="NANA::Matrix::operator=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#af8f91cc9e267b3c55d0b8e6cb80351c4",tooltip="等于时"];
+  Node4 [label="NANA::Matrix::Matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4",tooltip="构造函数，主动申请与管理内存"];
   Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="NANA::Matrix::setMatrixEye",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a0a5423a5d4ad70b3225216b7a6542ee4",tooltip="将当前矩阵设置为单位矩阵"];
+  Node5 [label="NANA::Matrix::operator=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#af8f91cc9e267b3c55d0b8e6cb80351c4",tooltip="等于时"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="NANA::Matrix::setMatrixEye",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a0a5423a5d4ad70b3225216b7a6542ee4",tooltip="将当前矩阵设置为单位矩阵"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="NANA::Matrix::QR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a521948ec0114d2e2204782b2bfd11bb0",tooltip="基于豪斯荷尔德变换实现矩阵的QR分解"];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="NANA::Matrix::zeros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#aca43ab15a7bcbb1b79bba0e384064194",tooltip="生成全0矩阵"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="NANA::Matrix::zeros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#aca43ab15a7bcbb1b79bba0e384064194",tooltip="生成全0矩阵"];
 }

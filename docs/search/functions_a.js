@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['release_0',['release',['../class_n_a_n_a_1_1_matrix.html#af89b2a36817707cc891210384ac59f98',1,'NANA::Matrix']]],
-  ['rows_1',['rows',['../class_n_a_n_a_1_1_matrix.html#a59af2b31be0c8625466dea7fa5a36afa',1,'NANA::Matrix']]]
+  ['qr_0',['QR',['../class_n_a_n_a_1_1_matrix.html#a521948ec0114d2e2204782b2bfd11bb0',1,'NANA::Matrix']]],
+  ['quicksort_1',['quickSort',['../sort_8hpp.html#a49f68f01c0f156ff2e0c9391b1c9de75',1,'NANA::GRAPH']]]
 ];

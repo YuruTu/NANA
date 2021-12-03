@@ -59,6 +59,112 @@ void Matrix::setMatrixEye(Matrix& mat, const int m) {
 		mat.m_val[i][i] = 1.0;
 }
 
+
+
+void Matrix::LU(const Matrix& A, Matrix& L, Matrix& U) {
+	int rows = A.rows();
+	int cols = A.cols();
+	NA_Assert(rows == cols);
+	Matrix Q = A;
+	L.release();
+	L.create(rows, cols);
+	U.release();
+	U.create(rows, cols);
+	NAFLOAT** q = Q.getValPtr();
+	NAFLOAT** l = L.getValPtr();
+	NAFLOAT** u = U.getValPtr();
+
+	int i, j, k;
+	for (k = 0; k < rows- 1; ++k) {
+		NA_Assert(std::fabs(q[k][k]) > NA_EPS);
+		for (i = k+1; i < rows; ++i) {
+			q[i][k] /= q[k][k];
+			for (j = k + 1; j < cols; ++j) {
+				q[i][j] -= (q[i][k]*q[k][j]);
+			}
+
+		}
+	}
+
+	for (i = 0; i < rows; ++i) {
+		for (j = 0; j < i; ++j) {
+			l[i][j] = q[i][j];
+			u[i][j] = 0.0;
+		}
+		l[i][i] = 1.0;
+		u[i][i] = q[i][i];
+		for (j = i + 1; j < cols; ++j) {
+			l[i][j] = 0.0;
+			u[i][j] = q[i][j];
+		}
+	}
+}
+
+void Matrix::QR(const Matrix A, Matrix& Q, Matrix& R) {
+	int rows = A.rows();
+	int cols = A.cols();
+	R = A;
+	NA_Assert(rows>=cols);///QR分解要求矩阵的行数大于等于列数
+	setMatrixEye(Q,rows);///<设置一个单位矩阵
+	int ncols, i, j,k;
+	if (rows == cols)
+		ncols = rows - 1;
+	else
+		ncols = cols;
+	double u, alpha, w, t;
+	NAFLOAT** a = R.getValPtr();
+	NAFLOAT** q = Q.getValPtr();
+	for (k = 0; k < ncols; ++k) {
+		u = 0.0;
+		for (i = k; i < rows; ++i) {
+			w = std::fabs(a[i][k]);
+			if (w > u)
+				u = w;
+		}
+		NA_Assert(u >= NA_EPS);
+		alpha = 0.0;
+		for (i = k; i < rows; ++i) {
+			t = a[i][k] / u;
+			alpha += (t * t);
+		}
+		if (a[k][k] > 0.0)
+			u = -u;
+		alpha = u * std::sqrtf(alpha);
+		NA_Assert(std::fabs(alpha) >= NA_EPS);
+		u = std::sqrtf(2.0 * alpha * (alpha - a[k][k]));
+		NA_Assert(!isNan(u));
+		a[k][k] = (a[k][k] - alpha) / u;
+
+		for (i = k + 1; i < rows; ++i) 
+			a[i][k] /= u;
+		
+		for (j = 0; j < rows; ++j) {
+			t = 0.0;
+			for (i = k; i < rows; ++i)
+				t += a[i][k] * q[i][j];
+			for (i = k; i < rows; ++i)
+				q[i][j] -= 2.0 * t * a[i][k];
+		}
+		for (j = k + 1; j < cols; ++j) {
+			t = 0.0;
+			for (i = k; i < rows; ++i) 
+				t += a[i][k] * a[i][j];
+			for (i = k; i < rows; ++i)
+				a[i][j] -= 2.0 * t * a[i][k];
+		}
+		a[k][k] = alpha;
+		for (i = k + 1; i < rows; ++i)
+			a[i][k] = 0.0;
+	}
+	for (i = 0; i < ncols; ++i) {
+		for (j = i + 1; j < rows; ++j) {
+			t = q[i][j];
+			q[i][j] = q[j][i];
+			q[j][i] = t;
+		}
+	}
+}
+
 Matrix Matrix::zeros(int rows, int cols) {
 	Matrix mat(rows, cols);
 	mat.fill(0.0);

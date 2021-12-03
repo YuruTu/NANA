@@ -80,8 +80,17 @@ typedef Size_<float> Size2f;
 typedef Size_<double> Size2d;
 typedef Size2i Size;
 
-
-
+/**
+ * @brief 判断一个数是否是Not a number
+ * @param x 
+ * @return 
+*/
+template<typename _Tp>
+bool isNan(_Tp x) {
+	if (x != x)
+		return true;
+	return false;
+}
 
 
 

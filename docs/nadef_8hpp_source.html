@@ -165,12 +165,17 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">typedef</span> <a class="code hl_struct" href="struct_n_a_n_a_1_1_size__.html">Size_&lt;double&gt;</a> <a class="code hl_struct" href="struct_n_a_n_a_1_1_size__.html">Size2d</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">typedef</span> <a class="code hl_struct" href="struct_n_a_n_a_1_1_size__.html">Size2i</a> <a class="code hl_struct" href="struct_n_a_n_a_1_1_size__.html">Size</a>;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Tp&gt;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="nadef_8hpp.html#aa2149b68acd7bfce1083b123f93a1ee6">   89</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="nadef_8hpp.html#aa2149b68acd7bfce1083b123f93a1ee6">isNan</a>(_Tp x) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">if</span> (x != x)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="ttc" id="anadef_8hpp_html_aa2149b68acd7bfce1083b123f93a1ee6"><div class="ttname"><a href="nadef_8hpp.html#aa2149b68acd7bfce1083b123f93a1ee6">NANA::isNan</a></div><div class="ttdeci">bool isNan(_Tp x)</div><div class="ttdoc">判断一个数是否是Not a number</div><div class="ttdef"><b>Definition:</b> <a href="nadef_8hpp_source.html#l00089">nadef.hpp:89</a></div></div>
 <div class="ttc" id="astruct_n_a_n_a_1_1_size___html"><div class="ttname"><a href="struct_n_a_n_a_1_1_size__.html">NANA::Size_</a></div><div class="ttdoc">二维数组的尺寸</div><div class="ttdef"><b>Definition:</b> <a href="nadef_8hpp_source.html#l00061">nadef.hpp:61</a></div></div>
 <div class="ttc" id="astruct_n_a_n_a_1_1_size___html_a694a458872d36f4d9e4440eb9a3280f3"><div class="ttname"><a href="struct_n_a_n_a_1_1_size__.html#a694a458872d36f4d9e4440eb9a3280f3">NANA::Size_::height</a></div><div class="ttdeci">_Tp height</div><div class="ttdoc">高度</div><div class="ttdef"><b>Definition:</b> <a href="nadef_8hpp_source.html#l00075">nadef.hpp:75</a></div></div>
 <div class="ttc" id="astruct_n_a_n_a_1_1_size___html_aa49f182e510617af72801b463aef58e1"><div class="ttname"><a href="struct_n_a_n_a_1_1_size__.html#aa49f182e510617af72801b463aef58e1">NANA::Size_::width</a></div><div class="ttdeci">_Tp width</div><div class="ttdoc">宽度</div><div class="ttdef"><b>Definition:</b> <a href="nadef_8hpp_source.html#l00074">nadef.hpp:74</a></div></div>

@@ -36,13 +36,23 @@ void showMatrix(const Matrix & a) {
 
 int main() {
 
-	Matrix A(4,4);
+	Matrix A(4, 3);
+	std::cin >> A;
+	Matrix Q, R;
+	Matrix::QR(A,Q, R);
+	std::cout << "Q:\n" <<Q << "R:\n" << R;
+#if 0
+	Matrix A(4, 4);
+	std::cin >> A;
+	Matrix L, U;
+	Matrix::LU(A, L, U);
+	std::cout << "L:\n" << L << "U:\n" << U;
+	Matrix A(4, 4);
 	std::cin >> A;
 	Matrix B = A.inv();
 	std::cout << "¾ØÕóA-1" << B;
 	Matrix C = A * B;
 	std::cout << "¾ØÕóA*A-1" << C;
-#if 0
 	Matrix a = Matrix::zeros(4, 5);
 	std::cout << a;
 

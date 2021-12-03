@@ -36,9 +36,6 @@ public:
 	 */
 	enum DecompositionMethod {
 		GaussiaJordan,///<高斯-约当消去法
-		LU,
-		QR,
-		SVD,
 	};
 
 	Matrix();
@@ -61,7 +58,7 @@ public:
 	/**
 	 * @brief 矩阵的析构函数，释放申请的内存
 	 */
-	~Matrix();
+	virtual ~Matrix();
 
 	/**
 	 * @brief 获取矩阵的列数
@@ -80,6 +77,25 @@ public:
 	 * @return
 	*/
 	static void setMatrixEye(Matrix& mat, const int m);
+
+
+	/**
+	 * @brief 实现矩阵的LU分解
+	 * @param A  带分解矩阵
+	 * @param L  下三角矩阵L
+	 * @param U  上三角矩阵U
+	 * @note   由于此方法没有选主元，其数值运算是不稳定的
+	*/
+	static void LU(const Matrix& A, Matrix& L, Matrix& U);
+
+	/**
+	 * @brief 基于豪斯荷尔德变换实现矩阵的QR分解
+	 * @param A 
+	 * @param Q 
+	 * @param R 
+	*/
+	static void QR(const Matrix A, Matrix& Q, Matrix& R);
+
 
 	/**
 	 * @brief 生成全0矩阵
@@ -155,6 +171,10 @@ public:
 	 * @return
 	*/
 	Matrix inv(int flag = GaussiaJordan);
+
+
+	
+
 
 	/**
 	 * @brief 用istream的形式给矩阵赋值
