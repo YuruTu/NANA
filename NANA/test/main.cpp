@@ -22,7 +22,7 @@ void showMatrix(const Matrix & a) {
 	std::cout << "¾ØÕóÏÔÊ¾£º\n";
 	int width = a.cols();
 	int height = a.rows();
-	const double** pdata = a.getValPtr();
+	double** pdata = a.getValPtr();
 	int u, v;
 	for (v = 0; v < height; v++) {
 		for (u = 0; u < width; u++) {
@@ -36,11 +36,16 @@ void showMatrix(const Matrix & a) {
 
 int main() {
 
+	Matrix A(4,4);
+	std::cin >> A;
+	Matrix B = A.inv();
+	std::cout << "¾ØÕóA-1" << B;
+	Matrix C = A * B;
+	std::cout << "¾ØÕóA*A-1" << C;
+#if 0
 	Matrix a = Matrix::zeros(4, 5);
 	std::cout << a;
 
-
-#if 0
 	Matrix a;
 	Matrix::setMatrixEye(a, 3);
 	Matrix b;

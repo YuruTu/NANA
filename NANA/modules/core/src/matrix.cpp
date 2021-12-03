@@ -107,8 +107,12 @@ void Matrix::fill(const NAFLOAT& value)
 
 }
 
-const NAFLOAT** Matrix::getValPtr() const
+NAFLOAT** Matrix::getValPtr() const
 {
+	return m_val;
+}
+
+const NAFLOAT** Matrix::getConstValPtr() const {
 	return const_cast<const NAFLOAT**>(m_val);
 }
 
@@ -168,6 +172,7 @@ Matrix Matrix::operator*(const Matrix& B) {
 	NA_Assert(A.m_cols == B.m_rows );
 
 	Matrix C(A.m_rows, B.m_cols);
+	C.fill(0.0);
 	for (int i = 0; i < A.m_rows; i++)
 		for (int j = 0; j < B.m_cols; j++)
 			for (int k = 0; k < A.m_cols; k++)
@@ -175,22 +180,118 @@ Matrix Matrix::operator*(const Matrix& B) {
 	return C;
 }
 
+/**
+ * @brief 使用高斯-约当消去法求矩阵的逆矩阵
+ * @param src 输入矩阵
+ * @param dst 逆矩阵
+ * @return 
+*/
+static int  GaussiaJordanInv(Matrix & src,Matrix &dst) {
+	int rows = src.rows();
+	int cols = src.cols();
+	NA_Assert(rows == cols);
+	///<数据拷贝
+	dst = src;
+	int i, j, k, temp;
+	NAFLOAT** data = dst.getValPtr();
+
+	std::vector<int> is(rows);
+	std::vector<int> js(cols);
+	/// 为数值计算的稳定性：交换主元
+	double d, p;
+	for (k = 0; k < rows; ++k) {
+		d = 0.0;
+		for (i = k; i < rows;++i) {
+			for (j = k; j < cols; ++j) {
+				p = std::fabs(data[i][j]);
+				if (p > d) {
+					d = p;
+					is[k] = i;
+					js[k] = j;
+				}
+			}
+		}
+		NA_Assert(d >= NA_EPS);
+		temp = is[k];
+		if (temp != k) {
+			for (j = 0; j < cols; ++j) {
+				p = data[k][j];
+				data[k][j] = data[temp][j];
+				data[temp][j] = p;
+			}
+		}
+		temp = js[k];
+		if (temp != k) {
+			for (i = 0; i < rows; ++i) {
+				p = data[i][k];
+				data[i][k] = data[i][temp];
+				data[i][temp] = p;
+			}
+		}
+		/// 归一化
+		data[k][k] = 1.0 / data[k][k];
+
+		for (j = 0; j < cols; ++j) {
+			if (k == j)
+				continue;
+			data[k][j] *= data[k][k];
+		}
+		///消元计算
+		for (i = 0; i < rows; ++i) {
+			if (i == k)
+				continue;
+			for (j = 0; j < cols; ++j) {
+				if (j == k)
+					continue;
+				data[i][j] -= data[i][k] * data[k][j];
+			}
+		}
+		for (i = 0; i < rows; ++i) {
+			if (i == k)
+				continue;
+			data[i][k] *= (-data[k][k]);
+		}
+	}
 
 
+	for (k = rows - 1; k >= 0; --k) {
+		temp = js[k];
+		if (k != temp) {
+			for (j = 0; j < cols; ++j) {
+				p = data[k][j];
+				data[k][j] = data[temp][j];
+				data[temp][j] = p;
+			}
+		}
+		temp= is[k];
+		if (k != temp) {
+			for (i = 0; i < rows; ++i) {
+				p = data[i][k];
+				data[i][k] = data[i][temp];
+				data[i][temp] = p;
+			}
+		}
+	}
+
+
+	return RET_OK;
+}
 
 
 Matrix Matrix::inv(int flag) {
-	Matrix C;
-	
+	Matrix invMat;
+	if (GaussiaJordan == flag) {
+		GaussiaJordanInv(*this,invMat);
+	}
 
 
-	return C;
+	return invMat;
 }
 
 
 std::istream& operator>>(std::istream& is, Matrix& m)
 {
-	NAFLOAT** val =const_cast<NAFLOAT**>(m.getValPtr());
+	NAFLOAT** val =m.getValPtr();
 	for (int i = 0; i < m.rows(); i++) {
 		for (int j = 0; j < m.cols(); j++) {
 			is>>val[i][j];

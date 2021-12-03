@@ -6,9 +6,9 @@
  * @author yurutu
  * Contact: 707101557@qq.com
  *
- * @brief 
+ * @brief  几何类型
  *
- * TODO: long description
+ * @note: long description
  *
  * \note
 */

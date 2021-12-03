@@ -36,13 +36,13 @@ _Tp PolynomialEvaluation1D(const _Tp* a, int n, _Tp x) {
 
 /**
  * @brief 二维多项式求值
- * @param mat 
+ * @param mat 低次项在前
  * @param x 
  * @param y 
  * @param n 
  * @return 
 */
-double NA_API PolynomialEvaluation2D(const Matrix& mat, double* x, double* y, int n);
+double NA_API PolynomialEvaluation2D(const Matrix& mat, double x, double y, int n);
 
 
 

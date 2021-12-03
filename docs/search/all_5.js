@@ -1,15 +1,17 @@
 var searchData=
 [
-  ['gaussian_2ehpp_0',['gaussian.hpp',['../gaussian_8hpp.html',1,'']]],
-  ['gaussian2d_1',['Gaussian2D',['../gaussian_8hpp.html#a738c0b82ed5297887c31f62d514ad0ca',1,'NANA::MATH']]],
-  ['gengaussiankernel_2',['GenGaussianKernel',['../gaussian_8hpp.html#a5c2f3cf15453b9f28b99120172bf2764',1,'NANA::MATH']]],
-  ['geometry_20structures_3',['geometry structures',['../group__geometry__basic.html',1,'']]],
-  ['geometry_20warp_4',['geometry warp',['../group__geometrywarp.html',1,'']]],
-  ['geometrytypes_2ecpp_5',['geometrytypes.cpp',['../geometrytypes_8cpp.html',1,'']]],
-  ['geometrytypes_2ehpp_6',['geometrytypes.hpp',['../geometrytypes_8hpp.html',1,'']]],
-  ['getvalptr_7',['getValPtr',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ad1ae96f08471a3453fbd440e26443c5c',1,'NANA::NA_FINAL']]],
-  ['graph_8',['Graph',['../group__graph.html',1,'']]],
-  ['graph_20structures_9',['Graph structures',['../group___graph__basic.html',1,'']]],
-  ['graph_2ehpp_10',['graph.hpp',['../graph_8hpp.html',1,'']]],
-  ['graphcore_2ehpp_11',['graphCore.hpp',['../graph_core_8hpp.html',1,'']]]
+  ['gaussiajordan_0',['GaussiaJordan',['../class_n_a_n_a_1_1_matrix.html#a4513ca00857661356b036f9d4723a6d1a659f7779c802e6e6688d82005070997b',1,'NANA::Matrix']]],
+  ['gaussian_2ehpp_1',['gaussian.hpp',['../gaussian_8hpp.html',1,'']]],
+  ['gaussian2d_2',['Gaussian2D',['../gaussian_8hpp.html#a738c0b82ed5297887c31f62d514ad0ca',1,'NANA::MATH']]],
+  ['gengaussiankernel_3',['GenGaussianKernel',['../gaussian_8hpp.html#a5c2f3cf15453b9f28b99120172bf2764',1,'NANA::MATH']]],
+  ['geometry_20structures_4',['geometry structures',['../group__geometry__basic.html',1,'']]],
+  ['geometry_20warp_5',['geometry warp',['../group__geometrywarp.html',1,'']]],
+  ['geometrytypes_2ecpp_6',['geometrytypes.cpp',['../geometrytypes_8cpp.html',1,'']]],
+  ['geometrytypes_2ehpp_7',['geometrytypes.hpp',['../geometrytypes_8hpp.html',1,'']]],
+  ['getconstvalptr_8',['getConstValPtr',['../class_n_a_n_a_1_1_matrix.html#aea5fd796922a2435f1b02135a2dfec81',1,'NANA::Matrix']]],
+  ['getvalptr_9',['getValPtr',['../class_n_a_n_a_1_1_matrix.html#ad485083f69fb71a764e8985322b8fb3e',1,'NANA::Matrix']]],
+  ['graph_10',['Graph',['../group__graph.html',1,'']]],
+  ['graph_20structures_11',['Graph structures',['../group___graph__basic.html',1,'']]],
+  ['graph_2ehpp_12',['graph.hpp',['../graph_8hpp.html',1,'']]],
+  ['graphcore_2ehpp_13',['graphCore.hpp',['../graph_core_8hpp.html',1,'']]]
 ];

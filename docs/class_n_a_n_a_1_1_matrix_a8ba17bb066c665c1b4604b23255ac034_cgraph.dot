@@ -1,0 +1,10 @@
+digraph "NANA::Matrix::operator*"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="NANA::Matrix::operator*",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="实现矩阵的乘法"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="NANA::Matrix::fill",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#aeac2a4af02d821da6f1890f4073eac51",tooltip="用value填充Matrix的全部内容"];
+}

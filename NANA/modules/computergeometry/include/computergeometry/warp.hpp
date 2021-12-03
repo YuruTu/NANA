@@ -43,7 +43,6 @@ void warpAffinePoint(const Matrix& M,const  PointXY_<_Tp> & src, PointXY_<_Tp>&d
 	dst.x = pdata[0] * src.x + pdata[1] * src.y + pdata[2];
 	pdata += M.m_step;
 	dst.y = pdata[0] * src.x + pdata[1] * src.y + pdata[2];
-
 	return ;
 }
 

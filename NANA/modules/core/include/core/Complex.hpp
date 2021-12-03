@@ -23,7 +23,7 @@ namespace NANA{
  * @note 用于实现复数的加减乘除运算
  */
 template <typename _T>
-class Complex NA_FINAL {
+class Complex {
 public:
 	Complex():
 		re(0),

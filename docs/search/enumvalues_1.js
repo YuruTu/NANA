@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ret_5fok_0',['RET_OK',['../core__global_8h.html#a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962',1,'NANA']]]
+  ['gaussiajordan_0',['GaussiaJordan',['../class_n_a_n_a_1_1_matrix.html#a4513ca00857661356b036f9d4723a6d1a659f7779c802e6e6688d82005070997b',1,'NANA::Matrix']]]
 ];

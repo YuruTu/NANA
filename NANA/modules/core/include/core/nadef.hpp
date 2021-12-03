@@ -1,6 +1,6 @@
 #pragma once
 /**
- * @file nadef.h
+ * @file nadef.hpp
  * @date 2021/11/11 18:17
  *
  * \author yurutu
@@ -10,7 +10,7 @@
  *
  * TODO: long description
  *
- * \note
+ * @note
 */
 
 #include <vector>

@@ -1,0 +1,14 @@
+digraph "NANA::Matrix::create"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="NANA::Matrix::create",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="申请内存"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="NANA::Matrix::Matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4",tooltip="构造函数，主动申请与管理内存"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NANA::Matrix::operator=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#af8f91cc9e267b3c55d0b8e6cb80351c4",tooltip="等于时"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NANA::Matrix::setMatrixEye",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a0a5423a5d4ad70b3225216b7a6542ee4",tooltip="将当前矩阵设置为单位矩阵"];
+}

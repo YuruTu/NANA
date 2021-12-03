@@ -25,16 +25,17 @@ namespace NANA {
 //! @addtogroup core_basic
 //! @{
 
-
-/*!
+/////////////////////////////////////// Matrix ///////////////////////////////////////////
+/**
  * @brief 简单矩阵类
  */
-class NA_API Matrix NA_FINAL{
+class NA_API  Matrix {
 public:
 	/**
 	 * @brief 枚举矩阵的各种分解方法
 	 */
 	enum DecompositionMethod {
+		GaussiaJordan,///<高斯-约当消去法
 		LU,
 		QR,
 		SVD,
@@ -98,8 +99,13 @@ public:
 	 * @brief 获取值的指针
 	 * @return
 	*/
-	const NAFLOAT** getValPtr() const;
+	NAFLOAT** getValPtr() const;
 
+	/**
+	 * @brief 获取常量指针
+	 * @return 
+	*/
+	const NAFLOAT** getConstValPtr() const;
 
 
 	/**
@@ -148,7 +154,7 @@ public:
 	 * @param flag
 	 * @return
 	*/
-	Matrix inv(int flag = LU);
+	Matrix inv(int flag = GaussiaJordan);
 
 	/**
 	 * @brief 用istream的形式给矩阵赋值
@@ -165,22 +171,23 @@ public:
 	 * @return 
 	*/
 	friend NA_API std::ostream& operator<< (std::ostream& out, const Matrix& M);
-private:
+
 
 
 
 	/**
 	 * @brief	申请内存
 	 * @returns:   void
-	 * @note:
+	 * @note:  未看底层代码，不要轻易调用
 	 */
 	void create(int rows, int cols);
 
 	/**
 	 * @brief 释放已申请的内存
+	 * @note 未看底层代码，不要轻易调用
 	 */
 	void release();
-
+private:
 	/// @brief 矩阵的数据
 	NAFLOAT** m_val;
 	NAFLOAT* m_data;
