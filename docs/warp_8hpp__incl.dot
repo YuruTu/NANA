@@ -7,7 +7,7 @@ digraph "NANA/modules/computergeometry/include/computergeometry/warp.hpp"
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="core.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core_8hpp.html",tooltip="包含基本的数据结构等"];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="core/nadef.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$nadef_8hpp_source.html",tooltip=" "];
+  Node3 [label="core/nadef.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$nadef_8hpp.html",tooltip="数值分析所依赖的定义"];
   Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -19,7 +19,7 @@ digraph "NANA/modules/computergeometry/include/computergeometry/warp.hpp"
   Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node8 [label="float.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="core/Complex.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_complex_8hpp.html",tooltip="实现复数"];
+  Node9 [label="core/Complex.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_complex_8hpp.html",tooltip="实现复数及其运算"];
   Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node10 [label="core_global.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core__global_8h.html",tooltip="全局头文件"];
   Node10 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

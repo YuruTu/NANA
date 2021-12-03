@@ -2,13 +2,14 @@ var indexSectionsWithContent =
 {
   0: "bcdefghilmnopqrstwxyz~",
   1: "celmnprs",
-  2: "bcdeghlmsw",
-  3: "cdefgimoqrstwz~",
+  2: "bcdefghlmnpsw",
+  3: "cdefgimopqrstwz~",
   4: "cdefhlmwxyz",
   5: "de",
   6: "er",
   7: "o",
-  8: "bcfgm"
+  8: "n",
+  9: "bcfgm"
 };
 
 var indexSectionNames =
@@ -21,7 +22,8 @@ var indexSectionNames =
   5: "enums",
   6: "enumvalues",
   7: "related",
-  8: "groups"
+  8: "defines",
+  9: "groups"
 };
 
 var indexSectionLabels =
@@ -34,6 +36,7 @@ var indexSectionLabels =
   5: "枚举",
   6: "枚举值",
   7: "友元",
-  8: "组"
+  8: "宏定义",
+  9: "组"
 };
 

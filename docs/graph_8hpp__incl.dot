@@ -9,7 +9,7 @@ digraph "NANA/modules/graph/include/graph.hpp"
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="core.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core_8hpp.html",tooltip="包含基本的数据结构等"];
   Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="core/nadef.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$nadef_8hpp_source.html",tooltip=" "];
+  Node4 [label="core/nadef.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$nadef_8hpp.html",tooltip="数值分析所依赖的定义"];
   Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
@@ -21,7 +21,7 @@ digraph "NANA/modules/graph/include/graph.hpp"
   Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node9 [label="float.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node3 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node10 [label="core/Complex.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_complex_8hpp.html",tooltip="实现复数"];
+  Node10 [label="core/Complex.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_complex_8hpp.html",tooltip="实现复数及其运算"];
   Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node11 [label="core_global.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core__global_8h.html",tooltip="全局头文件"];
   Node11 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

@@ -12,5 +12,6 @@ digraph "NANA/modules/math" {
   dir_771f7333db182dca04d4a001ffeb2ac4 [shape=box label="src" fillcolor="white" style="filled" URL="dir_771f7333db182dca04d4a001ffeb2ac4.html"];
   }
   }
+  dir_771f7333db182dca04d4a001ffeb2ac4->dir_ae521b40900f65e001f9918ef6cf05b7 [headlabel="2", labeldistance=1.5 headhref="dir_000018_000016.html"];
   dir_ae521b40900f65e001f9918ef6cf05b7->dir_c3e203e05606b384f5fc9d03652c3ac7 [headlabel="4", labeldistance=1.5 headhref="dir_000016_000006.html"];
 }
