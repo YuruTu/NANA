@@ -101,6 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle"><div class="title">fft.h 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
@@ -120,6 +122,13 @@ fft.h 的引用(Include)关系图:</div>
 </div>
 </div>
 <p><a href="fft_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a56a249db80b4523932634b9f05d61219"><td class="memItemLeft" align="right" valign="top">void NA_API&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fft_8h.html#a56a249db80b4523932634b9f05d61219">NANA::MATH::fft</a> (NAFLOAT *p, Complex&lt; NAFLOAT &gt; *f, int n, int k)</td></tr>
+<tr class="memdesc:a56a249db80b4523932634b9f05d61219"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现快速傅里叶变换  <a href="fft_8h.html#a56a249db80b4523932634b9f05d61219">更多...</a><br /></td></tr>
+<tr class="separator:a56a249db80b4523932634b9f05d61219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p >实现傅里叶变换相关算法 </p>
 <dl class="section date"><dt>日期</dt><dd>2021/12/3 19:57</dd></dl>
@@ -127,7 +136,71 @@ fft.h 的引用(Include)关系图:</div>
 <dl class="section note"><dt>注解</dt><dd></dd></dl>
 
 <p class="definition">在文件 <a class="el" href="fft_8h_source.html">fft.h</a> 中定义.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a56a249db80b4523932634b9f05d61219" name="a56a249db80b4523932634b9f05d61219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a249db80b4523932634b9f05d61219">&#9670;&nbsp;</a></span>fft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NANA::MATH::fft </td>
+          <td>(</td>
+          <td class="paramtype">NAFLOAT *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_n_a_n_a_1_1_complex.html">Complex</a>&lt; NAFLOAT &gt; *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>实现快速傅里叶变换 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>n个采样输入数据 </td></tr>
+    <tr><td class="paramname">f</td><td>傅里叶变换结果 </td></tr>
+    <tr><td class="paramname">n</td><td>采样点数 </td></tr>
+    <tr><td class="paramname">k</td><td>n==2^k </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="fft_8cpp_source.html">fft.cpp</a> 第 <a class="el" href="fft_8cpp_source.html#l00009">9</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="fft_8h_a56a249db80b4523932634b9f05d61219_cgraph.png" border="0" usemap="#afft_8h_a56a249db80b4523932634b9f05d61219_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="fft_8h_a56a249db80b4523932634b9f05d61219_icgraph.png" border="0" usemap="#afft_8h_a56a249db80b4523932634b9f05d61219_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2

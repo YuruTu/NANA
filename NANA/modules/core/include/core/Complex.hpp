@@ -85,7 +85,7 @@ public:
 		_T w = (B.re * B.re + B.im * B.im);
 		return Complex<_T>((p-q)/w, (s-p-q)/w);
 	}
-private:
+
 	_T re, im;
 
 };

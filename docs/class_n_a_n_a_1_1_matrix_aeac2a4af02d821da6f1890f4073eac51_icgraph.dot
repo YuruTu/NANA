@@ -10,7 +10,7 @@ digraph "NANA::Matrix::fill"
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="NANA::Matrix::setMatrixEye",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a0a5423a5d4ad70b3225216b7a6542ee4",tooltip="将当前矩阵设置为单位矩阵"];
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="NANA::Matrix::QR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a521948ec0114d2e2204782b2bfd11bb0",tooltip="基于豪斯荷尔德变换实现矩阵的QR分解"];
+  Node4 [label="NANA::Matrix::QR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#aa7c0b878879e366512929f60b01b883b",tooltip="基于豪斯荷尔德变换实现矩阵的QR分解"];
   Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="NANA::Matrix::zeros",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#aca43ab15a7bcbb1b79bba0e384064194",tooltip="生成全0矩阵"];
 }

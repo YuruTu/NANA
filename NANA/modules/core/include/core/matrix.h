@@ -94,8 +94,17 @@ public:
 	 * @param Q 
 	 * @param R 
 	*/
-	static void QR(const Matrix A, Matrix& Q, Matrix& R);
+	static void QR(const Matrix & A, Matrix& Q, Matrix& R);
 
+	/**
+	 * @brief 实现奇异值分解
+	 * @param A 输入矩阵A
+	 * @param U 左奇异向量U
+	 * @param D 时对角线给出奇异值
+	 * @param V 右奇异向量V^T
+	 * @note  基于Householder变换以及变星QR算法对一般实矩阵A进行奇异值分解
+	*/
+	static void SVD(const Matrix A, Matrix& U, Matrix& D, Matrix& V);
 
 	/**
 	 * @brief 生成全0矩阵

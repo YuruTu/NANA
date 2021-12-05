@@ -100,7 +100,7 @@ void Matrix::LU(const Matrix& A, Matrix& L, Matrix& U) {
 	}
 }
 
-void Matrix::QR(const Matrix A, Matrix& Q, Matrix& R) {
+void Matrix::QR(const Matrix & A, Matrix& Q, Matrix& R) {
 	int rows = A.rows();
 	int cols = A.cols();
 	R = A;
@@ -164,6 +164,27 @@ void Matrix::QR(const Matrix A, Matrix& Q, Matrix& R) {
 		}
 	}
 }
+
+
+/**
+ * @brief 实现奇异值分解
+ * @note  基于Householder变换以及变星QR算法对一般实矩阵A进行奇异值分解
+ * step1 用豪斯荷尔德变换将A约化为双对角线矩阵
+ * step2 用变星的QR算法进行迭代，计算所有奇异值
+ * steo3 对奇异值按非递增次序进行排列
+*/
+void Matrix::SVD(const Matrix A, Matrix& U, Matrix& D, Matrix& V) {
+	int rows = A.rows();
+	int cols = A.cols();
+	int ka = std::max(rows, cols) + 1;
+	std::vector<NAFLOAT> s(ka);
+	std::vector<NAFLOAT> e(ka);
+	std::vector<NAFLOAT> w(ka);
+	//it's too difficult ,wait...
+
+
+}
+
 
 Matrix Matrix::zeros(int rows, int cols) {
 	Matrix mat(rows, cols);
