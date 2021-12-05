@@ -9,8 +9,6 @@
  *
  * @brief 简单矩阵类(效率不高，但易于理解，很多时候会触发复制构造函数)，不同于Mat
  *
- * TODO:
- *
  * @note
 */
 #include "core_global.h"
@@ -19,8 +17,6 @@
 
 
 namespace NANA {
-
-
 
 //! @addtogroup core_basic
 //! @{
@@ -184,10 +180,17 @@ public:
 
 	/**
 	 * @brief 求矩阵行列式的值
-	 * @return 
+	 * @return 行列式的值
+	 * @note   用选主元高斯消去法计算n阶方阵所对应的行列式
 	*/
 	NAFLOAT det() const;
 
+	/**
+	 * @brief 求矩阵的秩
+	 * @return 矩阵的秩
+	 * @note 用选主元高斯消去法计算矩阵的秩
+	*/
+	int rank() const;
 
 	/**
 	 * @brief 用istream的形式给矩阵赋值

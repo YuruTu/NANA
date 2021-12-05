@@ -466,12 +466,62 @@ NAFLOAT Matrix::det() const {
 				a[i][j] -= d * a[k][j];
 			}
 		}
-		
-
 	}
 	detVal *= f * a[n - 1][n-1];
 	return detVal;
+}
 
+
+int Matrix::rank() const {
+	int i, j, k, nn, is, js, cycle;
+	double q, d;
+	///拷贝一份数据，计算秩的过程，不应该改变矩阵的内容
+	Matrix A = *this;
+	double** a = A.getValPtr();
+	nn = std::min(m_rows, m_cols);
+	k = 0;
+	for (cycle = 0; cycle < nn; ++cycle) {
+		q = 0.0;
+		for (i = 1; i < m_rows; ++i) {
+			for (j = 1; j < m_cols; ++j) {
+				d = std::fabs(a[i][j]);
+				if (d > q) {
+					q = d;
+					is = i;
+					js = j;
+				}
+			}
+		}
+
+		if (q < NA_EPS)
+			return k;
+		
+		++k;
+		if (is != cycle) {
+			for (j = 1; j < m_cols; ++j) {
+				d = a[cycle][j];
+				a[cycle][j] = a[is][j];
+				a[is][j] = d;
+			}
+		}
+		if (js != cycle) {
+			for (i = 1; i < m_rows; ++i) {
+				d = a[i][js];
+				a[i][js] = a[i][cycle];
+				a[i][cycle] = d;
+			}
+		}
+		for (i = cycle + 1; i < m_rows; ++i) {
+			d = a[i][cycle] / a[cycle][cycle];
+			for (j = cycle + 1; j < m_cols; ++j) {
+				a[i][j] -= d * a[cycle][j];
+			}
+		}
+
+
+	}
+
+	return k;
 
 }
 
