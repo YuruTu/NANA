@@ -4,7 +4,7 @@
 namespace NANA {
 namespace MATH {
 
-double NA_API PolynomialEvaluation2D(const Matrix& mat, double x, double y, int n) {
+double PolynomialEvaluation2D(const Matrix& mat, double x, double y, int n) {
 	NA_Assert(n == mat.cols());
 	double ret, s, xx;
 	int m = mat.rows();
