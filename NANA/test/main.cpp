@@ -36,11 +36,9 @@ void showMatrix(const Matrix & a) {
 
 int main() {
 
-	Matrix A(4, 3);
+	Matrix A(4, 4);
 	std::cin >> A;
-	Matrix Q, R;
-	Matrix::QR(A,Q, R);
-	std::cout << "Q:\n" <<Q << "R:\n" << R;
+	std::cout << A.det();
 #if 0
 	Matrix A(4, 4);
 	std::cin >> A;

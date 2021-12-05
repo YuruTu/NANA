@@ -28,6 +28,7 @@ namespace NANA {
 /////////////////////////////////////// Matrix ///////////////////////////////////////////
 /**
  * @brief 简单矩阵类
+ * @note  允许其它地方继承
  */
 class NA_API  Matrix {
 public:
@@ -181,8 +182,11 @@ public:
 	*/
 	Matrix inv(int flag = GaussiaJordan);
 
-
-	
+	/**
+	 * @brief 求矩阵行列式的值
+	 * @return 
+	*/
+	NAFLOAT det() const;
 
 
 	/**
@@ -216,7 +220,8 @@ public:
 	 * @note 未看底层代码，不要轻易调用
 	 */
 	void release();
-private:
+
+protected:
 	/// @brief 矩阵的数据
 	NAFLOAT** m_val;
 	NAFLOAT* m_data;

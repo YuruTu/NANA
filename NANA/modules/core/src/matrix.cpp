@@ -415,6 +415,65 @@ Matrix Matrix::inv(int flag) {
 	return invMat;
 }
 
+NAFLOAT Matrix::det() const {
+	///只有方阵才能求行列式
+	NA_Assert(m_rows==m_cols);
+	double f, detVal, q, d;
+	int i, j, k, is, js;
+	int n = m_rows;
+	f = 1.0;
+	detVal = 1.0;
+	Matrix A = *this;
+	double** a = A.getValPtr();
+	for (k = 0; k < n - 1; ++k) {
+		q = 0.0;
+		for (i = k; i < n; ++i) {
+			for (j = k; j < n; ++j) {
+				d = std::fabs(a[i][j]);
+				if (d > q) {
+					q = d;
+					is = i;
+					js = j;
+				}
+			}
+		}
+
+		if (q < NA_EPS) {
+			return 0.0;
+		}
+		if (is != k) {
+			f = -f;
+			for (j = k; j < n; ++j) {
+				d = a[k][j];
+				a[k][j] = a[is][j];
+				a[is][j] = d;
+			}
+		}
+
+		if (js != k) {
+			f = -f;
+			for (i = k; i < n; ++i) {
+				d = a[i][js];
+				a[i][js] = a[i][k];
+				a[i][k] = d;
+			}
+		}
+
+		detVal *= a[k][k];
+		for (i = k + 1; i < n; ++i) {
+			d = a[i][k] / a[k][k];
+			for (j = k + 1; j < n; ++j) {
+				a[i][j] -= d * a[k][j];
+			}
+		}
+		
+
+	}
+	detVal *= f * a[n - 1][n-1];
+	return detVal;
+
+
+}
 
 std::istream& operator>>(std::istream& is, Matrix& m)
 {
