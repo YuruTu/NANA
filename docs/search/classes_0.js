@@ -5,5 +5,6 @@ var searchData=
   ['cerror_2',['CError',['../class_n_a_n_a_1_1_c_error.html',1,'NANA']]],
   ['chuffman_3',['CHuffman',['../class_n_a_n_a_1_1_c_huffman.html',1,'NANA']]],
   ['ciclist_4',['CicList',['../class_n_a_n_a_1_1_g_r_a_p_h_1_1_cic_list.html',1,'NANA::GRAPH']]],
-  ['complex_5',['Complex',['../class_n_a_n_a_1_1_complex.html',1,'NANA']]]
+  ['cmatrix_5',['CMatrix',['../class_n_a_n_a_1_1_c_matrix.html',1,'NANA']]],
+  ['complex_6',['Complex',['../class_n_a_n_a_1_1_complex.html',1,'NANA']]]
 ];

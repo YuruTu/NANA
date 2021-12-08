@@ -18,4 +18,8 @@ digraph "NANA::deleteArraySafe"
   Node6 [label="NANA::Matrix::QR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#aa7c0b878879e366512929f60b01b883b",tooltip="基于豪斯荷尔德变换实现矩阵的QR分解"];
   Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node7 [label="NANA::Matrix::~Matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#af6db31f44e0cedf29f256b35049a5d20",tooltip="矩阵的析构函数，释放申请的内存"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="NANA::CMatrix::release",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_c_matrix.html#af59878785d01056f4ce2666118ec6a37",tooltip="释放已申请的内存"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="NANA::CMatrix::~CMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_c_matrix.html#a434c26e54f3e4302e209f460c608757b",tooltip="析构"];
 }
