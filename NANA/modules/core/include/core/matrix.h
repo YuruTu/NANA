@@ -9,7 +9,7 @@
  *
  * @brief 简单矩阵类(效率不高，但易于理解，很多时候会触发复制构造函数)，不同于Mat
  *
- * @note
+ * @note  Matrix也是可以用C方法实现高效运算的，但这样一来就背离了笔者的初心:一个用于教学的SDK
 */
 #include "core_global.h"
 #include "error.h"
@@ -169,7 +169,23 @@ public:
 	 * @param B
 	 * @return C = A*B
 	 */
-	Matrix  operator* (const Matrix& M);
+	Matrix  operator* (const Matrix& B);
+
+	/**
+	 * @brief 实现矩阵的点乘
+	 * @param B 与当前矩阵行列相等的矩阵
+	 * @return 
+	*/
+	Matrix dot(const Matrix& B) const;
+
+
+
+	/**
+	 * @brief 矩阵的点乘
+	 * @param b  
+	 * @return 
+	*/
+	Matrix dot(NAFLOAT b) const;
 
 	/**
 	 * @brief 实现矩阵的求逆
@@ -181,7 +197,7 @@ public:
 	/**
 	 * @brief 求矩阵行列式的值
 	 * @return 行列式的值
-	 * @note   用选主元高斯消去法计算n阶方阵所对应的行列式
+	 * @note   用选主元高斯消去法计算n阶方阵(也只有方阵才能求行列式)所对应的行列式	
 	*/
 	NAFLOAT det() const;
 

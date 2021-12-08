@@ -307,6 +307,25 @@ Matrix Matrix::operator*(const Matrix& B) {
 	return C;
 }
 
+Matrix Matrix::dot(const Matrix& B) const {
+
+	NA_Assert((m_cols == B.m_cols)&&(m_rows==B.m_rows));
+
+	Matrix C(m_rows, m_cols);
+	for (int i = 0; i < m_rows; i++)
+		for (int j = 0; j < m_cols; j++)
+			C.m_val[i][j] = m_val[i][j] * B.m_val[i][j];
+	return C;
+}
+
+Matrix Matrix::dot(NAFLOAT b) const {
+	Matrix C(m_rows, m_cols);
+	for (int i = 0; i < m_rows; i++)
+		for (int j = 0; j < m_cols; j++)
+			C.m_val[i][j] = m_val[i][j] *b;
+	return C;
+}
+
 /**
  * @brief 使用高斯-约当消去法求矩阵的逆矩阵
  * @param src 输入矩阵
