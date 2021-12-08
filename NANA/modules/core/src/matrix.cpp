@@ -219,6 +219,7 @@ void Matrix::release()
 #endif
 	deleteArraySafe(m_data);
 	deleteArraySafe(m_val);
+	m_rows = m_cols = 0;
 }
 
 void Matrix::fill(const NAFLOAT& value)
@@ -571,6 +572,64 @@ std::ostream& operator<< (std::ostream& out, const Matrix& M) {
 	}
 	return out;
 }
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////复数矩阵开始/////////////////////////////////////////
+CMatrix::CMatrix() {
+	m_redata = nullptr;
+	m_imdata = nullptr;
+	m_reval = nullptr;
+	m_imval = nullptr;
+	m_rows = 0;
+	m_cols = 0;
+}
+
+CMatrix::~CMatrix(){
+	this->release();
+}
+
+void CMatrix::create(int rows, int cols) {
+	m_rows = rows;
+	m_cols = cols;
+	int temp = m_cols % 32;
+	if (0 == temp)
+		m_step = m_cols;
+	else
+		m_step = m_cols + 32 - temp;
+	size_t nSize = static_cast<size_t> (m_rows) * m_step;
+	///为实部申请数据
+	m_redata = new NAFLOAT[nSize];
+	m_reval = new NAFLOAT * [m_rows];
+	m_reval[0] = m_redata;
+	for (int i = 1; i < m_rows; i++)
+		m_reval[i] = m_reval[i - 1] + m_step;
+	m_imdata = new NAFLOAT[nSize];
+	m_imval = new NAFLOAT * [m_rows];
+	m_imval[0] = m_imdata;
+	for (int i = 1; i < m_rows; i++)
+		m_imval[i] = m_imval[i - 1] + m_step;
+}
+
+
+
+/**
+ * @brief 释放已申请的内存
+ * @note 未看底层代码，不要轻易调用
+ */
+void CMatrix::release() {
+	deleteArraySafe(m_redata);
+	deleteArraySafe(m_reval);
+	deleteArraySafe(m_imdata);
+	deleteArraySafe(m_imval);
+	m_rows = m_cols = 0;
+}
+
 
 
 

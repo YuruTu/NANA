@@ -53,7 +53,14 @@ void quickSort(_Tp * datas, int l, int r)
 	}
 }
 
+template<typename _Tp>
+void bubSort(_Tp* datas, int l, int r) {
+	for (int i = l; i < r; ++i) {
 
+	}
+
+
+}
 
 
 

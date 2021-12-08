@@ -97,11 +97,11 @@ public:
 	 * @brief 实现奇异值分解
 	 * @param A 输入矩阵A
 	 * @param U 左奇异向量U
-	 * @param D 时对角线给出奇异值
+	 * @param D 对角线给出奇异值
 	 * @param V 右奇异向量V^T
 	 * @note  基于Householder变换以及变星QR算法对一般实矩阵A进行奇异值分解
 	*/
-	static void SVD(const Matrix A, Matrix& U, Matrix& D, Matrix& V);
+	static void SVD(const Matrix A, Matrix& U, Matrix& D, Matrix& v );
 
 	/**
 	 * @brief 生成全0矩阵
@@ -252,6 +252,60 @@ protected:
 	/// @brief 步长
 	int m_step;
 };
+
+/**
+ * @brief 实现的稀疏矩阵
+*/
+class NA_API SparseMatrix {
+public:
+
+
+private:
+
+
+};
+
+
+///@note 
+
+/**
+ * @brief 复数矩阵
+*/
+class NA_API  CMatrix {
+public:
+	CMatrix();
+	/**
+	 * @brief 析构
+	*/
+	virtual ~CMatrix();
+
+	/**
+	 * @brief 申请内存
+	 * @param rows 
+	 * @param cols 
+	*/
+	void create(int rows, int cols);
+
+
+	/**
+	 * @brief 释放已申请的内存
+	 * @note 未看底层代码，不要轻易调用
+	 */
+	void release();
+private:
+	NAFLOAT* m_redata;///<实部数据指针
+	NAFLOAT* m_imdata;///<虚部数据指针
+	NAFLOAT** m_reval;///<实部二维指针
+	NAFLOAT** m_imval;///<虚部数据指针
+	int		m_rows;///行数
+	int     m_cols;///列数
+	int     m_step;
+
+};
+
+
+
+
 
 
 //! @} core_basic
