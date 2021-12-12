@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['warpaffinepoint_0',['warpAffinePoint',['../group__geometrywarp.html#gad59c461ba53a05b373dffe981b3497cf',1,'NANA::ComputerGeometry']]],
-  ['warpperspectivepoint2d_1',['warpPerspectivePoint2D',['../group__geometrywarp.html#gacc2db867a11e0353c405d0b5ae6f1fb6',1,'NANA::ComputerGeometry']]],
-  ['what_2',['what',['../class_n_a_n_a_1_1_exception.html#acfd4f608a5a0129acb6048f8e6ff7e7c',1,'NANA::Exception']]]
+  ['t_0',['T',['../class_n_a_n_a_1_1_matrix.html#a456b56921f6b8f7a752858c3eb664c52',1,'NANA::Matrix']]],
+  ['translate_1',['translate',['../class_n_a_n_a_1_1_g_a_1_1_gene_float.html#ad63e7704ba888786f7b0f84dc1a8e6f9',1,'NANA::GA::GeneFloat']]]
 ];

@@ -16,5 +16,7 @@ var searchData=
   ['core_13',['Core',['../group__core.html',1,'']]],
   ['core_2ehpp_14',['core.hpp',['../core_8hpp.html',1,'']]],
   ['core_5fglobal_2eh_15',['core_global.h',['../core__global_8h.html',1,'']]],
-  ['create_16',['create',['../class_n_a_n_a_1_1_matrix.html#a9143733c65d050c962bb9ea8fe03d19b',1,'NANA::Matrix::create()'],['../class_n_a_n_a_1_1_c_matrix.html#ad7e68d530b2a96bead981ba4d6e5e09b',1,'NANA::CMatrix::create()']]]
+  ['create_16',['create',['../class_n_a_n_a_1_1_matrix.html#a9143733c65d050c962bb9ea8fe03d19b',1,'NANA::Matrix::create()'],['../class_n_a_n_a_1_1_c_matrix.html#ad7e68d530b2a96bead981ba4d6e5e09b',1,'NANA::CMatrix::create()']]],
+  ['cresult_17',['CResult',['../struct_n_a_n_a_1_1_g_a_1_1_popultation_1_1_c_result.html',1,'NANA::GA::Popultation']]],
+  ['cross_18',['cross',['../class_n_a_n_a_1_1_g_a_1_1_gene_float.html#a00daab9a4cf0f7bb23408094a9c6913c',1,'NANA::GA::GeneFloat']]]
 ];

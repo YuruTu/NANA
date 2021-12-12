@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 </div><!--header-->
 <div class="contents">
 
-<p>简单矩阵类(效率不高，但易于理解，很多时候会触发复制构造函数)，不同于Mat  
+<p>1.简单矩阵类Matrix(效率不高，但易于理解，很多时候会触发复制构造函数)，不同于Mat 2.SpareMatrix 稀疏矩阵 3.CMatrix 复数矩阵  
 <a href="#details">更多...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="core__global_8h_source.html">core_global.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="error_8h_source.html">error.h</a>&quot;</code><br />
@@ -131,14 +131,14 @@ matrix.h 的引用(Include)关系图:</div>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">简单矩阵类  <a href="class_n_a_n_a_1_1_matrix.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_sparse_matrix.html">NANA::SparseMatrix</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现的稀疏矩阵  <a href="class_n_a_n_a_1_1_sparse_matrix.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">稀疏矩阵  <a href="class_n_a_n_a_1_1_sparse_matrix.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_c_matrix.html">NANA::CMatrix</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">复数矩阵  <a href="class_n_a_n_a_1_1_c_matrix.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p >简单矩阵类(效率不高，但易于理解，很多时候会触发复制构造函数)，不同于Mat </p>
+<div class="textblock"><p >1.简单矩阵类Matrix(效率不高，但易于理解，很多时候会触发复制构造函数)，不同于Mat 2.SpareMatrix 稀疏矩阵 3.CMatrix 复数矩阵 </p>
 <dl class="section date"><dt>日期</dt><dd>2021/11/17 6:03</dd></dl>
 <dl class="section author"><dt>作者</dt><dd>yurutu Contact: <a href="#" onclick="location.href='mai'+'lto:'+'707'+'10'+'155'+'7@'+'qq.'+'co'+'m'; return false;">70710<span style="display: none;">.nosp@m.</span>1557<span style="display: none;">.nosp@m.</span>@qq.c<span style="display: none;">.nosp@m.</span>om</a></dd></dl>
 <dl class="section note"><dt>注解</dt><dd>Matrix也是可以用C方法实现高效运算的，但这样一来就背离了笔者的初心:一个用于教学的SDK </dd></dl>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['fft_0',['fft',['../fft_8h.html#a56a249db80b4523932634b9f05d61219',1,'NANA::MATH']]],
-  ['fill_1',['fill',['../class_n_a_n_a_1_1_matrix.html#aeac2a4af02d821da6f1890f4073eac51',1,'NANA::Matrix']]]
+  ['exception_0',['Exception',['../class_n_a_n_a_1_1_exception.html#ae72abd7562f353293ebad2b0bcecde0a',1,'NANA::Exception::Exception()'],['../class_n_a_n_a_1_1_exception.html#a68c4ebcee21364ec0453d917f853c838',1,'NANA::Exception::Exception(int _code, const String &amp;_err, const String &amp;_func, const String &amp;_file, int _line)']]]
 ];

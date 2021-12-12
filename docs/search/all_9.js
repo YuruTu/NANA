@@ -13,5 +13,6 @@ var searchData=
   ['matrix_10',['Matrix',['../class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4',1,'NANA::Matrix::Matrix(int rows, int cols)'],['../class_n_a_n_a_1_1_matrix.html#a993ef6b3ea430956efc1febce948e766',1,'NANA::Matrix::Matrix(const Matrix &amp;M)'],['../class_n_a_n_a_1_1_matrix.html',1,'NANA::Matrix']]],
   ['matrix_2ecpp_11',['matrix.cpp',['../matrix_8cpp.html',1,'']]],
   ['matrix_2eh_12',['matrix.h',['../matrix_8h.html',1,'']]],
-  ['msg_13',['msg',['../class_n_a_n_a_1_1_exception.html#a71f359dabb13e2378d1f9beb3a55d900',1,'NANA::Exception']]]
+  ['msg_13',['msg',['../class_n_a_n_a_1_1_exception.html#a71f359dabb13e2378d1f9beb3a55d900',1,'NANA::Exception']]],
+  ['mutate_14',['mutate',['../class_n_a_n_a_1_1_g_a_1_1_gene_float.html#a3c6c244a46807c79ffc17a01b2dc55f3',1,'NANA::GA::GeneFloat']]]
 ];
