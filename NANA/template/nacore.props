@@ -10,6 +10,12 @@
     <Link>
       <AdditionalDependencies>NACore.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>md $(SolutionDir)bin\dll
+md $(SolutionDir)bin\lib
+md $(SolutionDir)bin\include
+xcopy /E/S/C/Y $(SolutionDir)modules\$(ProjectName)\include $(SolutionDir)bin\include</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

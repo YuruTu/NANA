@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{708cf563-46a7-4252-8860-b07b66f0864b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2aee248a-cdf3-4e4e-b385-3071e19debc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GA">
+      <UniqueIdentifier>{ea4e61a4-1024-413c-bd89-21836094b69f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\modules\GA\include\ga.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\GA\include\GA\gene.h">
+      <Filter>include\GA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\modules\GA\include\GA\population.h">
+      <Filter>include\GA</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\modules\GA\src\gene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\modules\GA\src\population.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

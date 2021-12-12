@@ -7,7 +7,9 @@
  * @author yurutu
  * Contact: 707101557@qq.com
  *
- * @brief 简单矩阵类(效率不高，但易于理解，很多时候会触发复制构造函数)，不同于Mat
+ * @brief 1.简单矩阵类Matrix(效率不高，但易于理解，很多时候会触发复制构造函数)，不同于Mat
+ *		  2.SpareMatrix 稀疏矩阵
+ *		  3.CMatrix    复数矩阵
  *
  * @note  Matrix也是可以用C方法实现高效运算的，但这样一来就背离了笔者的初心:一个用于教学的SDK
 */
@@ -253,8 +255,9 @@ protected:
 	int m_step;
 };
 
+///////////////////////////////////////SparseMatrix///////////////////////////////////////////
 /**
- * @brief 实现的稀疏矩阵
+ * @brief 稀疏矩阵
 */
 class NA_API SparseMatrix {
 public:
@@ -267,10 +270,10 @@ private:
 
 
 ///@note 
-
+/////////////////////////////////////// CMatrix ///////////////////////////////////////////
 /**
  * @brief 复数矩阵
-*/
+ */
 class NA_API  CMatrix {
 public:
 	CMatrix();

@@ -53,6 +53,12 @@ void quickSort(_Tp * datas, int l, int r)
 	}
 }
 
+/**
+ * @brief ц╟ещеепР
+ * @param datas 
+ * @param l 
+ * @param r 
+*/
 template<typename _Tp>
 void bubSort(_Tp* datas, int l, int r) {
 	for (int i = l; i < r; ++i) {

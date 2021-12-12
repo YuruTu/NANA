@@ -8,7 +8,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>NACored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>NACored.lib;NAGAd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />

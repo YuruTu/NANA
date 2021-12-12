@@ -8,7 +8,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
-      <AdditionalDependencies>NACore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>NACore.lib;NAGA.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />
