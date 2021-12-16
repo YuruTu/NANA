@@ -42,7 +42,7 @@ public:
 	
 
 
-private:
+protected:
 	/**
 	 * @brief 天择(从种群中选择优秀的个体，认为是存活下来的个体)
 	*/

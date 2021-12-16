@@ -23,6 +23,24 @@ static int log2(int value) {
 
 }
 
+CGeneInt::CGeneInt(int minV, int maxV):
+m_minV(minV),
+m_maxV(maxV){
+
+}
+
+void CGeneInt::initGene() {
+
+}
+int CGeneInt::translate() {
+	int result = 0;
+
+	///<todo something
+
+	return result;
+}
+
+
 GeneFloat::GeneFloat(double minV, double maxV, double eps) :
 m_minV(minV),
 m_maxV(maxV),
@@ -76,6 +94,7 @@ void GeneFloat::cross(const GeneFloat& father, const GeneFloat& mother, GeneFloa
 		child1.m_gene[i] = mother.m_gene[i];
 	}
 }
+
 
 
 }

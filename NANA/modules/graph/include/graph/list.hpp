@@ -42,7 +42,7 @@ template <typename T>
 class CicList {
 	typedef ListNode<T> Node;
 public:
-	CList()
+	CicList()
 		:_head(new Node(T()))
 	{
 		_head->_next = _head;
@@ -50,7 +50,7 @@ public:
 	}
 
 
-	virtual	~CList()
+	virtual	~CicList()
 	{
 		Node* tmp = _head->_next;
 		while (tmp != _head)

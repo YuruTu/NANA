@@ -16,9 +16,31 @@
 namespace NANA {
 namespace GA {
 /**
+ * @brief 基因表示整数 
+ */
+class NA_API CGeneInt NA_FINAL{
+public:
+
+	CGeneInt(int minV, int maxV);
+	/**
+	 * @brief 基因初始化
+	*/
+	void initGene();
+	/**
+	 * @brief 将基因转化为对应的值 
+	 */
+	int translate();
+private:
+	std::vector<bool> m_gene;///<基因序列
+	int m_minV;
+	int m_maxV;
+};
+
+
+/**
  *  基因表示浮点数
  */
-class  NA_API GeneFloat {
+class  NA_API GeneFloat NA_FINAL {
 public:
 	
 	GeneFloat(double minV, double maxV, double eps);
@@ -42,8 +64,7 @@ public:
 	 * @brief 染色体的交换
 	 * @param father 
 	 * @param mother 
-	 * @param child1 
-	 * @param child2 
+	 * @param child
 	*/
 	static void cross(const GeneFloat & father, const GeneFloat & mother , GeneFloat & child);
 
