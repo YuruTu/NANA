@@ -4,6 +4,7 @@ var searchData=
   ['na_5fassert_1',['NA_Assert',['../group__core__basic.html#ga565ebbe097427f7ac31b1fe4c512f252',1,'error.h']]],
   ['na_5feps_2',['NA_EPS',['../nadef_8hpp.html#a72a09b905caf49e9a6ef145ad8be8d7d',1,'nadef.hpp']]],
   ['na_5feulernum_3',['NA_EulerNum',['../nadef_8hpp.html#a9610d0b2a7dfd2f3faf826e3e3229809',1,'nadef.hpp']]],
-  ['na_5fpi_4',['NA_PI',['../nadef_8hpp.html#a6db6bc4ec6525f8532706a1c03527fcb',1,'nadef.hpp']]],
-  ['nadef_2ehpp_5',['nadef.hpp',['../nadef_8hpp.html',1,'']]]
+  ['na_5ffinal_4',['NA_FINAL',['../class_n_a_n_a_1_1_g_a_1_1_n_a___f_i_n_a_l.html',1,'NANA::GA']]],
+  ['na_5fpi_5',['NA_PI',['../nadef_8hpp.html#a6db6bc4ec6525f8532706a1c03527fcb',1,'nadef.hpp']]],
+  ['nadef_2ehpp_6',['nadef.hpp',['../nadef_8hpp.html',1,'']]]
 ];

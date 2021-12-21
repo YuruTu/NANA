@@ -6,9 +6,5 @@ digraph "NANA::Matrix::zeros"
   rankdir="LR";
   Node1 [label="NANA::Matrix::zeros",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="生成全0矩阵"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="NANA::Matrix::cols",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a5e7705b4d776c325b12b0599c021f607",tooltip="获取矩阵的列数"];
-  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="NANA::Matrix::fill",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#aeac2a4af02d821da6f1890f4073eac51",tooltip="用value填充Matrix的全部内容"];
-  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="NANA::Matrix::rows",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#a59af2b31be0c8625466dea7fa5a36afa",tooltip="获取矩阵的行数"];
+  Node2 [label="NANA::Matrix::fill",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_matrix.html#aeac2a4af02d821da6f1890f4073eac51",tooltip="用value填充Matrix的全部内容"];
 }
