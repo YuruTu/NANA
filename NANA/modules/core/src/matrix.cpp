@@ -18,11 +18,13 @@
 #include <iostream>
 namespace NANA {
 
-Matrix::Matrix() {
-	m_rows = 0;
-	m_cols = 0;
-	m_data = nullptr;
-	m_val = nullptr;
+Matrix::Matrix():
+m_rows(0),
+m_cols(0),
+m_step(0),
+m_data(nullptr),
+m_val(nullptr){
+
 }
 
 Matrix::Matrix(int rows, int cols)
@@ -186,6 +188,14 @@ void Matrix::SVD(const Matrix A, Matrix& U, Matrix& D, Matrix& V) {
 }
 
 
+
+
+void Matrix::solve(const Matrix& A, const Matrix& b, Matrix& x, int flag ){
+	if (DecompositionMethod::GaussiaJordan == flag) {
+		x = A.inv(DecompositionMethod::GaussiaJordan) * b;
+	}
+}
+
 Matrix Matrix::zeros(int rows, int cols) {
 	Matrix mat(rows, cols);
 	mat.fill(0.0);
@@ -333,7 +343,7 @@ Matrix Matrix::dot(NAFLOAT b) const {
  * @param dst Äæ¾ØÕó
  * @return 
 */
-static int  GaussiaJordanInv(Matrix & src,Matrix &dst) {
+static int  GaussiaJordanInv(const Matrix & src,Matrix &dst) {
 	int rows = src.rows();
 	int cols = src.cols();
 	NA_Assert(rows == cols);
@@ -425,7 +435,7 @@ static int  GaussiaJordanInv(Matrix & src,Matrix &dst) {
 }
 
 
-Matrix Matrix::inv(int flag) {
+Matrix Matrix::inv(int flag) const {
 	Matrix invMat;
 	if (GaussiaJordan == flag) {
 		GaussiaJordanInv(*this,invMat);

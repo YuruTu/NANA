@@ -95,6 +95,8 @@ public:
 	*/
 	static void QR(const Matrix & A, Matrix& Q, Matrix& R);
 
+
+
 	/**
 	 * @brief 实现奇异值分解
 	 * @param A 输入矩阵A
@@ -104,6 +106,14 @@ public:
 	 * @note  基于Householder变换以及变星QR算法对一般实矩阵A进行奇异值分解
 	*/
 	static void SVD(const Matrix A, Matrix& U, Matrix& D, Matrix& v );
+	/**
+	 * @brief 求解Ax=b的方程
+	 * @param A
+	 * @param b
+	 * @param x
+	 * @param flag
+	*/
+	static void solve(const Matrix& A, const Matrix& b, Matrix& x, int flag = DecompositionMethod::GaussiaJordan);
 
 	/**
 	 * @brief 生成全0矩阵
@@ -144,6 +154,7 @@ public:
 	 * @return
 	*/
 	Matrix& operator= (const Matrix& M);
+
 	/**
 	 * @brief 返回第row行的起始指针
 	 * @param row 
@@ -194,7 +205,7 @@ public:
 	 * @param flag
 	 * @return
 	*/
-	Matrix inv(int flag = GaussiaJordan);
+	Matrix inv(int flag = GaussiaJordan) const;
 
 	/**
 	 * @brief 求矩阵行列式的值

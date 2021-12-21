@@ -76,8 +76,6 @@ private:
 	double			  m_rate;///<为调整精度而做的修改
 	int				m_lenGene;///<基因长度
 	std::vector<bool> m_gene;///<基因序列
-
-
 };
 
 

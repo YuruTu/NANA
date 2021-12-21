@@ -39,8 +39,6 @@ static bool  CResultCmp(Popultation::CResult const& A, Popultation::CResult cons
 
 void Popultation::run(int iterNum) {
 	
-
-	int iter = 0;
 	while (0 != (iterNum--)) {
 		/// 物竞，个体凭借自己的力量获取资源，排名越靠前的个体月去的资源越多
 		for (int i = 0; i < m_groupNumber; ++i) {
@@ -58,7 +56,6 @@ void Popultation::run(int iterNum) {
 		this->choose();
 		/// 更新到下一代
 		this->update();
-
 	}
 }
 

@@ -81,7 +81,6 @@ double GeneFloat::translate() {
 void GeneFloat::mutate() {
 	int randid = rand() % m_lenGene;
 	m_gene[randid] = !m_gene[randid];///类型取反
-
 }
 
 void GeneFloat::cross(const GeneFloat& father, const GeneFloat& mother, GeneFloat& child1) {
