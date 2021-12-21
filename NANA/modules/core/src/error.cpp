@@ -7,8 +7,8 @@ namespace NANA {
 ////////////////////////////////// Exception /////////////////////////////////
 
 
-Exception::Exception() 
-{ 
+Exception::Exception()
+{
     code = 0;
     line = 0;
 }
@@ -24,8 +24,8 @@ Exception::~Exception() throw() {}
 /*!
  \return the error description and the context as a text string.
  */
-const char* Exception::what() const throw() 
-{ 
+const char* Exception::what() const throw()
+{
     return msg.c_str();
 }
 
@@ -53,16 +53,16 @@ void Exception::formatMessage()
 ////////////////////////////////// CError /////////////////////////////////
 CError* CError::instance(std::string filename)
 {
-	static CError* obj = nullptr;
-	if (nullptr == obj) {
-		obj = new CError(filename);
-	}
-	return obj;
+    static CError* obj = nullptr;
+    if (nullptr == obj) {
+        obj = new CError(filename);
+    }
+    return obj;
 }
 
 CError::CError(std::string& filename)
 {
-	m_filename = filename;
+    m_filename = filename;
 }
 //! @} core_basic
 

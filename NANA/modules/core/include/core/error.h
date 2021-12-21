@@ -63,11 +63,11 @@ public:
  */
 class  CError {
 public:
-	static CError* instance(std::string filename = "error.txt");
+    static CError* instance(std::string filename = "error.txt");
 private:
-	CError(std::string & filename);
+    CError(std::string& filename);
 
-	std::string m_filename;//记录错误的文件
+    std::string m_filename;//记录错误的文件
 
 
 };

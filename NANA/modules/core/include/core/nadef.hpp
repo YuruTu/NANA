@@ -58,21 +58,21 @@ typedef  std::string String;
  * @brief 二维数组的尺寸
  */
 template<typename _Tp>
-struct Size_{
-	Size_():
-		width(0),
-		height(0)
-	{
+struct Size_ {
+    Size_() :
+        width(0),
+        height(0)
+    {
 
-	}
+    }
 
-	Size_(_Tp _width, _Tp _height) {
-		width = _width;
-		height = _height;
-	}
+    Size_(_Tp _width, _Tp _height) {
+        width = _width;
+        height = _height;
+    }
 
-	_Tp width;///<宽度
-	_Tp height;///<高度
+    _Tp width;///<宽度
+    _Tp height;///<高度
 };
 typedef Size_<int> Size2i;
 typedef Size_<int64> Size2l;
@@ -82,14 +82,14 @@ typedef Size2i Size;
 
 /**
  * @brief 判断一个数是否是Not a number
- * @param x 
- * @return 
+ * @param x
+ * @return
 */
 template<typename _Tp>
 bool isNan(_Tp x) {
-	if (x != x)
-		return true;
-	return false;
+    if (x != x)
+        return true;
+    return false;
 }
 
 
