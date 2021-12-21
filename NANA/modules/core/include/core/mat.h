@@ -31,29 +31,29 @@ template <typename _T>
 class Mat {
 public:
 
-	/**
-	 * @brief  
-	 * @returns   
-	 * @note
-	 */
-	Mat();
+    /**
+     * @brief
+     * @returns
+     * @note
+     */
+    Mat();
 
 
-	/**
-	 * @brief  
-	 * @returns   
-	 * @param int rows
-	 * @param int cols
-	 * @note
-	 */
-	Mat(int rows, int cols);
+    /**
+     * @brief
+     * @returns
+     * @param int rows
+     * @param int cols
+     * @note
+     */
+    Mat(int rows, int cols);
 
-	/**
-	 * @brief 析构函数
-	 * @returns
-	 * @note 用于释放Mat中申请的数据
-	 */
-	virtual ~Mat();
+    /**
+     * @brief 析构函数
+     * @returns
+     * @note 用于释放Mat中申请的数据
+     */
+    virtual ~Mat();
 
 
 
@@ -64,38 +64,38 @@ public:
 private:
 
 
-	/**
-	 * @brief 内存申请
- 	 * @returns
-	 * @param[in] const int32_t rows
-	 * @param[in] const int32_t rows
-	 * @note
-	 */
-	void allocateMemory(const int32_t rows, const int32_t cols);
+    /**
+     * @brief 内存申请
+     * @returns
+     * @param[in] const int32_t rows
+     * @param[in] const int32_t rows
+     * @note
+     */
+    void allocateMemory(const int32_t rows, const int32_t cols);
 
-	///************************************
-	/// @brief:    releaseMemory 内存释放
-	/// @fullname:  NANA::Mat<_T>::releaseMemory
-	/// @access:    private 
-	/// @returns:   void
-	/// @qualifier:
-	///************************************
-	void releaseMemory();
+    ///************************************
+    /// @brief:    releaseMemory 内存释放
+    /// @fullname:  NANA::Mat<_T>::releaseMemory
+    /// @access:    private 
+    /// @returns:   void
+    /// @qualifier:
+    ///************************************
+    void releaseMemory();
 
-	///************************************
-	/// @brief:    release
-	/// @fullname:  NANA::Mat<_T>::release
-	/// @access:    private 
-	/// @returns:   void
-	/// @qualifier:
-	///************************************
-	void release();
+    ///************************************
+    /// @brief:    release
+    /// @fullname:  NANA::Mat<_T>::release
+    /// @access:    private 
+    /// @returns:   void
+    /// @qualifier:
+    ///************************************
+    void release();
 
-	char * m_data;///<指针数组
-	int m_stride;///<步长
-	int m_rows;///<行数
-	int m_cols;///<列数
-	CDataManager* m_datamanager;
+    char* m_data;///<指针数组
+    int m_stride;///<步长
+    int m_rows;///<行数
+    int m_cols;///<列数
+    CDataManager* m_datamanager;
 };
 
 

@@ -31,17 +31,17 @@ private:
 
 
 /**
- * @brief  
+ * @brief
  * @returns   void
  * @param _T * & p
  * @note
  */
 template<typename _T>
 inline void deleteSafe(_T*& p) {
-	if (nullptr == p)
-		return;
-	delete p;
-	p = nullptr;
+    if (nullptr == p)
+        return;
+    delete p;
+    p = nullptr;
 }
 
 
@@ -53,10 +53,10 @@ inline void deleteSafe(_T*& p) {
  */
 template<typename _T>
 inline void deleteArraySafe(_T*& p) {
-	if (nullptr == p)
-		return;
-	delete [] p;
-	p = nullptr;
+    if (nullptr == p)
+        return;
+    delete[] p;
+    p = nullptr;
 }
 
 
