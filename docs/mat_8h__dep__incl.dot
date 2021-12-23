@@ -9,7 +9,7 @@ digraph "NANA/modules/core/include/core/mat.h"
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="NANA/modules/GA/include\l/GA/gene.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gene_8h.html",tooltip="实现基因的运算"];
   Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="NANA/modules/GA/include\l/GA/population.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$population_8h_source.html",tooltip=" "];
+  Node4 [label="NANA/modules/GA/include\l/GA/population.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$population_8h.html",tooltip="实现种群类"];
   Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="NANA/modules/GA/include\l/ga.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ga_8hpp_source.html",tooltip=" "];
   Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

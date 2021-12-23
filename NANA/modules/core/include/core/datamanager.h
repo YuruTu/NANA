@@ -1,3 +1,4 @@
+#pragma once
 #include "core_global.h"
 /**
  * @file datamanager.h
@@ -22,10 +23,10 @@ namespace NANA {
 class CDataManager {
 public:
 
-	CDataManager();
+    CDataManager();
 
 
-	int m_refcount;///引用计数器
+    int m_refcount;///引用计数器
 
 
 

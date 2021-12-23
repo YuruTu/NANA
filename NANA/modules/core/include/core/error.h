@@ -1,5 +1,6 @@
 
 #pragma once
+#pragma once
 /**
  * @file error.h
  * @date 2021/11/11 20:54

@@ -12,6 +12,6 @@ digraph "NANA/modules/GA" {
   dir_bfbfa4704f04e15011c671f8d0703f07 [shape=box label="src" fillcolor="white" style="filled" URL="dir_bfbfa4704f04e15011c671f8d0703f07.html"];
   }
   }
-  dir_bfbfa4704f04e15011c671f8d0703f07->dir_eee36098850f0dea61ca0103caf017e2 [headlabel="1", labeldistance=1.5 headhref="dir_000015_000013.html"];
+  dir_bfbfa4704f04e15011c671f8d0703f07->dir_eee36098850f0dea61ca0103caf017e2 [headlabel="2", labeldistance=1.5 headhref="dir_000015_000013.html"];
   dir_eee36098850f0dea61ca0103caf017e2->dir_c3e203e05606b384f5fc9d03652c3ac7 [headlabel="1", labeldistance=1.5 headhref="dir_000013_000006.html"];
 }

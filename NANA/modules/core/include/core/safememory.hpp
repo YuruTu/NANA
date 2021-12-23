@@ -1,4 +1,4 @@
-
+#pragma once
 #include "core_global.h"
 /**
  * @file safememory.hpp

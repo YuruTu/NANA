@@ -66,6 +66,22 @@ void GeneFloat::initGene() {
             m_gene[i] = true;
         }
     }
+    ///<超出最大值的基因显然是不稳定的这里发生基因坍塌
+
+    int result = 0.0;
+    for (int i = 0; i < m_lenGene; ++i) {
+        if (m_gene[i])
+            result += std::pow(2, i);
+    }
+
+    int maxVal = m_maxV - m_minV;
+    while (result > maxVal) {
+        int id = rand() % m_lenGene;
+        if (m_gene[id])
+            m_gene[id] = false;
+        result-= std::pow(2, id);
+    }
+
 }
 
 double GeneFloat::translate() {

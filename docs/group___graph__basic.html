@@ -92,7 +92,8 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">类</a>  </div>
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a>  </div>
   <div class="headertitle"><div class="title">Graph structures<div class="ingroups"><a class="el" href="group__graph.html">Graph</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -104,15 +105,157 @@ Graph structures 的协作图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">NANA::GRAPH::BinTreeNode&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于递归的二叉树先序遍历(根-&gt;左-&gt;右)  <a href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_g_r_a_p_h_1_1_c_binary_tree.html">NANA::GRAPH::CBinaryTree&lt; _T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">二叉树的类  <a href="class_n_a_n_a_1_1_g_r_a_p_h_1_1_c_binary_tree.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_list_node.html">NANA::GRAPH::ListNode&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_g_r_a_p_h_1_1_cic_list.html">NANA::GRAPH::CicList&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">双向循环链表  <a href="class_n_a_n_a_1_1_g_r_a_p_h_1_1_cic_list.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_g_r_a_p_h_1_1_c_list.html">NANA::GRAPH::CList&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">普通链表，不同于循环链表  <a href="class_n_a_n_a_1_1_g_r_a_p_h_1_1_c_list.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ga22b3e100cea69cc8fdf3b7761e85ee44"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga22b3e100cea69cc8fdf3b7761e85ee44"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___graph__basic.html#ga22b3e100cea69cc8fdf3b7761e85ee44">NANA::GRAPH::PreOrder</a> (<a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">BinTreeNode</a>&lt; T &gt; *&amp;subTree, std::queue&lt; T &gt; &amp;curQueue)</td></tr>
+<tr class="memdesc:ga22b3e100cea69cc8fdf3b7761e85ee44"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于递归的中序遍历(左-&gt;根-&gt;右)  <a href="group___graph__basic.html#ga22b3e100cea69cc8fdf3b7761e85ee44">更多...</a><br /></td></tr>
+<tr class="separator:ga22b3e100cea69cc8fdf3b7761e85ee44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd0e7e9bbf407279bd8c8826c9a52f86"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gacd0e7e9bbf407279bd8c8826c9a52f86"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___graph__basic.html#gacd0e7e9bbf407279bd8c8826c9a52f86">NANA::GRAPH::InOrder</a> (<a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">BinTreeNode</a>&lt; T &gt; *&amp;subTree, std::queue&lt; T &gt; &amp;curQueue)</td></tr>
+<tr class="memdesc:gacd0e7e9bbf407279bd8c8826c9a52f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于递归的后续遍历(左-&gt;右-&gt;根)  <a href="group___graph__basic.html#gacd0e7e9bbf407279bd8c8826c9a52f86">更多...</a><br /></td></tr>
+<tr class="separator:gacd0e7e9bbf407279bd8c8826c9a52f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fb20ba900f7baf69b5c3d1a592c1d19"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga5fb20ba900f7baf69b5c3d1a592c1d19"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___graph__basic.html#ga5fb20ba900f7baf69b5c3d1a592c1d19">NANA::GRAPH::PostOrder</a> (<a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">BinTreeNode</a>&lt; T &gt; *&amp;subTree, std::queue&lt; T &gt; &amp;curQueue)</td></tr>
+<tr class="separator:ga5fb20ba900f7baf69b5c3d1a592c1d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<h2 class="groupheader">函数说明</h2>
+<a id="gacd0e7e9bbf407279bd8c8826c9a52f86" name="gacd0e7e9bbf407279bd8c8826c9a52f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd0e7e9bbf407279bd8c8826c9a52f86">&#9670;&nbsp;</a></span>InOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void NANA::GRAPH::InOrder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">BinTreeNode</a>&lt; T &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>subTree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::queue&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>curQueue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>基于递归的后续遍历(左-&gt;右-&gt;根) </p>
+
+<p class="definition">在文件 <a class="el" href="binarytree_8hpp_source.html">binarytree.hpp</a> 第 <a class="el" href="binarytree_8hpp_source.html#l00059">59</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___graph__basic_gacd0e7e9bbf407279bd8c8826c9a52f86_cgraph.png" border="0" usemap="#agroup___graph__basic_gacd0e7e9bbf407279bd8c8826c9a52f86_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___graph__basic_gacd0e7e9bbf407279bd8c8826c9a52f86_icgraph.png" border="0" usemap="#agroup___graph__basic_gacd0e7e9bbf407279bd8c8826c9a52f86_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ga5fb20ba900f7baf69b5c3d1a592c1d19" name="ga5fb20ba900f7baf69b5c3d1a592c1d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5fb20ba900f7baf69b5c3d1a592c1d19">&#9670;&nbsp;</a></span>PostOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void NANA::GRAPH::PostOrder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">BinTreeNode</a>&lt; T &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>subTree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::queue&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>curQueue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="binarytree_8hpp_source.html">binarytree.hpp</a> 第 <a class="el" href="binarytree_8hpp_source.html#l00071">71</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ga22b3e100cea69cc8fdf3b7761e85ee44" name="ga22b3e100cea69cc8fdf3b7761e85ee44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22b3e100cea69cc8fdf3b7761e85ee44">&#9670;&nbsp;</a></span>PreOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void NANA::GRAPH::PreOrder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">BinTreeNode</a>&lt; T &gt; *&amp;&#160;</td>
+          <td class="paramname"><em>subTree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::queue&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>curQueue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>基于递归的中序遍历(左-&gt;根-&gt;右) </p>
+
+<p class="definition">在文件 <a class="el" href="binarytree_8hpp_source.html">binarytree.hpp</a> 第 <a class="el" href="binarytree_8hpp_source.html#l00047">47</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___graph__basic_ga22b3e100cea69cc8fdf3b7761e85ee44_cgraph.png" border="0" usemap="#agroup___graph__basic_ga22b3e100cea69cc8fdf3b7761e85ee44_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___graph__basic_ga22b3e100cea69cc8fdf3b7761e85ee44_icgraph.png" border="0" usemap="#agroup___graph__basic_ga22b3e100cea69cc8fdf3b7761e85ee44_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

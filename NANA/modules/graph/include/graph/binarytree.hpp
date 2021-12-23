@@ -1,3 +1,4 @@
+#pragma once
 #include <core.hpp>
 /**
  * @file binarytree.hpp

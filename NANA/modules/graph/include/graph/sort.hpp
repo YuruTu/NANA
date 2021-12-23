@@ -25,45 +25,45 @@ namespace GRAPH {
  * @param[in|out] _Tp * datas Êý¾ÝÖ¸Õë
  * @param[in] int l ÅÅÐò×î×ó¶Ë
  * @param[in] int r ÅÅÐò×îºó¶Ë
- * @note 
+ * @note
  */
 template<typename _Tp>
-void quickSort(_Tp * datas, int l, int r)
+void quickSort(_Tp* datas, int l, int r)
 {
-	if (l < r)
-	{
-		int i = l, j = r;
-		_Tp temp = datas[l];
-		while (i < j)
-		{
-			while (i < j && datas[j] >= temp)
-			{
-				j--;
-			}
-			s[i] = s[j];
-			while (i < j && datas[i] <= temp)
-			{
-				i++;
-			}
-			s[j] = s[i];
-		}
-		s[i] = temp;
-		quickSort(datas, l, i - 1);
-		quickSort(datas, i + 1, r);
-	}
+    if (l < r)
+    {
+        int i = l, j = r;
+        _Tp temp = datas[l];
+        while (i < j)
+        {
+            while (i < j && datas[j] >= temp)
+            {
+                j--;
+            }
+            s[i] = s[j];
+            while (i < j && datas[i] <= temp)
+            {
+                i++;
+            }
+            s[j] = s[i];
+        }
+        s[i] = temp;
+        quickSort(datas, l, i - 1);
+        quickSort(datas, i + 1, r);
+    }
 }
 
 /**
  * @brief Ã°ÅÝÅÅÐò
- * @param datas 
- * @param l 
- * @param r 
+ * @param datas
+ * @param l
+ * @param r
 */
 template<typename _Tp>
 void bubSort(_Tp* datas, int l, int r) {
-	for (int i = l; i < r; ++i) {
+    for (int i = l; i < r; ++i) {
 
-	}
+    }
 
 
 }

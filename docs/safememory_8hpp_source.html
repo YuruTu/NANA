@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
   <div class="headertitle"><div class="title">safememory.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="safememory_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="safememory_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="core__global_8h.html">core_global.h</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
@@ -132,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="safememory_8hpp.html#a4ef1679be806b08b4ac9941cb4045adb">   55</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="safememory_8hpp.html#a4ef1679be806b08b4ac9941cb4045adb">deleteArraySafe</a>(_T*&amp; p) {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == p)</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">delete</span> [] p;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">delete</span>[] p;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    p = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>

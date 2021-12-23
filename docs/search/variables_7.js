@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['width_0',['width',['../struct_n_a_n_a_1_1_size__.html#aa49f182e510617af72801b463aef58e1',1,'NANA::Size_']]]
+  ['rightchild_0',['rightChild',['../struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html#a1d0bb1db0d81742388e7c99c8a24ec0d',1,'NANA::GRAPH::BinTreeNode']]]
 ];
