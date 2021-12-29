@@ -235,7 +235,7 @@ public:
      * @param M
      * @return
     */
-    friend NA_API std::ostream& operator<< (std::ostream& out, const Matrix& M) const;
+    friend NA_API std::ostream& operator<< (std::ostream& out, const Matrix& M);
 
 
 

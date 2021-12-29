@@ -25,7 +25,7 @@ namespace NANA {
 /**
  *@brief 用于异常抛出
  */
-class  NA_API Exception : public std::exception
+class  NA_API Exception NA_FINAL: public std::exception
 {
 public:
     /*!

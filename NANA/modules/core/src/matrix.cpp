@@ -566,7 +566,7 @@ std::istream& operator>>(std::istream& is, Matrix& m)
     return is;
 }
 
-std::ostream& operator<< (std::ostream& out, const Matrix& M) const{
+std::ostream& operator<< (std::ostream& out, const Matrix& M){
     if (M.m_cols == 0 || M.m_rows == 0) {
         out << "[empty matrix]";
     }
