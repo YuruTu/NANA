@@ -87,11 +87,13 @@
     <ClInclude Include="..\modules\math\include\math.hpp" />
     <ClInclude Include="..\modules\math\include\math\fft.h" />
     <ClInclude Include="..\modules\math\include\math\gaussian.hpp" />
+    <ClInclude Include="..\modules\math\include\math\LevenbergMarquardt.h" />
     <ClInclude Include="..\modules\math\include\math\polynomialevaluation.hpp" />
     <ClInclude Include="..\modules\math\include\math\rand.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\modules\math\src\fft.cpp" />
+    <ClCompile Include="..\modules\math\src\LevenbergMarquardt.cpp" />
     <ClCompile Include="..\modules\math\src\polynomialevaluation.cpp" />
     <ClCompile Include="..\modules\math\src\rand.cpp" />
   </ItemGroup>

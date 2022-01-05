@@ -55,6 +55,14 @@ public:
     Matrix(const Matrix& M);
 
     /**
+     * @brief 复制构造函数
+     * @param m 
+     * @param n 
+     * @param val_ 
+    */
+    Matrix(int m, int n,NAFLOAT const * val);
+
+    /**
      * @brief 矩阵的析构函数，释放申请的内存
      */
     virtual ~Matrix();
@@ -70,6 +78,25 @@ public:
      * @return
     */
     int rows() const;
+
+
+    /**
+     * @brief 获取当前矩阵的子矩阵
+     * @param i1 
+     * @param j1 
+     * @param i2 
+     * @param j2 
+     * @return 
+    */
+    Matrix getMat(int i1, int j1, int i2 = -1, int j2 = -1);
+
+    /**
+     * @brief 设置当前矩阵
+     * @param M 
+     * @param i 
+     * @param j 
+    */
+    void   setMat(const Matrix& M, int i, int j);
 
     /**
      * @brief 将当前矩阵设置为单位矩阵
@@ -105,7 +132,8 @@ public:
      * @param V 右奇异向量V^T
      * @note  基于Householder变换以及变星QR算法对一般实矩阵A进行奇异值分解
     */
-    static void SVD(const Matrix A, Matrix& U, Matrix& D, Matrix& v);
+    static void SVD( const Matrix & A, Matrix& U, Matrix& W, Matrix& v);
+
     /**
      * @brief 求解Ax=b的方程
      * @param A
