@@ -23,14 +23,31 @@ namespace ComputerGeometry {
 //! @addtogroup geometry_basic
 //! @{
 /**
- * @brief 直线
+ * @brief 2D直线
  */
 template<typename _Tp>
-struct Line_ {
-    _Tp x, y, costheta, sintheta;
+struct Line2D_ {
+    union {
+        struct {
+            _Tp x, y, dx, dy;
+        };
+        _Tp data[4];
+    };
+   
 };
 
-
+/**
+ * @brief 3D直线
+ */
+template<typename _Tp>
+struct Line3D_ {
+    union {
+        struct {
+            _Tp x, y,z, dx, dy,dz;
+        };
+        _Tp data[6];
+    };
+};
 
 /**
  * @brief 2D点集
