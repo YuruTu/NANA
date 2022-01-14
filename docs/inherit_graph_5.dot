@@ -4,5 +4,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="NANA::ComputerGeometry\l::Line_\< _Tp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html",tooltip="直线"];
+  Node0 [label="NANA::ComputerGeometry\l::Line2D_\< _Tp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_a_n_a_1_1_computer_geometry_1_1_line2_d__.html",tooltip="2D直线"];
 }

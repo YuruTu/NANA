@@ -4,5 +4,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="NANA::MatOp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_mat_op.html",tooltip=" "];
+  Node0 [label="NANA::Size_\< _Tp \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_a_n_a_1_1_size__.html",tooltip="二维数组的尺寸"];
 }

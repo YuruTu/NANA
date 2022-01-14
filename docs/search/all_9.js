@@ -16,9 +16,9 @@ var searchData=
   ['math_13',['Math',['../group__math.html',1,'']]],
   ['math_2ehpp_14',['math.hpp',['../math_8hpp.html',1,'']]],
   ['matop_15',['MatOp',['../class_n_a_n_a_1_1_mat_op.html',1,'NANA']]],
-  ['matrix_16',['Matrix',['../class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4',1,'NANA::Matrix::Matrix(int rows, int cols)'],['../class_n_a_n_a_1_1_matrix.html#a993ef6b3ea430956efc1febce948e766',1,'NANA::Matrix::Matrix(const Matrix &amp;M)'],['../class_n_a_n_a_1_1_matrix.html',1,'NANA::Matrix']]],
+  ['matrix_16',['Matrix',['../class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4',1,'NANA::Matrix::Matrix(int rows, int cols)'],['../class_n_a_n_a_1_1_matrix.html#a993ef6b3ea430956efc1febce948e766',1,'NANA::Matrix::Matrix(const Matrix &amp;M)'],['../class_n_a_n_a_1_1_matrix.html#acb1816cea6e21c28e4fb02e663d1fd0e',1,'NANA::Matrix::Matrix(int m, int n, NAFLOAT const *val)'],['../class_n_a_n_a_1_1_matrix.html',1,'NANA::Matrix']]],
   ['matrix_2ecpp_17',['matrix.cpp',['../matrix_8cpp.html',1,'']]],
   ['matrix_2eh_18',['matrix.h',['../matrix_8h.html',1,'']]],
-  ['msg_19',['msg',['../class_n_a_n_a_1_1_exception.html#a71f359dabb13e2378d1f9beb3a55d900',1,'NANA::Exception']]],
+  ['msg_19',['msg',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ad800fe286e458fa6e46b4999433092e8',1,'NANA::NA_FINAL']]],
   ['mutate_20',['mutate',['../class_n_a_n_a_1_1_g_a_1_1_n_a___f_i_n_a_l.html#a73e74dd6cc55fc2ddeb527dcf96bf6ba',1,'NANA::GA::NA_FINAL']]]
 ];

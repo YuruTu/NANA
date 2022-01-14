@@ -102,6 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
 <a href="#func-members">函数</a>  </div>
   <div class="headertitle"><div class="title">matrix.cpp 文件参考</div></div>
 </div><!--header-->
@@ -120,12 +121,21 @@ matrix.cpp 的引用(Include)关系图:</div>
 </div>
 <p><a href="matrix_8cpp_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ac89d5f8a358eb8a1abdcd0fcef134f1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8cpp.html#ac89d5f8a358eb8a1abdcd0fcef134f1a">SIGN</a>(a,  b)&#160;&#160;&#160;((b) &gt;= 0.0 ? std::fabs(a) : -std::fabs(a))</td></tr>
+<tr class="separator:ac89d5f8a358eb8a1abdcd0fcef134f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41630f833e920c1ffa34722f45a8e77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8cpp.html#ad41630f833e920c1ffa34722f45a8e77">SQR</a>(a)&#160;&#160;&#160;((sqrarg=(a)) == 0.0 ? 0.0 : sqrarg*sqrarg)</td></tr>
+<tr class="separator:ad41630f833e920c1ffa34722f45a8e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
+<tr class="memitem:a7753734f9a4746950d1bc6f70d40f69f"><td class="memItemLeft" align="right" valign="top">NAFLOAT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8cpp.html#a7753734f9a4746950d1bc6f70d40f69f">NANA::pythag</a> (NAFLOAT a, NAFLOAT b)</td></tr>
+<tr class="separator:a7753734f9a4746950d1bc6f70d40f69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a863930acc69cb2dcaec5c8998463e0b0"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8cpp.html#a863930acc69cb2dcaec5c8998463e0b0">NANA::operator&gt;&gt;</a> (std::istream &amp;is, Matrix &amp;m)</td></tr>
 <tr class="separator:a863930acc69cb2dcaec5c8998463e0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af257b21240e1aac4ded0c303f0454d21"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8cpp.html#af257b21240e1aac4ded0c303f0454d21">NANA::operator&lt;&lt;</a> (std::ostream &amp;out, const Matrix &amp;M) const</td></tr>
-<tr class="separator:af257b21240e1aac4ded0c303f0454d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff05a3b7640f9e4a8071a38affe452e2"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix_8cpp.html#aff05a3b7640f9e4a8071a38affe452e2">NANA::operator&lt;&lt;</a> (std::ostream &amp;out, const Matrix &amp;M)</td></tr>
+<tr class="separator:aff05a3b7640f9e4a8071a38affe452e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p >简单矩阵类的实现 </p>
@@ -135,9 +145,60 @@ matrix.cpp 的引用(Include)关系图:</div>
 <dl class="section note"><dt>注解</dt><dd></dd></dl>
 
 <p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 中定义.</p>
-</div><h2 class="groupheader">函数说明</h2>
-<a id="af257b21240e1aac4ded0c303f0454d21" name="af257b21240e1aac4ded0c303f0454d21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af257b21240e1aac4ded0c303f0454d21">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="ac89d5f8a358eb8a1abdcd0fcef134f1a" name="ac89d5f8a358eb8a1abdcd0fcef134f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac89d5f8a358eb8a1abdcd0fcef134f1a">&#9670;&nbsp;</a></span>SIGN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SIGN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((b) &gt;= 0.0 ? std::fabs(a) : -std::fabs(a))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00207">207</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ad41630f833e920c1ffa34722f45a8e77" name="ad41630f833e920c1ffa34722f45a8e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41630f833e920c1ffa34722f45a8e77">&#9670;&nbsp;</a></span>SQR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SQR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;((sqrarg=(a)) == 0.0 ? 0.0 : sqrarg*sqrarg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00209">209</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aff05a3b7640f9e4a8071a38affe452e2" name="aff05a3b7640f9e4a8071a38affe452e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff05a3b7640f9e4a8071a38affe452e2">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +218,7 @@ matrix.cpp 的引用(Include)关系图:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -170,7 +231,7 @@ matrix.cpp 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00569">569</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00838">838</a> 行定义.</p>
 
 </div>
 </div>
@@ -208,7 +269,37 @@ matrix.cpp 的引用(Include)关系图:</div>
 </dl>
 <dl class="section return"><dt>返回</dt><dd></dd></dl>
 
-<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00558">558</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00827">827</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7753734f9a4746950d1bc6f70d40f69f" name="a7753734f9a4746950d1bc6f70d40f69f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7753734f9a4746950d1bc6f70d40f69f">&#9670;&nbsp;</a></span>pythag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NAFLOAT NANA::pythag </td>
+          <td>(</td>
+          <td class="paramtype">NAFLOAT&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NAFLOAT&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="matrix_8cpp_source.html">matrix.cpp</a> 第 <a class="el" href="matrix_8cpp_source.html#l00210">210</a> 行定义.</p>
 
 </div>
 </div>

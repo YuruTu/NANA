@@ -10,9 +10,10 @@ var searchData=
   ['geometrytypes_2ecpp_7',['geometrytypes.cpp',['../geometrytypes_8cpp.html',1,'']]],
   ['geometrytypes_2ehpp_8',['geometrytypes.hpp',['../geometrytypes_8hpp.html',1,'']]],
   ['getconstvalptr_9',['getConstValPtr',['../class_n_a_n_a_1_1_matrix.html#aea5fd796922a2435f1b02135a2dfec81',1,'NANA::Matrix']]],
-  ['getvalptr_10',['getValPtr',['../class_n_a_n_a_1_1_matrix.html#ad485083f69fb71a764e8985322b8fb3e',1,'NANA::Matrix']]],
-  ['graph_11',['Graph',['../group__graph.html',1,'']]],
-  ['graph_20structures_12',['Graph structures',['../group___graph__basic.html',1,'']]],
-  ['graph_2ehpp_13',['graph.hpp',['../graph_8hpp.html',1,'']]],
-  ['graphcore_2ehpp_14',['graphCore.hpp',['../graph_core_8hpp.html',1,'']]]
+  ['getmat_10',['getMat',['../class_n_a_n_a_1_1_matrix.html#a554fcfa0a8a8d449c3686bffdf1f2197',1,'NANA::Matrix']]],
+  ['getvalptr_11',['getValPtr',['../class_n_a_n_a_1_1_matrix.html#ad485083f69fb71a764e8985322b8fb3e',1,'NANA::Matrix']]],
+  ['graph_12',['Graph',['../group__graph.html',1,'']]],
+  ['graph_20structures_13',['Graph structures',['../group___graph__basic.html',1,'']]],
+  ['graph_2ehpp_14',['graph.hpp',['../graph_8hpp.html',1,'']]],
+  ['graphcore_2ehpp_15',['graphCore.hpp',['../graph_core_8hpp.html',1,'']]]
 ];

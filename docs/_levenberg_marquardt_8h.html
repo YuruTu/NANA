@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>NANA: 成员列表</title>
+<title>NANA: NANA/modules/math/include/math/LevenbergMarquardt.h 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -55,8 +55,8 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
       <li><a href="modules.html"><span>模块</span></a></li>
-      <li class="current"><a href="annotated.html"><span>类</span></a></li>
-      <li><a href="files.html"><span>文件</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -77,10 +77,8 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>类列表</span></a></li>
-      <li><a href="classes.html"><span>类索引</span></a></li>
-      <li><a href="inherits.html"><span>类继承关系</span></a></li>
-      <li><a href="functions.html"><span>类成员</span></a></li>
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -99,21 +97,45 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>NANA</b></li><li class="navelem"><b>ComputerGeometry</b></li><li class="navelem"><a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">Line_</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_7c9b6f0367ec74be5e320712e0f90a45.html">NANA</a></li><li class="navelem"><a class="el" href="dir_6b55659ead8ae8e939b199224b5f3833.html">modules</a></li><li class="navelem"><a class="el" href="dir_b4523354886b5a0c83c88c960c3f222a.html">math</a></li><li class="navelem"><a class="el" href="dir_ae521b40900f65e001f9918ef6cf05b7.html">include</a></li><li class="navelem"><a class="el" href="dir_25e37a84575eb2688a125a02ece6c264.html">math</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">NANA::ComputerGeometry::Line_&lt; _Tp &gt; 成员列表</div></div>
+  <div class="summary">
+<a href="#nested-classes">类</a>  </div>
+  <div class="headertitle"><div class="title">LevenbergMarquardt.h 文件参考</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>成员的完整列表，这些成员属于 <a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">NANA::ComputerGeometry::Line_&lt; _Tp &gt;</a>,包括所有继承而来的类成员</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>costheta</b> (定义于 <a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">NANA::ComputerGeometry::Line_&lt; _Tp &gt;</a>)</td><td class="entry"><a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">NANA::ComputerGeometry::Line_&lt; _Tp &gt;</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>sintheta</b> (定义于 <a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">NANA::ComputerGeometry::Line_&lt; _Tp &gt;</a>)</td><td class="entry"><a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">NANA::ComputerGeometry::Line_&lt; _Tp &gt;</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>x</b> (定义于 <a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">NANA::ComputerGeometry::Line_&lt; _Tp &gt;</a>)</td><td class="entry"><a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">NANA::ComputerGeometry::Line_&lt; _Tp &gt;</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>y</b> (定义于 <a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">NANA::ComputerGeometry::Line_&lt; _Tp &gt;</a>)</td><td class="entry"><a class="el" href="struct_n_a_n_a_1_1_computer_geometry_1_1_line__.html">NANA::ComputerGeometry::Line_&lt; _Tp &gt;</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>实现列文伯格-马夸尔特算法  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="matrix_8h_source.html">core/matrix.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+LevenbergMarquardt.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="_levenberg_marquardt_8h__incl.png" border="0" usemap="#a_n_a_n_a_2modules_2math_2include_2math_2_levenberg_marquardt_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="_levenberg_marquardt_8h__dep__incl.png" border="0" usemap="#a_n_a_n_a_2modules_2math_2include_2math_2_levenberg_marquardt_8hdep" alt=""/></div>
+</div>
+</div>
+<p><a href="_levenberg_marquardt_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_m_a_t_h_1_1_c_levenberg_marquardt.html">NANA::MATH::CLevenbergMarquardt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >实现列文伯格-马夸尔特算法 </p>
+<dl class="section date"><dt>日期</dt><dd>2022/1/5 19:57</dd></dl>
+<dl class="section author"><dt>作者</dt><dd>yurutu Contact: <a href="#" onclick="location.href='mai'+'lto:'+'707'+'10'+'155'+'7@'+'qq.'+'co'+'m'; return false;">70710<span style="display: none;">.nosp@m.</span>1557<span style="display: none;">.nosp@m.</span>@qq.c<span style="display: none;">.nosp@m.</span>om</a></dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+
+<p class="definition">在文件 <a class="el" href="_levenberg_marquardt_8h_source.html">LevenbergMarquardt.h</a> 中定义.</p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
