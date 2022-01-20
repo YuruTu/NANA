@@ -16,7 +16,7 @@
 #include "core/graphCore.hpp"
 #include "core/matrix.h"
 #include "core/mat.h"
-
+#include "core/utility.hpp"
 
 
 

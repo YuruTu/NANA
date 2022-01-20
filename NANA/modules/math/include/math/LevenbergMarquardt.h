@@ -10,12 +10,13 @@
  * \note
 */
 #include <core/matrix.h>
+#include <core/algorithm.h>
 namespace NANA {
 namespace MATH {
 
-class NA_API CLevenbergMarquardt {
+class NA_API CLevenbergMarquardt:public Algorithm {
 public:
-
+    
 protected:
 
 

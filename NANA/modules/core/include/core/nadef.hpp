@@ -86,7 +86,7 @@ typedef Size2i Size;
  * @return
 */
 template<typename _Tp>
-bool isNan(_Tp x) {
+inline bool isNan(_Tp x) {
     if (x != x)
         return true;
     return false;

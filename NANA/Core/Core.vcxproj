@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\modules\core\include\core.hpp" />
+    <ClInclude Include="..\modules\core\include\core\algorithm.h" />
     <ClInclude Include="..\modules\core\include\core\Complex.hpp" />
     <ClInclude Include="..\modules\core\include\core\core_global.h" />
     <ClInclude Include="..\modules\core\include\core\datamanager.h" />
@@ -21,8 +22,10 @@
     <ClInclude Include="..\modules\core\include\core\matrix.h" />
     <ClInclude Include="..\modules\core\include\core\nadef.hpp" />
     <ClInclude Include="..\modules\core\include\core\safememory.hpp" />
+    <ClInclude Include="..\modules\core\include\core\utility.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\modules\core\src\algorithm.cpp" />
     <ClCompile Include="..\modules\core\src\datamanager.cpp" />
     <ClCompile Include="..\modules\core\src\error.cpp" />
     <ClCompile Include="..\modules\core\src\mat.cpp" />
