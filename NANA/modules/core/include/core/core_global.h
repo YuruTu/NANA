@@ -14,10 +14,14 @@
 */
 #include "nadef.hpp"
 
+#ifdef _WIN64///兼容windows系统与linux系统
 #ifdef NA_EXPORT
 #define NA_API __declspec(dllexport)
 #else
 #define NA_API __declspec(dllimport)
+#endif
+#else
+#define NA_API
 #endif
 
 #define NA_FINAL final

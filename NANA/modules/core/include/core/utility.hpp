@@ -6,7 +6,7 @@
  * @author yurutu
  * Contact: 707101557@qq.com
  *
- * @brief 1.实现一些基础功能
+ * @brief 1.实现参数的读写功能
  * @note  
 */
 
