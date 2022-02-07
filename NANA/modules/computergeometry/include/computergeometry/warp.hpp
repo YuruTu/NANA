@@ -13,7 +13,7 @@
  * \note
 */
 
-#include <core.hpp>
+#include <NANA\core.hpp>
 #include "geometrytypes.hpp"
 
 namespace NANA {

@@ -12,8 +12,8 @@
  * \note
 */
 
-#include "core/error.h"
-#include "core/matrix.h"
+#include "NANA\core/error.h"
+#include "NANA\core/matrix.h"
 namespace NANA {
 namespace MATH {
 /**

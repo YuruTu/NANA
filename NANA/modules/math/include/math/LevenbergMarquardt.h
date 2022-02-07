@@ -9,8 +9,8 @@
  * @brief 实现列文伯格-马夸尔特算法
  * \note
 */
-#include <core/matrix.h>
-#include <core/algorithm.h>
+#include <NANA\core/matrix.h>
+#include <NANA\core/algorithm.h>
 namespace NANA {
 namespace MATH {
 

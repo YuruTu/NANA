@@ -1,5 +1,5 @@
 #pragma once
-#include <core.hpp>
+#include <NANA\core.hpp>
 /**
  * @file gaussian.hpp
  * @date 2021/11/20 7:23
