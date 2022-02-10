@@ -19,5 +19,13 @@
     <ClInclude Include="..\modules\dnn\include\dnn.hpp">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\modules\dnn\include\dnn\bpnn.h">
+      <Filter>include\dnn</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\modules\dnn\src\bpnn.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

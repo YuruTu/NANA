@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['datamanager_2eh_0',['datamanager.h',['../datamanager_8h.html',1,'']]],
-  ['dnn_2ehpp_1',['dnn.hpp',['../dnn_8hpp.html',1,'']]]
+  ['complex_2ehpp_0',['Complex.hpp',['../_complex_8hpp.html',1,'']]],
+  ['computergeometry_2ehpp_1',['computergeometry.hpp',['../computergeometry_8hpp.html',1,'']]],
+  ['core_2ehpp_2',['core.hpp',['../core_8hpp.html',1,'']]],
+  ['core_5fglobal_2eh_3',['core_global.h',['../core__global_8h.html',1,'']]]
 ];

@@ -1,0 +1,14 @@
+digraph "NANA/modules/dnn/include" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3301d753c8d3b9ca2a0c8cbcfadf8edc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="dnn" fontname="Helvetica", fontsize="10", URL="dir_3301d753c8d3b9ca2a0c8cbcfadf8edc.html"]
+  subgraph clusterdir_0413a7bf7db9bb93c2ea1ca9019c2d56 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_0413a7bf7db9bb93c2ea1ca9019c2d56.html"];
+    dir_0413a7bf7db9bb93c2ea1ca9019c2d56 [shape=plaintext label="include"];
+  dir_b92b43e6242091e097a4c53afb3dd36a [shape=box label="dnn" fillcolor="white" style="filled" URL="dir_b92b43e6242091e097a4c53afb3dd36a.html"];
+  }
+  }
+  dir_0413a7bf7db9bb93c2ea1ca9019c2d56->dir_b92b43e6242091e097a4c53afb3dd36a [headlabel="1", labeldistance=1.5 headhref="dir_000011_000012.html"];
+}

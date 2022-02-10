@@ -1,10 +1,24 @@
 var searchData=
 [
-  ['na_5f2pi_0',['NA_2PI',['../nadef_8hpp.html#a644fe2ae2b801a7c5a053f8d37e83b65',1,'nadef.hpp']]],
-  ['na_5fassert_1',['NA_Assert',['../group__core__basic.html#ga565ebbe097427f7ac31b1fe4c512f252',1,'error.h']]],
-  ['na_5feps_2',['NA_EPS',['../nadef_8hpp.html#a72a09b905caf49e9a6ef145ad8be8d7d',1,'nadef.hpp']]],
-  ['na_5feulernum_3',['NA_EulerNum',['../nadef_8hpp.html#a9610d0b2a7dfd2f3faf826e3e3229809',1,'nadef.hpp']]],
-  ['na_5ffinal_4',['NA_FINAL',['../class_n_a_n_a_1_1_g_a_1_1_n_a___f_i_n_a_l.html',1,'NANA::GA::NA_FINAL'],['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html',1,'NANA::NA_FINAL']]],
-  ['na_5fpi_5',['NA_PI',['../nadef_8hpp.html#a6db6bc4ec6525f8532706a1c03527fcb',1,'nadef.hpp']]],
-  ['nadef_2ehpp_6',['nadef.hpp',['../nadef_8hpp.html',1,'']]]
+  ['m_5fcols_0',['m_cols',['../class_n_a_n_a_1_1_matrix.html#a5629dd234353f57153481f23c311d113',1,'NANA::Matrix']]],
+  ['m_5fgroupnumber_1',['m_groupNumber',['../class_n_a_n_a_1_1_g_a_1_1_popultation.html#a7a524f61753f1ab55f885ac9bea71a13',1,'NANA::GA::Popultation']]],
+  ['m_5flives_2',['m_lives',['../class_n_a_n_a_1_1_g_a_1_1_popultation.html#a9e7a5a0f5ca1fa205166f59b5b3e25e3',1,'NANA::GA::Popultation']]],
+  ['m_5fmembers_3',['m_members',['../class_n_a_n_a_1_1_g_a_1_1_popultation.html#ac5e54e51dc25cde18b95a0407945bc09',1,'NANA::GA::Popultation']]],
+  ['m_5fmutate_4',['m_mutate',['../class_n_a_n_a_1_1_g_a_1_1_popultation.html#a27ec961a2cd3c4b95e6ce20b11e28892',1,'NANA::GA::Popultation']]],
+  ['m_5fresult_5',['m_result',['../class_n_a_n_a_1_1_g_a_1_1_popultation.html#a93bedb21b20313eb95d4ea5e956fc243',1,'NANA::GA::Popultation']]],
+  ['m_5froot_6',['m_root',['../class_n_a_n_a_1_1_g_r_a_p_h_1_1_c_binary_tree.html#a0c87291bb41c87dbe9cf3887aca19c51',1,'NANA::GRAPH::CBinaryTree']]],
+  ['m_5frows_7',['m_rows',['../class_n_a_n_a_1_1_matrix.html#a53dab414488a1f13e95a212fead4936b',1,'NANA::Matrix']]],
+  ['m_5fstep_8',['m_step',['../class_n_a_n_a_1_1_matrix.html#ae86429e06b30ce0044f850d3c7205c55',1,'NANA::Matrix']]],
+  ['m_5fval_9',['m_val',['../class_n_a_n_a_1_1_matrix.html#a2bcfb03796e36c30d9e24078f796467a',1,'NANA::Matrix']]],
+  ['mat_10',['Mat',['../class_n_a_n_a_1_1_mat.html#ab9020e46287396ad53f551cbb24d7154',1,'NANA::Mat::Mat()'],['../class_n_a_n_a_1_1_mat.html#ae2e5019301aa7ef03d493e28a5e874ee',1,'NANA::Mat::Mat(int rows, int cols)'],['../class_n_a_n_a_1_1_mat.html',1,'NANA::Mat&lt; _T &gt;']]],
+  ['mat_2ecpp_11',['mat.cpp',['../mat_8cpp.html',1,'']]],
+  ['mat_2eh_12',['mat.h',['../mat_8h.html',1,'']]],
+  ['math_13',['Math',['../group__math.html',1,'']]],
+  ['math_2ehpp_14',['math.hpp',['../math_8hpp.html',1,'']]],
+  ['matop_15',['MatOp',['../class_n_a_n_a_1_1_mat_op.html',1,'NANA']]],
+  ['matrix_16',['Matrix',['../class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4',1,'NANA::Matrix::Matrix(int rows, int cols)'],['../class_n_a_n_a_1_1_matrix.html#a993ef6b3ea430956efc1febce948e766',1,'NANA::Matrix::Matrix(const Matrix &amp;M)'],['../class_n_a_n_a_1_1_matrix.html#acb1816cea6e21c28e4fb02e663d1fd0e',1,'NANA::Matrix::Matrix(int m, int n, NAFLOAT const *val)'],['../class_n_a_n_a_1_1_matrix.html',1,'NANA::Matrix']]],
+  ['matrix_2ecpp_17',['matrix.cpp',['../matrix_8cpp.html',1,'']]],
+  ['matrix_2eh_18',['matrix.h',['../matrix_8h.html',1,'']]],
+  ['msg_19',['msg',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ad800fe286e458fa6e46b4999433092e8',1,'NANA::NA_FINAL']]],
+  ['mutate_20',['mutate',['../class_n_a_n_a_1_1_g_a_1_1_n_a___f_i_n_a_l.html#a73e74dd6cc55fc2ddeb527dcf96bf6ba',1,'NANA::GA::NA_FINAL']]]
 ];

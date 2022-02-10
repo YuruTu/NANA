@@ -11,7 +11,7 @@
 */
 
 
-#include <core.hpp>
+#include <NANA/core.hpp>
 #include <vector>
 namespace NANA {
 namespace GA {

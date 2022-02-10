@@ -4,5 +4,5 @@ digraph "类继承关系图"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="NANA::GRAPH::CBinaryTree\l\< _T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_a_n_a_1_1_g_r_a_p_h_1_1_c_binary_tree.html",tooltip="二叉树的类"];
+  Node0 [label="NANA::GRAPH::BinTreeNode\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html",tooltip="基于递归的二叉树先序遍历(根->左->右)"];
 }

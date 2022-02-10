@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bintreenode_0',['BinTreeNode',['../struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html',1,'NANA::GRAPH']]]
+  ['algorithm_0',['Algorithm',['../class_n_a_n_a_1_1_algorithm.html',1,'NANA']]]
 ];

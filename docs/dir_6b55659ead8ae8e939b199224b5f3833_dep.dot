@@ -15,8 +15,5 @@ digraph "NANA/modules" {
   dir_b4523354886b5a0c83c88c960c3f222a [shape=box label="math" fillcolor="white" style="filled" color="red" URL="dir_b4523354886b5a0c83c88c960c3f222a.html"];
   }
   }
-  dir_33c137a055f180a488eaf5b0b4e3c87c->dir_c3e203e05606b384f5fc9d03652c3ac7 [headlabel="1", labeldistance=1.5 headhref="dir_000016_000006.html"];
-  dir_59adbde5762d97ad75527641e5709f5d->dir_c3e203e05606b384f5fc9d03652c3ac7 [headlabel="1", labeldistance=1.5 headhref="dir_000012_000006.html"];
-  dir_a0034a2e1eb347b72447d7288fcbeb40->dir_c3e203e05606b384f5fc9d03652c3ac7 [headlabel="1", labeldistance=1.5 headhref="dir_000002_000006.html"];
-  dir_b4523354886b5a0c83c88c960c3f222a->dir_c3e203e05606b384f5fc9d03652c3ac7 [headlabel="6", labeldistance=1.5 headhref="dir_000019_000006.html"];
+  dir_33c137a055f180a488eaf5b0b4e3c87c->dir_c3e203e05606b384f5fc9d03652c3ac7 [headlabel="1", labeldistance=1.5 headhref="dir_000018_000006.html"];
 }

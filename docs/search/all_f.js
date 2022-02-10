@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['safememory_2ehpp_0',['safememory.hpp',['../safememory_8hpp.html',1,'']]],
-  ['setmat_1',['setMat',['../class_n_a_n_a_1_1_matrix.html#ac0780a423fa8b1499134316ebd0b759a',1,'NANA::Matrix']]],
-  ['setmatrixeye_2',['setMatrixEye',['../class_n_a_n_a_1_1_matrix.html#a0a5423a5d4ad70b3225216b7a6542ee4',1,'NANA::Matrix']]],
-  ['size_5f_3',['Size_',['../struct_n_a_n_a_1_1_size__.html',1,'NANA']]],
-  ['solve_4',['solve',['../class_n_a_n_a_1_1_matrix.html#a90d7e956408c7f30caf1e3dc0a3ba40c',1,'NANA::Matrix']]],
-  ['sort_2ehpp_5',['sort.hpp',['../sort_8hpp.html',1,'']]],
-  ['sparsematrix_6',['SparseMatrix',['../class_n_a_n_a_1_1_sparse_matrix.html',1,'NANA']]],
-  ['svd_7',['SVD',['../class_n_a_n_a_1_1_matrix.html#a0ad2011a8b49e7e7a911b82bea7dd270',1,'NANA::Matrix']]]
+  ['rank_0',['rank',['../class_n_a_n_a_1_1_matrix.html#a88be45600d7dd39bd348a51a756e7e37',1,'NANA::Matrix']]],
+  ['read_1',['read',['../class_n_a_n_a_1_1_algorithm.html#af8e11a0d50ce02469a3dea5c9ca96058',1,'NANA::Algorithm']]],
+  ['rect_5f_2',['Rect_',['../struct_n_a_n_a_1_1_computer_geometry_1_1_rect__.html',1,'NANA::ComputerGeometry']]],
+  ['release_3',['release',['../class_n_a_n_a_1_1_matrix.html#af89b2a36817707cc891210384ac59f98',1,'NANA::Matrix::release()'],['../class_n_a_n_a_1_1_c_matrix.html#af59878785d01056f4ce2666118ec6a37',1,'NANA::CMatrix::release()']]],
+  ['ret_5fok_4',['RET_OK',['../core__global_8h.html#a1e797be0531b8bba36892f4625887338af8e5b5c613eb2a7a4dcb60b6f356b962',1,'NANA']]],
+  ['rightchild_5',['rightChild',['../struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html#a1d0bb1db0d81742388e7c99c8a24ec0d',1,'NANA::GRAPH::BinTreeNode']]],
+  ['rows_6',['rows',['../class_n_a_n_a_1_1_matrix.html#a59af2b31be0c8625466dea7fa5a36afa',1,'NANA::Matrix']]],
+  ['run_7',['run',['../class_n_a_n_a_1_1_g_a_1_1_popultation.html#aca15b65560d0bbc5ddc04b394581dc02',1,'NANA::GA::Popultation']]]
 ];

@@ -45,4 +45,11 @@ digraph "NANA/modules/core/include/core.hpp"
   Node16 [label="safememory.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$safememory_8hpp.html",tooltip="实现安全的内存管理"];
   Node16 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node16 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="core/utility.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utility_8hpp.html",tooltip="1.实现参数的读写功能"];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="core/algorithm.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$algorithm_8h.html",tooltip="1.实现基类Algorithm"];
+  Node18 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

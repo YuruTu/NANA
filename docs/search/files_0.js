@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['binarytree_2ehpp_0',['binarytree.hpp',['../binarytree_8hpp.html',1,'']]]
+  ['algorithm_2eh_0',['algorithm.h',['../algorithm_8h.html',1,'']]]
 ];

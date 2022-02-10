@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['edge_0',['Edge',['../class_n_a_n_a_1_1_g_r_a_p_h_1_1_edge.html',1,'NANA::GRAPH']]],
-  ['err_1',['err',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a8c4569276800aefa0f4a5d85809484b9',1,'NANA::NA_FINAL']]],
-  ['err_5fassert_2',['ERR_ASSERT',['../core__global_8h.html#a1e797be0531b8bba36892f4625887338a580945f3e482c601dd9b9d516c838bb9',1,'NANA']]],
-  ['err_5fparam_3',['ERR_PARAM',['../core__global_8h.html#a1e797be0531b8bba36892f4625887338adc52dfb7d8eb7ede6c04c16aa8ab0f8a',1,'NANA']]],
-  ['err_5fruntime_4',['ERR_RUNTIME',['../core__global_8h.html#a1e797be0531b8bba36892f4625887338ae643f23c9632d1e6d47255460398f27b',1,'NANA']]],
-  ['error_5',['Error',['../core__global_8h.html#a1e797be0531b8bba36892f4625887338',1,'NANA']]],
-  ['error_2eh_6',['error.h',['../error_8h.html',1,'']]],
-  ['exception_7',['Exception',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#afe3f70bb7a75be93ea7e4ff999b7d21f',1,'NANA::NA_FINAL::Exception()'],['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a26fa784320912abcbec31a9f6f716d20',1,'NANA::NA_FINAL::Exception(int _code, const String &amp;_err, const String &amp;_func, const String &amp;_file, int _line)']]]
+  ['data_0',['data',['../struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#ac4e4f7b9d56d8287c56f6961201b4402',1,'NANA::ComputerGeometry::PointXYZ_::data()'],['../struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html#abf50c7945393b5708ad1e4e26a082669',1,'NANA::GRAPH::BinTreeNode::data()']]],
+  ['datamanager_2eh_1',['datamanager.h',['../datamanager_8h.html',1,'']]],
+  ['decompositionmethod_2',['DecompositionMethod',['../class_n_a_n_a_1_1_matrix.html#a4513ca00857661356b036f9d4723a6d1',1,'NANA::Matrix']]],
+  ['deletearraysafe_3',['deleteArraySafe',['../safememory_8hpp.html#a4ef1679be806b08b4ac9941cb4045adb',1,'NANA']]],
+  ['deletesafe_4',['deleteSafe',['../safememory_8hpp.html#ac807886262e6875d857690a1fb778cfc',1,'NANA']]],
+  ['det_5',['det',['../class_n_a_n_a_1_1_matrix.html#abc38a025de0550a8d856fecf1e19910e',1,'NANA::Matrix']]],
+  ['dnn_2ehpp_6',['dnn.hpp',['../dnn_8hpp.html',1,'']]],
+  ['dot_7',['dot',['../class_n_a_n_a_1_1_matrix.html#a7b285f4e128e3a3de82c05aba5bfdfbf',1,'NANA::Matrix::dot(const Matrix &amp;B) const'],['../class_n_a_n_a_1_1_matrix.html#a388021d97ed7ab0e675f415a7aa524b5',1,'NANA::Matrix::dot(NAFLOAT b) const']]]
 ];

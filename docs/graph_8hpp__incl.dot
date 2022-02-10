@@ -49,10 +49,17 @@ digraph "NANA/modules/graph/include/graph.hpp"
   Node18 [label="safememory.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$safememory_8hpp.html",tooltip="实现安全的内存管理"];
   Node18 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node18 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node19 [label="queue",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
-  Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node20 [label="graph/huffman.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$huffman_8hpp.html",tooltip="实现霍夫曼编码和解码"];
-  Node1 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node21 [label="graph/list.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8hpp.html",tooltip="实现双向链表类"];
+  Node3 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="core/utility.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$utility_8hpp.html",tooltip="1.实现参数的读写功能"];
+  Node3 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="core/algorithm.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$algorithm_8h.html",tooltip="1.实现基类Algorithm"];
+  Node20 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="queue",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="graph/huffman.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$huffman_8hpp.html",tooltip="实现霍夫曼编码和解码"];
+  Node1 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="graph/list.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8hpp.html",tooltip="实现双向链表类"];
 }

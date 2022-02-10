@@ -17,7 +17,7 @@
 #include "core/matrix.h"
 #include "core/mat.h"
 #include "core/utility.hpp"
-
+#include "core/algorithm.h"
 
 
 

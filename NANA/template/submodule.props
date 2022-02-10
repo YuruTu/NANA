@@ -12,8 +12,8 @@ xcopy /Y $(SolutionDir)$(Platform)\$(Configuration)\*.lib $(SolutionDir)bin\lib<
     <PreBuildEvent>
       <Command>md $(SolutionDir)bin\dll
 md $(SolutionDir)bin\lib
-md $(SolutionDir)bin\NANA\include
-xcopy /E/S/C/Y $(SolutionDir)modules\$(ProjectName)\include $(SolutionDir)bin\NANA\include</Command>
+md $(SolutionDir)bin\include\NANA
+xcopy /E/S/C/Y $(SolutionDir)modules\$(ProjectName)\include $(SolutionDir)bin\include\NANA</Command>
     </PreBuildEvent>
     <ClCompile>
       <PreprocessorDefinitions>_UNICODE;UNICODE;NA_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
