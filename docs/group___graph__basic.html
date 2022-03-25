@@ -106,7 +106,7 @@ Graph structures 的协作图:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 类</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">NANA::GRAPH::BinTreeNode&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于递归的二叉树先序遍历(根-&gt;左-&gt;右)  <a href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html#details">更多...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">二叉树的节点  <a href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html#details">更多...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_n_a_n_a_1_1_g_r_a_p_h_1_1_c_binary_tree.html">NANA::GRAPH::CBinaryTree&lt; _T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">二叉树的类  <a href="class_n_a_n_a_1_1_g_r_a_p_h_1_1_c_binary_tree.html#details">更多...</a><br /></td></tr>
@@ -124,7 +124,7 @@ Graph structures 的协作图:</div>
 函数</h2></td></tr>
 <tr class="memitem:ga22b3e100cea69cc8fdf3b7761e85ee44"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga22b3e100cea69cc8fdf3b7761e85ee44"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___graph__basic.html#ga22b3e100cea69cc8fdf3b7761e85ee44">NANA::GRAPH::PreOrder</a> (<a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">BinTreeNode</a>&lt; T &gt; *&amp;subTree, std::queue&lt; T &gt; &amp;curQueue)</td></tr>
-<tr class="memdesc:ga22b3e100cea69cc8fdf3b7761e85ee44"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于递归的中序遍历(左-&gt;根-&gt;右)  <a href="group___graph__basic.html#ga22b3e100cea69cc8fdf3b7761e85ee44">更多...</a><br /></td></tr>
+<tr class="memdesc:ga22b3e100cea69cc8fdf3b7761e85ee44"><td class="mdescLeft">&#160;</td><td class="mdescRight">基于递归的二叉树先序遍历(根-&gt;左-&gt;右)  <a href="group___graph__basic.html#ga22b3e100cea69cc8fdf3b7761e85ee44">更多...</a><br /></td></tr>
 <tr class="separator:ga22b3e100cea69cc8fdf3b7761e85ee44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacd0e7e9bbf407279bd8c8826c9a52f86"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gacd0e7e9bbf407279bd8c8826c9a52f86"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___graph__basic.html#gacd0e7e9bbf407279bd8c8826c9a52f86">NANA::GRAPH::InOrder</a> (<a class="el" href="struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html">BinTreeNode</a>&lt; T &gt; *&amp;subTree, std::queue&lt; T &gt; &amp;curQueue)</td></tr>
@@ -166,7 +166,7 @@ template&lt;typename T &gt; </div>
 
 <p>基于递归的后续遍历(左-&gt;右-&gt;根) </p>
 
-<p class="definition">在文件 <a class="el" href="binarytree_8hpp_source.html">binarytree.hpp</a> 第 <a class="el" href="binarytree_8hpp_source.html#l00059">59</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="binarytree_8hpp_source.html">binarytree.hpp</a> 第 <a class="el" href="binarytree_8hpp_source.html#l00066">66</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -208,7 +208,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="binarytree_8hpp_source.html">binarytree.hpp</a> 第 <a class="el" href="binarytree_8hpp_source.html#l00071">71</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="binarytree_8hpp_source.html">binarytree.hpp</a> 第 <a class="el" href="binarytree_8hpp_source.html#l00078">78</a> 行定义.</p>
 
 </div>
 </div>
@@ -240,9 +240,18 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>基于递归的中序遍历(左-&gt;根-&gt;右) </p>
+<p>基于递归的二叉树先序遍历(根-&gt;左-&gt;右) </p>
+<dl class="section return"><dt>返回</dt><dd>void </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">BinTreeNode&lt;T&gt;</td><td>* &amp; subTree </td></tr>
+    <tr><td class="paramname">std::queue&lt;T&gt;</td><td>&amp; curQueue </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>基于递归的中序遍历(左-&gt;根-&gt;右) </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="binarytree_8hpp_source.html">binarytree.hpp</a> 第 <a class="el" href="binarytree_8hpp_source.html#l00047">47</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="binarytree_8hpp_source.html">binarytree.hpp</a> 第 <a class="el" href="binarytree_8hpp_source.html#l00054">54</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">

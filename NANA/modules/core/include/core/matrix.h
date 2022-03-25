@@ -300,7 +300,7 @@ protected:
 */
 class NA_API SparseMatrix {
 public:
-
+    SparseMatrix();
 
 private:
 

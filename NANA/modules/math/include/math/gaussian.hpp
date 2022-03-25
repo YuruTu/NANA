@@ -1,5 +1,4 @@
 #pragma once
-#include <NANA\core.hpp>
 /**
  * @file gaussian.hpp
  * @date 2021/11/20 7:23
@@ -14,6 +13,8 @@
  *		2.生成高斯随机数
  * \note
 */
+#include <NANA\core.hpp>
+
 
 
 namespace NANA {

@@ -30,14 +30,14 @@ public:
      * @param paramFile 
      * @return 
     */
-    virtual int read(std::string const& paramFile);
+    virtual int Read(std::string const& paramFile);
 
     /**
      * @brief ±£´æ²ÎÊı
      * @param paramFile 
      * @return 
     */
-    virtual int save(std::string const& paramFile);
+    virtual int Save(std::string const& paramFile);
 
 
 

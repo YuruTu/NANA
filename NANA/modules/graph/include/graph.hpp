@@ -16,6 +16,7 @@
 #include "graph/binarytree.hpp"
 #include "graph/huffman.hpp"
 #include "graph/list.hpp"
+#include "graph/sort.hpp"
 /**
 @defgroup graph Graph
 @{

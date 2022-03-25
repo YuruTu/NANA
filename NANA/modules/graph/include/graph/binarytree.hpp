@@ -42,7 +42,14 @@ struct BinTreeNode
     }
 };
 
-///<基于递归的二叉树先序遍历(根->左->右)
+
+/**
+ * @brief  基于递归的二叉树先序遍历(根->左->右)
+ * @returns   void
+ * @param BinTreeNode<T> * & subTree
+ * @param std::queue<T> & curQueue
+ * @note
+ */
 template<typename T>
 void PreOrder(BinTreeNode<T>*& subTree,std::queue<T> & curQueue)
 {
@@ -93,6 +100,11 @@ public:
 
     }
 
+    /**
+     * @brief   当前树是否维空
+     * @returns   bool
+     * @note
+     */
     bool empty() {
         if (nullptr == m_root)
             return true;

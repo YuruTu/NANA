@@ -98,6 +98,26 @@ struct Rect_ {
     _Tp x, y, w, h;
 };
 
+/*!
+ * \class  Palne_ 
+ *
+ * \brief 自定义平面类
+ *
+ * \author yurutu
+ * \date 2022/03/25
+ */
+template<typename _Tp>
+struct Palne_ {
+    union {
+        struct {
+            _Tp a;///<
+            _Tp b;///<
+            _Tp c;///<
+            _Tp d;
+        };
+        _Tp data[4];///<数据部分
+    };
+};
 
 //! @} geometry_basic
 

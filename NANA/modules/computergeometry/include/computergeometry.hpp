@@ -21,8 +21,8 @@
 /**
 @defgroup computer_geometry ComputerGeometry
 @{
-	@defgroup geometry_basic geometry structures
-	@defgroup geometrywarp   geometry warp
+    @defgroup geometry_basic geometry structures
+    @defgroup geometrywarp   geometry warp
 @}
 
 

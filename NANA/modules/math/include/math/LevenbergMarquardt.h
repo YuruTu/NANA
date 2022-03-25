@@ -16,7 +16,8 @@ namespace MATH {
 
 class NA_API CLevenbergMarquardt:public Algorithm {
 public:
-    
+    CLevenbergMarquardt();
+
 protected:
 
 

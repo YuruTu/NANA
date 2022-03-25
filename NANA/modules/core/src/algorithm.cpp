@@ -14,12 +14,12 @@ Algorithm::~Algorithm()
 {
 }
 
-int Algorithm::read(std::string const& paramFile)
+int Algorithm::Read(std::string const& paramFile)
 {
     return 0;
 }
 
-int Algorithm::save(std::string const& paramFile)
+int Algorithm::Save(std::string const& paramFile)
 {
     return 0;
 }

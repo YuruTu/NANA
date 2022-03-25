@@ -1,5 +1,3 @@
-
-#pragma once
 #pragma once
 /**
  * @file error.h

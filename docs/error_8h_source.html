@@ -104,57 +104,55 @@ var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
   <div class="headertitle"><div class="title">error.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="error_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="core__global_8h.html">core_global.h</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;vcruntime_exception.h&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>NANA {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html">   28</a></span><span class="keyword">class  </span><a class="code hl_define" href="core__global_8h.html#a66cbc0b7db2517826e88c1abc4a60d0c">NA_API</a> Exception <a class="code hl_class" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html">NA_FINAL</a>: <span class="keyword">public</span> std::exception</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#afe3f70bb7a75be93ea7e4ff999b7d21f">   34</a></span>    <a class="code hl_function" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#afe3f70bb7a75be93ea7e4ff999b7d21f">Exception</a>();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a26fa784320912abcbec31a9f6f716d20">   39</a></span>    <a class="code hl_function" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a26fa784320912abcbec31a9f6f716d20">Exception</a>(<span class="keywordtype">int</span> _code, <span class="keyword">const</span> String&amp; _err, <span class="keyword">const</span> String&amp; _func, <span class="keyword">const</span> String&amp; _file, <span class="keywordtype">int</span> _line);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">virtual</span> ~Exception() throw();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a2a635c5c23a6beef64307241741fd029">   45</a></span>    virtual const <span class="keywordtype">char</span>* what() const throw();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> formatMessage();</div>
+<a href="error_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="core__global_8h.html">core_global.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;vcruntime_exception.h&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span>NANA {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html">   26</a></span><span class="keyword">class  </span><a class="code hl_define" href="core__global_8h.html#a66cbc0b7db2517826e88c1abc4a60d0c">NA_API</a> Exception <a class="code hl_class" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html">NA_FINAL</a>: <span class="keyword">public</span> std::exception</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#afe3f70bb7a75be93ea7e4ff999b7d21f">   32</a></span>    <a class="code hl_function" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#afe3f70bb7a75be93ea7e4ff999b7d21f">Exception</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a26fa784320912abcbec31a9f6f716d20">   37</a></span>    <a class="code hl_function" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a26fa784320912abcbec31a9f6f716d20">Exception</a>(<span class="keywordtype">int</span> _code, <span class="keyword">const</span> String&amp; _err, <span class="keyword">const</span> String&amp; _func, <span class="keyword">const</span> String&amp; _file, <span class="keywordtype">int</span> _line);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">virtual</span> ~Exception() throw();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a2a635c5c23a6beef64307241741fd029">   43</a></span>    virtual const <span class="keywordtype">char</span>* what() const throw();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> formatMessage();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ad800fe286e458fa6e46b4999433092e8">   46</a></span>    String msg; </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ad800fe286e458fa6e46b4999433092e8">   48</a></span>    String msg; </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#aa56991c0fc7043e62050f2862efd6f67">   50</a></span>    <span class="keywordtype">int</span> code; </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a8c4569276800aefa0f4a5d85809484b9">   51</a></span>    String err; </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#af484b46443d4252a446945ce5e662c82">   52</a></span>    String func; </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ab1fa724dc6bd6dc666aae0be1d679474">   53</a></span>    String file; </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#abc634d54dc5acf6a8cd88a8ec476f21a">   54</a></span>    <span class="keywordtype">int</span> line; </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="group__core__basic.html#ga565ebbe097427f7ac31b1fe4c512f252">   58</a></span><span class="preprocessor">#define NA_Assert( expr ) do { if(!!(expr)) ; else throw NANA::Exception( NANA::Error::ERR_ASSERT, #expr, __FUNCTION__, __FILE__, __LINE__ ); } while(0);</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#aa56991c0fc7043e62050f2862efd6f67">   48</a></span>    <span class="keywordtype">int</span> code; </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a8c4569276800aefa0f4a5d85809484b9">   49</a></span>    String err; </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#af484b46443d4252a446945ce5e662c82">   50</a></span>    String func; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ab1fa724dc6bd6dc666aae0be1d679474">   51</a></span>    String file; </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#abc634d54dc5acf6a8cd88a8ec476f21a">   52</a></span>    <span class="keywordtype">int</span> line; </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group__core__basic.html#ga565ebbe097427f7ac31b1fe4c512f252">   56</a></span><span class="preprocessor">#define NA_Assert( expr ) do { if(!!(expr)) ; else throw NANA::Exception( NANA::Error::ERR_ASSERT, #expr, __FUNCTION__, __FILE__, __LINE__ ); } while(0);</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_c_error.html">   65</a></span><span class="keyword">class  </span><a class="code hl_class" href="class_n_a_n_a_1_1_c_error.html">CError</a> {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_n_a_n_a_1_1_c_error.html">CError</a>* instance(std::string filename = <span class="stringliteral">&quot;error.txt&quot;</span>);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_class" href="class_n_a_n_a_1_1_c_error.html">CError</a>(std::string&amp; filename);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_n_a_n_a_1_1_c_error.html">   63</a></span><span class="keyword">class  </span><a class="code hl_class" href="class_n_a_n_a_1_1_c_error.html">CError</a> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_n_a_n_a_1_1_c_error.html">CError</a>* instance(std::string filename = <span class="stringliteral">&quot;error.txt&quot;</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_class" href="class_n_a_n_a_1_1_c_error.html">CError</a>(std::string&amp; filename);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    std::string m_filename;<span class="comment">//记录错误的文件</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    std::string m_filename;<span class="comment">//记录错误的文件</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="ttc" id="aclass_n_a_n_a_1_1_c_error_html"><div class="ttname"><a href="class_n_a_n_a_1_1_c_error.html">NANA::CError</a></div><div class="ttdef"><b>Definition:</b> <a href="error_8h_source.html#l00065">error.h:65</a></div></div>
-<div class="ttc" id="aclass_n_a_n_a_1_1_n_a___f_i_n_a_l_html"><div class="ttname"><a href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html">NANA::NA_FINAL</a></div><div class="ttdoc">用于异常抛出</div><div class="ttdef"><b>Definition:</b> <a href="error_8h_source.html#l00028">error.h:29</a></div></div>
+<div class="ttc" id="aclass_n_a_n_a_1_1_c_error_html"><div class="ttname"><a href="class_n_a_n_a_1_1_c_error.html">NANA::CError</a></div><div class="ttdef"><b>Definition:</b> <a href="error_8h_source.html#l00063">error.h:63</a></div></div>
+<div class="ttc" id="aclass_n_a_n_a_1_1_n_a___f_i_n_a_l_html"><div class="ttname"><a href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html">NANA::NA_FINAL</a></div><div class="ttdoc">用于异常抛出</div><div class="ttdef"><b>Definition:</b> <a href="error_8h_source.html#l00026">error.h:27</a></div></div>
 <div class="ttc" id="aclass_n_a_n_a_1_1_n_a___f_i_n_a_l_html_a26fa784320912abcbec31a9f6f716d20"><div class="ttname"><a href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#a26fa784320912abcbec31a9f6f716d20">NANA::NA_FINAL::Exception</a></div><div class="ttdeci">Exception(int _code, const String &amp;_err, const String &amp;_func, const String &amp;_file, int _line)</div></div>
 <div class="ttc" id="aclass_n_a_n_a_1_1_n_a___f_i_n_a_l_html_afe3f70bb7a75be93ea7e4ff999b7d21f"><div class="ttname"><a href="class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#afe3f70bb7a75be93ea7e4ff999b7d21f">NANA::NA_FINAL::Exception</a></div><div class="ttdeci">Exception()</div></div>
 <div class="ttc" id="acore__global_8h_html"><div class="ttname"><a href="core__global_8h.html">core_global.h</a></div><div class="ttdoc">全局头文件</div></div>

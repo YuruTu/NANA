@@ -15,8 +15,9 @@
 
 #include "math/fft.h"
 #include "math/gaussian.hpp"
+#include "math/LevenbergMarquardt.h"
 #include "math/polynomialevaluation.hpp"
-
+#include "math/rand.h"
 
 /**
 @defgroup math Math

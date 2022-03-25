@@ -178,13 +178,14 @@ fft.h 的引用(Include)关系图:</div>
 <p>实现快速傅里叶变换 </p>
 <dl class="params"><dt>参数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>n个采样输入数据 </td></tr>
-    <tr><td class="paramname">f</td><td>傅里叶变换结果 </td></tr>
-    <tr><td class="paramname">n</td><td>采样点数 </td></tr>
-    <tr><td class="paramname">k</td><td>n==2^k </td></tr>
+    <tr><td class="paramname">NAFLOAT</td><td>* p n个采样输入数据 </td></tr>
+    <tr><td class="paramname">Complex&lt;NAFLOAT&gt;</td><td>* f 傅里叶变换结果 </td></tr>
+    <tr><td class="paramname">int</td><td>n 采样点数 </td></tr>
+    <tr><td class="paramname">int</td><td>k n==2^k </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
 
 <p class="definition">在文件 <a class="el" href="fft_8cpp_source.html">fft.cpp</a> 第 <a class="el" href="fft_8cpp_source.html#l00009">9</a> 行定义.</p>
 <div class="dynheader">

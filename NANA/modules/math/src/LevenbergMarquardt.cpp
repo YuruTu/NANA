@@ -6,6 +6,12 @@ namespace MATH {
 
 
 
+CLevenbergMarquardt::CLevenbergMarquardt():
+    Algorithm()
+{
+
+}
+
 }
 }
 

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data_0',['data',['../struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#ac4e4f7b9d56d8287c56f6961201b4402',1,'NANA::ComputerGeometry::PointXYZ_::data()'],['../struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html#abf50c7945393b5708ad1e4e26a082669',1,'NANA::GRAPH::BinTreeNode::data()']]],
+  ['data_0',['data',['../struct_n_a_n_a_1_1_computer_geometry_1_1_point_x_y_z__.html#ac4e4f7b9d56d8287c56f6961201b4402',1,'NANA::ComputerGeometry::PointXYZ_::data()'],['../struct_n_a_n_a_1_1_computer_geometry_1_1_palne__.html#a82db222096a77447a04174655ddf028d',1,'NANA::ComputerGeometry::Palne_::data()'],['../struct_n_a_n_a_1_1_g_r_a_p_h_1_1_bin_tree_node.html#abf50c7945393b5708ad1e4e26a082669',1,'NANA::GRAPH::BinTreeNode::data()']]],
   ['datamanager_2eh_1',['datamanager.h',['../datamanager_8h.html',1,'']]],
   ['decompositionmethod_2',['DecompositionMethod',['../class_n_a_n_a_1_1_matrix.html#a4513ca00857661356b036f9d4723a6d1',1,'NANA::Matrix']]],
   ['deletearraysafe_3',['deleteArraySafe',['../safememory_8hpp.html#a4ef1679be806b08b4ac9941cb4045adb',1,'NANA']]],
