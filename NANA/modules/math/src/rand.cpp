@@ -1,5 +1,5 @@
 #include "..\include\math\rand.h"
-
+#include <cmath>
 
 namespace NANA {
 namespace MATH {
@@ -27,6 +27,15 @@ double NA_API randNormal(double r_me, double sd)
     ccl_num /= ccl_s;//此时ccl_num接近标准正态分布的一个子集
     ccl_num *= sd;
     ccl_num += r_me;
+    return ccl_num;
+}
+
+double NA_API randNormalWitghBoxMuller()
+{
+    double x1, x2;
+    x1 = std::rand() % RAND_MAX / (double)RAND_MAX;
+    x2 = std::rand() % RAND_MAX / (double)RAND_MAX;
+    double ccl_num = std::sqrt(-2 * std::log(x1)) * cos(2 * NA_PI * x2);
     return ccl_num;
 }
 

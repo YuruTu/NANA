@@ -32,7 +32,16 @@ namespace MATH {
  */
 double NA_API randNormal(double r_me, double sd);
 
-
+/**
+ * @Method:    randNormalWitghBoxMuller
+ * @FullName:  NANA::MATH::randNormalWitghBoxMuller
+ * @Access:    public 
+ * @Returns:   double NA_API
+ * @Qualifier: //返回一个double类型的随机数，这么做的目的是破坏神经网络结构的对称性
+              基本原理，参见利用Box-Muller变换生成正态分布的随机数（附代码）
+ * @note https://blog.csdn.net/m0_37772174/article/details/81356434
+ */
+double NA_API randNormalWitghBoxMuller();
 
 }
 }
