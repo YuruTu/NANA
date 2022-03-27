@@ -98,16 +98,16 @@ struct Rect_ {
     _Tp x, y, w, h;
 };
 
-/*!
- * \class  Palne_ 
+/**
+ * @class  Plane_
  *
- * \brief 自定义平面类
+ * @brief 自定义平面类
  *
- * \author yurutu
- * \date 2022/03/25
+ * @author yurutu
+ * @date 2022/03/25
  */
 template<typename _Tp>
-struct Palne_ {
+struct Plane_ {
     union {
         struct {
             _Tp a;///<

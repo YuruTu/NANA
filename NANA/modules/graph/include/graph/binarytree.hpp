@@ -1,5 +1,4 @@
 #pragma once
-#include <core.hpp>
 /**
  * @file binarytree.hpp
  * @date 2021/11/11 22:41
@@ -13,6 +12,8 @@
  *
  * \note
 */
+#include <core.hpp>
+
 #include <queue>
 
 namespace NANA {
@@ -51,38 +52,55 @@ struct BinTreeNode
  * @note
  */
 template<typename T>
-void PreOrder(BinTreeNode<T>*& subTree,std::queue<T> & curQueue)
+void PreOrder(BinTreeNode<T>* node,std::queue<T> & curQueue)
 {
-    if (nullptr!=subTree)
-    {
-        curQueue.push(subTree->data);
-        PreOrder(subTree->leftChild, curQueue);
-        PreOrder(subTree->rightChild, curQueue);
-    }
+    if (nullptr == node)
+        return;
+
+    curQueue.push(node->data);
+    PreOrder(node->leftChild, curQueue);
+    PreOrder(node->rightChild, curQueue);
+    
 }
 
-///<基于递归的中序遍历(左->根->右)
+/**
+ * @Method:    InOrder
+ * @FullName:  NANA::GRAPH::InOrder
+ * @Returns:   void
+ * @Qualifier: 基于递归的中序遍历(左->根->右)
+ * @Parameter: BinTreeNode<T> * node 节点
+ * @Parameter: std::queue<T> & curQueue 保存的队列
+ */
 template<typename T>
-void InOrder(BinTreeNode<T>*& subTree, std::queue<T>& curQueue)
+void InOrder(BinTreeNode<T>* node, std::queue<T>& curQueue)
 {
-    if (nullptr != subTree )
-    {
-        InOrder(subTree->leftChild, curQueue);
-        curQueue.push(subTree->data);
-        InOrder(subTree->rightChild, curQueue);
-    }
+    if (nullptr == node)
+        return;
+
+    InOrder(node->leftChild, curQueue);
+    curQueue.push(node->data);
+    InOrder(node->rightChild, curQueue);
+    
 }
 
-///<基于递归的后续遍历(左->右->根)
+
+/**
+ * @Method:    PostOrder
+ * @FullName:  NANA::GRAPH::PostOrder
+ * @Returns:   void
+ * @Qualifier: 基于递归的后续遍历(左->右->根)
+ * @Parameter: BinTreeNode<T> *  subTree 传入的节点
+ * @Parameter: std::queue<T> & curQueue 顺序队列
+ */
 template<typename T>
-void PostOrder(BinTreeNode<T>*& subTree, std::queue<T>& curQueue)
+void PostOrder(BinTreeNode<T>* node, std::queue<T>& curQueue)
 {
-    if (nullptr!= subTree)
-    {
-        PostOrder(subTree->leftChild, curQueue);
-        PostOrder(subTree->rightChild, curQueue);
-        curQueue.push(subTree->data);
-    }
+    if (nullptr == node)
+        return;
+    PostOrder(node->leftChild, curQueue);
+    PostOrder(node->rightChild, curQueue);
+    curQueue.push(node->data);
+    
 }
 
 
