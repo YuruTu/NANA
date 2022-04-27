@@ -204,9 +204,18 @@ void Matrix::QR(const Matrix& A, Matrix& Q, Matrix& R) {
     }
 }
 
-#define SIGN(a,b) ((b) >= 0.0 ? std::fabs(a) : -std::fabs(a))
-static NAFLOAT sqrarg;
-#define SQR(a) ((sqrarg=(a)) == 0.0 ? 0.0 : sqrarg*sqrarg)
+static NAFLOAT SIGN(NAFLOAT a, NAFLOAT b) {
+    if (b >= 0.0)
+        return std::fabs(a);
+    return -std::fabs(a);
+}
+
+static NAFLOAT SQR(NAFLOAT a) {
+    if (a == 0.0)
+        return 0.0;
+    return a * a;
+}
+
 NAFLOAT pythag(NAFLOAT a, NAFLOAT b) {
     NAFLOAT absa, absb;
     absa = fabs(a);
