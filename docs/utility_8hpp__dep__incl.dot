@@ -6,8 +6,4 @@ digraph "NANA/modules/core/include/core/utility.hpp"
   Node1 [label="NANA/modules/core/include\l/core/utility.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="1.实现参数的读写功能"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="NANA/modules/core/include\l/core.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$core_8hpp.html",tooltip="包含基本的数据结构等"];
-  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="NANA/modules/graph\l/include/graph/binarytree.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$binarytree_8hpp.html",tooltip="实现二叉树的模板"];
-  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="NANA/modules/graph\l/include/graph.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$graph_8hpp.html",tooltip="实现图论相关算法"];
 }

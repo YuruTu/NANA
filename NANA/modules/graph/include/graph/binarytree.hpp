@@ -12,7 +12,7 @@
  *
  * \note
 */
-#include <core.hpp>
+
 
 #include <queue>
 
@@ -128,7 +128,20 @@ public:
             return true;
         return false;
     }
-
+    
+    /**
+     * @brief  二叉树的最大深度
+     * @returns   int
+     * @param TreeNode * root
+     * @note
+     */
+    static int maxDepth(BinTreeNode<T>* root) {
+        if (nullptr == root)
+            return 0;
+        int left = maxDepth(root->leftChild) + 1;
+        int right = maxDepth(root->rightChild) + 1;
+        return std::max(left, right);
+    }
 
 protected:
     BinTreeNode<T>* m_root; ///<根节点

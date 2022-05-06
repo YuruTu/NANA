@@ -19,6 +19,7 @@ var searchData=
   ['matrix_16',['Matrix',['../class_n_a_n_a_1_1_matrix.html#a200779713f922b3c87ad193b3ea7f6b4',1,'NANA::Matrix::Matrix(int rows, int cols)'],['../class_n_a_n_a_1_1_matrix.html#a993ef6b3ea430956efc1febce948e766',1,'NANA::Matrix::Matrix(const Matrix &amp;M)'],['../class_n_a_n_a_1_1_matrix.html#acb1816cea6e21c28e4fb02e663d1fd0e',1,'NANA::Matrix::Matrix(int m, int n, NAFLOAT const *val)'],['../class_n_a_n_a_1_1_matrix.html',1,'NANA::Matrix']]],
   ['matrix_2ecpp_17',['matrix.cpp',['../matrix_8cpp.html',1,'']]],
   ['matrix_2eh_18',['matrix.h',['../matrix_8h.html',1,'']]],
-  ['msg_19',['msg',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ad800fe286e458fa6e46b4999433092e8',1,'NANA::NA_FINAL']]],
-  ['mutate_20',['mutate',['../class_n_a_n_a_1_1_g_a_1_1_n_a___f_i_n_a_l.html#a73e74dd6cc55fc2ddeb527dcf96bf6ba',1,'NANA::GA::NA_FINAL']]]
+  ['maxdepth_19',['maxDepth',['../class_n_a_n_a_1_1_g_r_a_p_h_1_1_c_binary_tree.html#af64091ff2f9bec99fdd09e601e7fbb9c',1,'NANA::GRAPH::CBinaryTree']]],
+  ['msg_20',['msg',['../class_n_a_n_a_1_1_n_a___f_i_n_a_l.html#ad800fe286e458fa6e46b4999433092e8',1,'NANA::NA_FINAL']]],
+  ['mutate_21',['mutate',['../class_n_a_n_a_1_1_g_a_1_1_n_a___f_i_n_a_l.html#a73e74dd6cc55fc2ddeb527dcf96bf6ba',1,'NANA::GA::NA_FINAL']]]
 ];
