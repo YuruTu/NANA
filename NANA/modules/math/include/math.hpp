@@ -18,7 +18,7 @@
 #include "math/LevenbergMarquardt.h"
 #include "math/polynomialevaluation.hpp"
 #include "math/rand.h"
-
+#include "math/geometry.hpp"
 /**
 @defgroup math Math
 @{
