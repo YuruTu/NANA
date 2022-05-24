@@ -87,6 +87,7 @@
     <ClInclude Include="..\modules\math\include\math.hpp" />
     <ClInclude Include="..\modules\math\include\math\fft.h" />
     <ClInclude Include="..\modules\math\include\math\gaussian.hpp" />
+    <ClInclude Include="..\modules\math\include\math\geometry.hpp" />
     <ClInclude Include="..\modules\math\include\math\LevenbergMarquardt.h" />
     <ClInclude Include="..\modules\math\include\math\polynomialevaluation.hpp" />
     <ClInclude Include="..\modules\math\include\math\rand.h" />

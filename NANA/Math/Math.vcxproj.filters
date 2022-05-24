@@ -34,6 +34,9 @@
     <ClInclude Include="..\modules\math\include\math\LevenbergMarquardt.h">
       <Filter>include\math</Filter>
     </ClInclude>
+    <ClInclude Include="..\modules\math\include\math\geometry.hpp">
+      <Filter>include\math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\modules\math\src\fft.cpp">

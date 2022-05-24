@@ -16,5 +16,9 @@ namespace DNN {
 
 
 
+CBPNN::CBPNN()
+{
+}
+
 }
 }
