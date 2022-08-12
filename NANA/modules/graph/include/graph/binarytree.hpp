@@ -6,7 +6,7 @@
  * @author Administrator
  * Contact: 707101557@qq.com
  *
- * @brief 实现二叉树的模板
+ * @brief 实现二叉树，二叉搜索树
  *
  * TODO: long description
  *
@@ -109,7 +109,7 @@ void PostOrder(BinTreeNode<T>* node, std::queue<T>& curQueue)
  * @brief 二叉树的类
  * @tparam _T 
 */
-template<typename _T>
+template<typename T>
 class CBinaryTree {
 
 public:
@@ -118,17 +118,11 @@ public:
 
     }
 
-    /**
-     * @brief   当前树是否维空
-     * @returns   bool
-     * @note
-     */
-    bool empty() {
-        if (nullptr == m_root)
-            return true;
-        return false;
+    ~CBinaryTree()
+    {
+        destroy(m_root);
     }
-    
+
     /**
      * @brief  二叉树的最大深度
      * @returns   int
@@ -143,11 +137,93 @@ public:
         return std::max(left, right);
     }
 
+    
+    /**
+     * @Method:    isEmpty
+     * @FullName:  NANA::GRAPH::CBinaryTree<_T>::isEmpty
+     * @breif:     判断当前二叉树是否为空
+     * @returns:   bool
+     */
+    bool isEmpty() const {
+        return nullptr == m_root ? false, true;
+    }
 protected:
+
+    /**
+     * @Method:    release
+     * @FullName:  NANA::GRAPH::CBinaryTree<_T>::release
+     * @breif:     释放内存
+     * @returns:   void
+     */
+    void destroy(BinTreeNode<T>* node) {
+        if (nullptr != node) {
+            destroy(node->leftChild);
+            destroy(node->rightChild);
+            delete node;
+        }
+    }
+    
+
     BinTreeNode<T>* m_root; ///<根节点
+
+};
+
+/**
+ * @class  BSTNode
+ * @brief  二叉搜索树(binary searcgh treee)又称二叉排序树(binary sorting tree)的节点
+ * @tparam K 键的类型
+ * @tparam T 值的类型
+*/
+template<typename K, typename T>
+struct BSTNode {
+
+    
+    /**
+     * @Method:    operator<
+     * @FullName:  NANA::GRAPH::BSTNode<K, T>::operator<
+     * @breif:     比较Node的大小，以值排序
+     * @returns:   bool
+     * @Parameter: BSTNode<K
+     * @Parameter: T> const & node
+     */
+    bool operator<(BSTNode<K,T> const & node ) const{
+        return this->key < node.key ? true ? false;
+    }
+
+    bool operator>(BSTNode<K, T> const& node) const {
+        return this->key > node.key ? true ? false;
+    }
+
+    bool operator==(BSTNode<K, T> const& node) const {
+        return this->key > node.key ? true ? false;
+    }
+
+    BSTNode<K, T>* left;
+    BSTNode<K, T>* right;
+    K key;
+    T data;
+};
+
+
+/**
+ * @class  CBST
+ * @brief  二叉搜索树(binary searcgh treee)又称二叉排序树(binary sorting tree)
+ * @tparam K 键的类型
+ * @tparam T 值的类型
+*/
+template<typename K, typename T>
+class CBST {
+public:
+
+
+private:
+
 
 
 };
+
+
+
 
 //! @} Graph_basic
 
