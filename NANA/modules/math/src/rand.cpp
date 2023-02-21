@@ -18,7 +18,7 @@ double NA_API randNormal(double r_me, double sd)
     double ccl_ar[normal_count];
     ccl_num = 0;
     for (i = 0; i < normal_count; i++) {
-        ccl_ar[i] = rand() % 1000 / (double)999;//生成一个[0,1]的均匀分布
+        ccl_ar[i] = rand() % RAND_MAX / (double)(RAND_MAX-1);//生成一个[0,1]的均匀分布
         ccl_num += ccl_ar[i];
     }
     ccl_num -= ((double)normal_count * 0.5);//减去0-1均匀分布的均值

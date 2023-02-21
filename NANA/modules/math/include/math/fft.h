@@ -16,8 +16,6 @@
 
 
 namespace NANA {
-namespace MATH {
-
 /**
  * @brief  实现快速傅里叶变换
  * @param NAFLOAT * p n个采样输入数据
@@ -27,9 +25,6 @@ namespace MATH {
  * @note
  */
 void NA_API fft(NAFLOAT * p,Complex<NAFLOAT> * f,  int n,int k);
-
-
-}
 }
 
 
