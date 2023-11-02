@@ -43,7 +43,6 @@ struct BinTreeNode
     }
 };
 
-
 /**
  * @brief  基于递归的二叉树先序遍历(根->左->右)
  * @returns   void
@@ -74,13 +73,13 @@ void PreOrder(BinTreeNode<T>* node,std::queue<T> & curQueue)
 template<typename T>
 void InOrder(BinTreeNode<T>* node, std::queue<T>& curQueue)
 {
-    if (nullptr == node)
+    if (nullptr == node) {
         return;
+    }
 
     InOrder(node->leftChild, curQueue);
     curQueue.push(node->data);
     InOrder(node->rightChild, curQueue);
-    
 }
 
 

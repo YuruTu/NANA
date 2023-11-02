@@ -21,8 +21,8 @@ Exception::Exception(int _code, const String& _err, const String& _func, const S
 
 Exception::~Exception() throw() {}
 
-/*!
- \return the error description and the context as a text string.
+/**
+ @return the error description and the context as a text string.
  */
 const char* Exception::what() const throw()
 {

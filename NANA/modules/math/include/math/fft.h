@@ -9,11 +9,7 @@
  * @brief 实现傅里叶变换相关算法
  * \note
 */
-
-
 #include <NANA\core.hpp>
-
-
 
 namespace NANA {
 /**
@@ -24,7 +20,7 @@ namespace NANA {
  * @param int k n==2^k 
  * @note
  */
-void NA_API fft(NAFLOAT * p,Complex<NAFLOAT> * f,  int n,int k);
+void NA_API fft(NAFLOAT* p, Complex<NAFLOAT>* f, int n, int k);
 }
 
 

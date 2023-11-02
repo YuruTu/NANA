@@ -1,5 +1,5 @@
 #pragma once
-/*!
+/**
  * @file core_global.h
  * @date 2021/11/11 18:28
  *
@@ -33,10 +33,10 @@ namespace NANA {
  */
 enum  Error
 {
-	RET_OK,///<0表示返回值正常
-	ERR_PARAM,///<参数出错
-	ERR_RUNTIME,///<运行时出错
-	ERR_ASSERT,///<断言时出错
+    RET_OK,///<0表示返回值正常
+    ERR_PARAM,///<参数出错
+    ERR_RUNTIME,///<运行时出错
+    ERR_ASSERT,///<断言时出错
 };
 
 

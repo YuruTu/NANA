@@ -56,11 +56,11 @@ public:
 
     /**
      * @brief 复制构造函数
-     * @param m 
-     * @param n 
-     * @param val_ 
+     * @param m
+     * @param n
+     * @param val_
     */
-    Matrix(int m, int n,NAFLOAT const * val);
+    Matrix(int m, int n, NAFLOAT const* val);
 
     /**
      * @brief 矩阵的析构函数，释放申请的内存

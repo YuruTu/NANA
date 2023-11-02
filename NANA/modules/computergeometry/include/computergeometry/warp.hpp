@@ -77,9 +77,6 @@ void warpPerspectivePoint2D(const Matrix& M, const  PointXY_<_Tp>& src, PointXY_
 }
 
 
-
-
-
 //! @} geometrywarp
 
 

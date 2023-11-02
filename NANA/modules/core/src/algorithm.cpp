@@ -3,9 +3,6 @@
 namespace NANA {
 
 
-
-
-
 Algorithm::Algorithm()
 {
 }

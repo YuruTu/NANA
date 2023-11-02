@@ -35,7 +35,7 @@ public:
      Instead, the macros CV_Error(), CV_Error_() and CV_Assert() are used.
     */
     Exception(int _code, const String& _err, const String& _func, const String& _file, int _line);
-    virtual ~Exception() throw();
+    ~Exception() override throw();
 
     /*!
      \return the error description and the context as a text string.

@@ -252,7 +252,9 @@ void Matrix::SVD( const Matrix & A, Matrix& U2, Matrix& W, Matrix& V) {
         rv1[i] = scale * g;
         g = s = scale = 0.0;
         if (i < m) {
-            for (k = i; k < m; k++) scale += fabs(U.m_val[k][i]);
+            for (k = i; k < m; k++) {
+                scale += fabs(U.m_val[k][i]);
+            }
             if (scale) {
                 for (k = i; k < m; k++) {
                     U.m_val[k][i] /= scale;

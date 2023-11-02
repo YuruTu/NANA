@@ -4,12 +4,6 @@
 namespace NANA {
 namespace MATH {
 
-
-
-
-
-
-
 double NA_API randNormal(double r_me, double sd)
 {
     int  i;

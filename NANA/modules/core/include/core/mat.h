@@ -55,15 +55,7 @@ public:
      */
     virtual ~Mat();
 
-
-
-
-
-
-
 private:
-
-
     /**
      * @brief 内存申请
      * @returns
@@ -95,7 +87,7 @@ private:
     int m_stride;///<步长
     int m_rows;///<行数
     int m_cols;///<列数
-    CDataManager* m_datamanager;
+    CDataManager* m_datamanager; ///《基于引用计数器的数据管理
 };
 
 

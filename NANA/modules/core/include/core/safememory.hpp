@@ -53,8 +53,9 @@ inline void deleteSafe(_T*& p) {
  */
 template<typename _T>
 inline void deleteArraySafe(_T*& p) {
-    if (nullptr == p)
+    if (nullptr == p) {
         return;
+    }
     delete[] p;
     p = nullptr;
 }

@@ -54,9 +54,6 @@ void fft(NAFLOAT* p, Complex<NAFLOAT>* f, int n, int k) {
             }
         }
     }
-
-
-
 }
 
 

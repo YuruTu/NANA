@@ -19,14 +19,11 @@ static int log2(int value) {
         ++result;
     }
     return result;
-
-
 }
 
 CGeneInt::CGeneInt(int minV, int maxV) :
     m_minV(minV),
     m_maxV(maxV) {
-
 }
 
 void CGeneInt::initGene() {

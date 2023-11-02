@@ -17,8 +17,6 @@ static double myFun(const double& x) {
     return x * std::sin(10.0 * NA_PI * x) + 1.0;
 }
 
-
-
 Popultation::Popultation(int groupNumber, int mutate) :
     m_groupNumber(groupNumber),
     m_mutate(mutate) {
